@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <title>Insert title here</title>
 <link rel="stylesheet" href="../../static/css/jyk/boardMain.css">
 </head>
@@ -286,4 +287,5 @@
 
 	</section>
 </body>
+<script type="text/javascript" src="../../static/js/boardMain.js"></script>
 </html>
