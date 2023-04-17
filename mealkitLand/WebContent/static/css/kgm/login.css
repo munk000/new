@@ -764,3 +764,7 @@ p {
     border: 1px solid #ccc;
     cursor: default;
 }
+.terms-section .frame-sm .form-group {
+    width: 520px;
+    margin: 0 auto;
+}

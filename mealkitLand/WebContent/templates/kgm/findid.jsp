@@ -26,17 +26,109 @@
 					<fieldset class="form-group-area">
 						<legend>아이디 찾기 방식 선택</legend>
 						<ul class="find-id-list">
+
 							<!-- 휴대폰 번호로 찾기 -->
-							<li>
-								<div class="customr-radio">
-									<input type="radio" id="find-member-id-radio-1"
-									class="radio" value="phone" name="find-member-id-radio"
-									checked="" data-gtm-form-interact-field-id="1">
+							<!-- <li> -->
+								<!-- div class="customr-radio">
+									<input type="radio" id="find-member-id-radio-1" class="radio"
+										value="phone" name="find-member-id-radio" checked=""
+										data-gtm-form-interact-field-id="1"> <label
+										for="find-member-id-radio-1"> ::before
+										"휴대폰번호로 찾기"
+									</label>
+									<button type="button" class="btn-icon-mark" onclick="toolbox()">
+										<i class="ico-excl2"
+											style="border: 2px solid #d9d9d9; top: 2px;"></i><span
+											class="blind">주의</span> <i class="ico-excl2"
+											style="border: 2px solid #d9d9d9; top: 2px;"></i>
+										::before
+										::after
+										<span class="blind">주의</span>
+										::after
+									</button>
+									<div class="tooltip-wrap" onclick="hide($(this))">
+										<div class="tool">
+											<span>휴대폰 인증에 문제가 있으신 경우,<br>고객센터로 문의 주시기 바랍니다.
+											</span>
+										</div>
+									</div>
 								</div>
-								<label for="find-member-id-radio-1">
-									<!-- ::before -->
-									"휴대폰번호로 찾기"
-								</label>
+								<div id="find-member-id-phone-input-group"
+									class="ui-radio-content active">
+									<div class="input-group type-lg w-full">
+										<label for="find-member-id-name-text1" class="blind"
+											style="font-weight: 400; font-size: 15px; height: 50px;">휴대폰
+											인증</label>
+										<button type="button" id="find-member-id-name-text1"
+											name="find-member-id-name-text1"
+											class="btn-basic-lg2 btn-primary w-full"
+											onclick="fnGetCertifyInfo(); return false;"
+											style="font-weight: 400; font-size: 15px; height: 50px;">휴대폰
+											인증</button>
+									</div> -->
+									<!--// input-group -->
+									<!-- <div id="find-member-id-phone-no-error"></div> -->
+								<!-- </div> -->
+							<!-- </li> -->
+							<!-- 휴대폰번호로 찾기 -->
+							<!-- 이메일로 찾기 시작 -->
+							<li>
+								<div class="custom-radio">
+									<input type="radio" id="find-member-id-radio-2" class="radio"
+										value="email" name="find-member-id-radio"
+										data-gtm-form-interact-field-id="0"> <label
+										for="find-member-id-radio-2"> <!-- ::before --> "이메일로
+										찾기"
+									</label>
+								</div>
+								<div id="find-member-id-email-input-group"
+									class="ui-radio-content">
+									<div class="input-group type-lg w-full">
+										<label for="find-member-id-name-text2" class="bline">이름
+											입력</label> <input type="text" id="find-member-id-name-text2"
+											name="find-member-id-name-text2" class="input-text"
+											placeholder="이름 2자 이상 입력" maxlength="50"
+											onkeyup="onBlurFindMemberIdInput();"
+											onblur="onBlurFindMemberIdInput();">
+									</div>
+									<!-- //input-group -->
+									<div id="find-member-id-name-error2"></div>
+									<div class="input-group type-lg w-full">
+										<input type="text" id="find-member-id-email-prefix"
+											name="find-member-id-email-prefix" class="input-text"
+											placeholder="이메일 주소" onkeyup="onBlurFindMemberIdInput();"
+											onblur="onBlurFindMemberIdInput();">
+										<div class="input-group-form">
+											<div class="ui-select select-box w135"
+												id="find-member-id-email-domain" data-value="">
+												<a href="#none" title="선택" class="select-value"><span>직접입력</span></a>
+												<div class="select-list">
+													<ul>
+														<li data-name=""><a href="#none"><span>직접입력<!-- ::after --></span></a></li>
+														<li data-name="naver.com"><a href="#none"><span>naver.com</span></a></li>
+														<li data-name="daum.net"><a href="#none"><span>daum.net</span></a></li>
+														<li data-name="hanmail.net"><a href="#none"><span>hanmail.net</span></a></li>
+														<li data-name="gmail.com"><a href="#none"><span>gmail.com</span></a></li>
+														<li data-name="hotmail.com"><a href="#none"><span>hotmail.com</span></a></li>
+														<li data-name="yahoo.co.kr"><a href="#none"><span>yahoo.co.kr</span></a></li>
+														<li data-name="chollian.net"><a href="#none"><span>chollian.net</span></a></li>
+														<li data-name="empal.com"><a href="#none"><span>empal.com</span></a></li>
+														<li data-name="freechal.com"><a href="#none"><span>freechal.com</span></a></li>
+														<li data-name="hitel.net"><a href="#none"><span>hitel.net</span></a></li>
+														<li data-name="hanmir.com"><a href="#none"><span>hanmir.com</span></a></li>
+														<li data-name="hanafos.com"><a href="#none"><span>hanafos.com</span></a></li>
+														<li data-name="korea.com"><a href="#none"><span>korea.com</span></a></li>
+														<li data-name="lycos.co.kr"><a href="#none"><span>lycos.co.kr</span></a></li>
+														<li data-name="nate.com"><a href="#none"><span>nate.com</span></a></li>
+														<li data-name="netian.com"><a href="#none"><span>netian.com</span></a></li>
+														<li data-name="paran.com"><a href="#none"><span>paran.com</span></a></li>
+														<li data-name="unitel.co.kr"><a href="#none"><span>unitel.co.kr</span></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</li>
 						</ul>
 					</fieldset>
