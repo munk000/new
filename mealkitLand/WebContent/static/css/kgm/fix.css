@@ -56,7 +56,7 @@ div {
     left: 0;
     width: 180px;
     height: 46px;
-    background-image: url(../image/icon1.png);
+    background: url(../../image/logo.png);
     background-repeat: no-repeat;
 }
 h1 {
@@ -508,7 +508,7 @@ a {
     display: block;
     width: 104px;
     height: 42px;
-    background: url(/resources/pc/images/footer_logo.png) 0 0;
+    background: url(../../image/logo.png);
     margin-bottom: 26px;
 }
 
@@ -674,5 +674,13 @@ ul {
  	background-image: url(../../image/cart.png);
     background-size: auto 48px;
     background-position: 100% center;
+}
+    
+.footer-info .colum-info {
+    position: relative;
+    float: left;
+    width: 50%;
+    font-size: 12px;
+    color: #666;
 }
     
