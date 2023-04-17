@@ -4,9 +4,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>밀키트랜드</title>
 </head>
 <body>
+<%@include file ="/templates/kgm/header.jsp" %>
+
+
+
+<%@include file ="/templates/kgm/footer.jsp" %>
 
 </body>
 </html>
