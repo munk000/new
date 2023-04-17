@@ -72,7 +72,8 @@
 							value="885d1ba5-c5d8-41dc-93ae-0297ea677b25">
 					</div>
 				</form>
-				
+				</div>
+			</div>
 				
 				<!-- <div class="sns-login">
 					<ul class="sns-login-list">

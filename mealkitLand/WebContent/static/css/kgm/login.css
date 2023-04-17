@@ -567,3 +567,200 @@ button, select {
 button, input {
     overflow: visible;
 }
+
+.terms-section {
+    background-color: #F7F7F7;
+    padding: 100px 0;
+}
+.frame-full {
+    position: relative;
+    width: 100%;
+}
+.terms-section .frame-sm {
+    width: 720px;
+    background-color: #ffffff;
+    padding: 60px 0;
+    border-radius: 20px;
+}
+.frame-sm {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+}terms-section .frame-sm .form-group {
+    width: 520px;
+    margin: 0 auto;
+}
+.terms-section .frame-sm .form-head h3 {
+    font-size: 26px;
+    color: #333333;
+    font-weight: 700;
+    padding-bottom: 4px;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.terms-section .frame-sm .form-head p {
+    font-size: 13px;
+    color: #999999;
+    font-weight: 400;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.terms-section .terms-toggle-box {
+    border-top: none;
+    border-bottom: 1px solid #ccc;
+    margin-top: 0;
+    padding: 24px 0 12px 0;
+}
+.terms-toggle-box {
+    /* border: 1px solid #ccc; */
+    border-radius: 2px;
+    padding: 15px 0;
+    margin-top: 8px;
+}
+.terms-section .terms-toggle-box .box-head {
+    padding-bottom: 0;
+    border: none;
+}
+.terms-section .custom-checkbox .checkbox + label:before {
+    width: 16px;
+    height: 12px;
+    background: url(/resources/pc/images/icon/ico-terms-off-1.png);
+    background-repeat: no-repeat;
+    border: none;
+    background-size: 16px 12px;
+    top: 2px;
+}
+.custom-checkbox > .notice-text {
+    padding: 3px 0 0 26px;
+    font-size: 12px;
+    color: #999;
+}
+.terms-toggle-box .terms-inner-list {
+    padding-top: 18px;
+}
+.inner-flex:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.inner-flex .left-item1 {
+    float: left;
+}
+
+.terms-inner-list > li .custom-checkbox input[type="checkbox"] + label {
+    font-size: 13px;
+    color: #666;
+}
+.text-guide-sm2 {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+}
+.terms-toggle-box .terms-inner-list .inner-flex .btn-box-link1 {
+    float: right;
+    margin-top: -1px;
+}
+.terms-section .btn-box-link1 {
+    border: none;
+}
+.btn-box-link1 {
+    display: inline-block;
+    border-bottom: 1px solid #999;
+    color: #999;
+}
+.btn-box-link1 > [class*="ico-arr-"] {
+    width: 10px;
+    height: 10px;
+}
+[class*="ico-arr-"] {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    transition: .2s;
+    -webkit-transition: .2s;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+.ico-arr-toggle:before {
+    top: 50%;
+    right: 0;
+    width: 60%;
+    height: 1px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+[class*="ico-arr-"]:after, [class*="ico-arr-"]:before {
+    position: absolute;
+    display: block;
+    content: '';
+    background-color: #000;
+    box-shadow: inset 0 0 0 32px;
+}
+.ico-arr-toggle:after {
+    top: 50%;
+    left: 0;
+    width: 60%;
+    height: 1px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.terms-inner-list .terms-inner-box {
+    background: #f8f8f8;
+    padding: 12px;
+    margin-top: 10px;
+    max-height: 125px;
+    overflow-y: auto;
+    color: #333;
+    font-size: 13px;
+    line-height: 18px;
+}
+.ui-toggle-slide .ui-slide-content, .ui-toggle-slide .ui-slide-subcontent {
+    display: none;
+}
+.bl-text-type2:before, .bl-list-type2 > li:before {
+    display: inline-block;
+    content: '※';
+    vertical-align: middle;
+    margin: -3px 3px 0 -15px;
+}
+.bl-text-type2:before, .bl-list-type2 > li:before {
+    display: inline-block;
+    content: '※';
+    vertical-align: middle;
+    margin: -3px 3px 0 -15px;
+}
+
+.terms-section .terms-btn-wrap button {
+    width: 520px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 16px 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+.terms-section .terms-btn-wrap {
+    padding-top: 40px;
+}
+.text-center {
+    text-align: center !important;
+}
+.btn-dim, button[disabled] {
+    color: #fff;
+    background: #ccc;
+    border: 1px solid #ccc;
+    cursor: default;
+}

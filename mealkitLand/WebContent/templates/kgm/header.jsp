@@ -12,7 +12,7 @@
 		<div class="header-inner">
 			<!--헤더 로고 -->
 			<h1 class="logo">
-				<a href="../image/icon1.png"> <span class="blind">밀키트랜드</span>
+				<a href="../../static/image/logo.png"> <span class="blind">밀키트랜드</span>
 				</a>
 			</h1>
 
