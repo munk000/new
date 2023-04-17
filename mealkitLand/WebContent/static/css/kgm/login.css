@@ -1,0 +1,766 @@
+
+@charset "UTF-8";
+.btn-primary{
+    background: #ff6001;
+    color: #fff;
+    border: 1px solid #ff6001;
+}
+.container {
+    position: relative;
+    min-height: 700px;
+    padding-bottom: 100px;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    display: block;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body {
+    height: 100%;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    /* line-height: 1.4; */
+    font-family: 'Pretendard', sans-serif;
+    word-break: break-all;
+}
+.login-container {
+    min-height: 700px;
+    background: #f7f7f7;
+    margin-bottom: -100px;
+}
+
+.login-area {
+    width: 420px;
+    margin: 0 auto;
+    padding-bottom: 140px;
+}
+
+.login-greeting {
+    padding-top: 100px;
+    font-size: 32px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.login-greeting .txt {
+    font-weight: normal;
+}
+
+.txt, .txt span {
+    word-break: break-all;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+}
+    
+.login-greeting .message {
+	  line-height: 1.6;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+login-greeting .message .ico-logo-login {
+    vertical-align: top;
+    margin-right: 5px;
+}
+.ico-logo-login {
+    width: 105px;
+    height: 40px;
+}
+[class^="ico-logo-"] {
+    display: inline-block;
+    background: url(/resources/pc/images/logo.png) 0 0;
+    background-size: cover;
+}
+i {
+    font-style: italic;
+}
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+fieldset, img {
+    border: 0;
+}
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: rgb(192, 192, 192);
+    border-image: initial;
+}
+legend, caption {
+    position: absolute;
+    left: -99999px;
+    display: block;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    text-indent: -99999px;
+    clip: rect(0,0,0,0);
+    *display: none;
+}
+legend {
+    display: block;
+    padding-inline-start: 2px;
+    padding-inline-end: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+.wp100, .w-full {
+    width: 100% !important;
+}
+.input-group {
+    height: 40px;
+}
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: collapse;
+    /* width: 100%; */
+}
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+label, select, input, textarea {
+    vertical-align: middle;
+}
+label {
+    cursor: default;
+}
+.login-area .input-text.type-lg {
+    font-size: 15px;
+}
+.input-group.type-lg .input-text, .input-text.type-lg {
+    height: 50px;
+    padding: 3px 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    border-radius: 6px;
+}
+.input-group > .input-text {
+    position: relative;
+    display: table-cell;
+    float: left;
+    width: 100%;
+    z-index: 2;
+}
+.input-text {
+    height: 40px;
+    padding: 5px 15px;
+    background: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 13px;
+    border-radius: 0;
+}
+
+button, input {
+    overflow: visible;
+}
+
+element.style {
+}
+.login-area .input-text.type-lg {
+    font-size: 15px;
+}
+.input-group.type-lg .input-text, .input-text.type-lg {
+    height: 50px;
+    padding: 3px 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    border-radius: 6px;
+}
+.input-group .input-text {
+    height: 100%;
+    /* height: 40px; */
+    padding: 3px 15px;
+}
+.input-group > .input-text {
+    position: relative;
+    display: table-cell;
+    float: left;
+    width: 100%;
+    z-index: 2;
+}
+.input-text {
+    height: 40px;
+    padding: 5px 15px;
+    background: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 13px;
+    border-radius: 0;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    font: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+}
+label, select, input, textarea {
+    vertical-align: middle;
+}
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: collapse;
+    /* width: 100%; */
+}
+.login-area .input-group + .input-group {
+    margin-top: 8px;
+}
+.wp100, .w-full {
+    width: 100% !important;
+}
+.input-group {
+    height: 40px;
+}
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: collapse;
+    /* width: 100%; */
+}
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+label, select, input, textarea {
+    vertical-align: middle;
+}
+.login-area .input-text.type-lg {
+    font-size: 15px;
+}
+.input-group.type-lg .input-text, .input-text.type-lg {
+    height: 50px;
+    padding: 3px 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    border-radius: 6px;
+}
+.login-area .chk-area {
+    position: relative;
+    margin-top: 15px;
+}
+.login-area .remember-me-con .remember-me1-con {
+    margin-right: 12px;
+}
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+    vertical-align: top;
+}
+.login-area .custom-checkbox .checkbox + label {
+    min-height: 22px;
+    line-height: 22px;
+    padding-left: 28px;
+}
+.custom-checkbox input[type="checkbox"] + label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    vertical-align: top;
+}
+.custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+    vertical-align: top;
+}
+
+.login-area .chk-area {
+    position: relative;
+    margin-top: 15px;
+}
+.login-area .remember-me-con .remember-me1-con {
+    margin-right: 12px;
+}
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+    vertical-align: top;
+}
+.login-area .custom-checkbox .checkbox + label {
+    min-height: 22px;
+    line-height: 22px;
+    padding-left: 28px;
+}
+.custom-checkbox input[type="checkbox"] + label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    vertical-align: top;
+}
+.login-area .custom-checkbox .checkbox:checked + label:before {
+    width: 22px;
+    height: 22px;
+    border-radius: 3px;
+    background-position: -47px -224px;
+}
+.custom-checkbox .checkbox:checked + label:before {
+    background: #FF6001 url(/resources/pc/images/icon/ico_form.png?ver=20220511) -50px -30px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #FF6001;
+
+}
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.login-area .input-group ~ .btn-basic-lg2 {
+    margin-top: 15px;
+}
+.login-area .btn-basic-lg2 {
+    height: 50px;
+}
+.btn-primary {
+    background: #ff6001;
+    color: #fff;
+    border: 1px solid #ff6001;
+}
+.btn-basic-lg2 {
+    min-width: 180px;
+    height: 48px;
+    padding: 10px 25px 11px;
+}
+[class*="btn-basic-"], [class*="btn-option"] {
+    border-radius: 6px;
+}
+[class*="btn-basic-"], [class*="btn-option"], [class*="btn-rud-"] {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.wp100, .w-full {
+    width: 100% !important;
+}
+button, [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    /* border: 0; */
+    padding: 0;
+    background-image: none;
+}
+button {
+    background: none;
+    font-family: 'Pretendard', sans-serif;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    font: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.login-area .btn-basic-lg2.btn-primary.w-full > span {
+    font-size: 18px;
+    line-height: 1.7;
+}
+[class*="btn-basic-"] > span, [class*="btn-option"] > span, [class*="btn-rud-"] > span {
+    display: inline-block;
+    vertical-align: top;
+}
+button span {
+    position: relative;
+}
+.login-area .find-con {
+    margin-top: 30px;
+}
+.page-guide-center {
+    width: 100%;
+    text-align: center;
+}
+ol, ul {
+    list-style: none;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.page-guide-center {
+    width: 100%;
+    text-align: center;
+}
+.login-area .txt-link-list li {
+    display: inline-block;
+    color: #999;
+    font-size: 14px;
+}
+.text-black2 {
+    color: #333 !important;
+}
+a {
+    background: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+.login-area .txt-link-list li:last-child:not(:only-child):before {
+    display: inline-block;
+    content: '';
+    width: 1px;
+    height: 8px;
+    background: #ccc;
+    vertical-align: middle;
+    margin: 0 8px 0 3px;
+}
+.login-area .txt-link-list li {
+    display: inline-block;
+    color: #999;
+    font-size: 14px;
+}
+
+.login-area .remember-me-con .remember-me1-con {
+    margin-right: 12px;
+}
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.custom-checkbox .checkbox:checked + label:before {
+    background: #FF6001 url(/resources/pc/images/icon/ico_form.png?ver=20220511) -50px -30px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #FF6001;
+}
+.custom-checkbox .checkbox + label:before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.login-area .input-group ~ .btn-basic-lg2 {
+    margin-top: 15px;
+}
+.login-area .btn-basic-lg2 {
+    height: 50px;
+}
+.btn-basic-lg2 {
+    min-width: 180px;
+    height: 48px;
+    padding: 10px 25px 11px;
+}
+[class*="btn-basic-"], [class*="btn-option"] {
+    border-radius: 6px;
+}
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+
+.terms-section {
+    background-color: #F7F7F7;
+    padding: 100px 0;
+}
+.frame-full {
+    position: relative;
+    width: 100%;
+}
+.terms-section .frame-sm {
+    width: 720px;
+    background-color: #ffffff;
+    padding: 60px 0;
+    border-radius: 20px;
+}
+.frame-sm {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+}terms-section .frame-sm .form-group {
+    width: 520px;
+    margin: 0 auto;
+}
+.terms-section .frame-sm .form-head h3 {
+    font-size: 26px;
+    color: #333333;
+    font-weight: 700;
+    padding-bottom: 4px;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.terms-section .frame-sm .form-head p {
+    font-size: 13px;
+    color: #999999;
+    font-weight: 400;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.terms-section .terms-toggle-box {
+    border-top: none;
+    border-bottom: 1px solid #ccc;
+    margin-top: 0;
+    padding: 24px 0 12px 0;
+}
+.terms-toggle-box {
+    /* border: 1px solid #ccc; */
+    border-radius: 2px;
+    padding: 15px 0;
+    margin-top: 8px;
+}
+.terms-section .terms-toggle-box .box-head {
+    padding-bottom: 0;
+    border: none;
+}
+.terms-section .custom-checkbox .checkbox + label:before {
+    width: 16px;
+    height: 12px;
+    background: url(/resources/pc/images/icon/ico-terms-off-1.png);
+    background-repeat: no-repeat;
+    border: none;
+    background-size: 16px 12px;
+    top: 2px;
+}
+.custom-checkbox > .notice-text {
+    padding: 3px 0 0 26px;
+    font-size: 12px;
+    color: #999;
+}
+.terms-toggle-box .terms-inner-list {
+    padding-top: 18px;
+}
+.inner-flex:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.inner-flex .left-item1 {
+    float: left;
+}
+
+.terms-inner-list > li .custom-checkbox input[type="checkbox"] + label {
+    font-size: 13px;
+    color: #666;
+}
+.text-guide-sm2 {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+}
+.terms-toggle-box .terms-inner-list .inner-flex .btn-box-link1 {
+    float: right;
+    margin-top: -1px;
+}
+.terms-section .btn-box-link1 {
+    border: none;
+}
+.btn-box-link1 {
+    display: inline-block;
+    border-bottom: 1px solid #999;
+    color: #999;
+}
+.btn-box-link1 > [class*="ico-arr-"] {
+    width: 10px;
+    height: 10px;
+}
+[class*="ico-arr-"] {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    transition: .2s;
+    -webkit-transition: .2s;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+.ico-arr-toggle:before {
+    top: 50%;
+    right: 0;
+    width: 60%;
+    height: 1px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+[class*="ico-arr-"]:after, [class*="ico-arr-"]:before {
+    position: absolute;
+    display: block;
+    content: '';
+    background-color: #000;
+    box-shadow: inset 0 0 0 32px;
+}
+.ico-arr-toggle:after {
+    top: 50%;
+    left: 0;
+    width: 60%;
+    height: 1px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.terms-inner-list .terms-inner-box {
+    background: #f8f8f8;
+    padding: 12px;
+    margin-top: 10px;
+    max-height: 125px;
+    overflow-y: auto;
+    color: #333;
+    font-size: 13px;
+    line-height: 18px;
+}
+.ui-toggle-slide .ui-slide-content, .ui-toggle-slide .ui-slide-subcontent {
+    display: none;
+}
+.bl-text-type2:before, .bl-list-type2 > li:before {
+    display: inline-block;
+    content: '※';
+    vertical-align: middle;
+    margin: -3px 3px 0 -15px;
+}
+.bl-text-type2:before, .bl-list-type2 > li:before {
+    display: inline-block;
+    content: '※';
+    vertical-align: middle;
+    margin: -3px 3px 0 -15px;
+}
+
+.terms-section .terms-btn-wrap button {
+    width: 520px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 16px 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+.terms-section .terms-btn-wrap {
+    padding-top: 40px;
+}
+.text-center {
+    text-align: center !important;
+}
+.btn-dim, button[disabled] {
+    color: #fff;
+    background: #ccc;
+    border: 1px solid #ccc;
+    cursor: default;
+}
