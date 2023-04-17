@@ -4,7 +4,7 @@
 <html land="ko" xml:lang="ko">
 <head>
 
-    <meta charset="utf-8">
+<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="_csrf" content="3a5eb909-3fab-4535-85d4-733e79f97a82">
@@ -99,6 +99,7 @@ src="https://www.facebook.com/tr?id=163613154295945&ev=PageView&noscript=1"
 <!-- ======================== APP 호출 alert ======================== -->
 <!--// ======================== APP 호출 alert ======================== -->
 
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/jbk/personal.css" />
 <title>랭킹닭컴 </title>
 
 <!-- [Pub/Dev] 메인페이지의 경우 addClass main -->
