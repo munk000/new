@@ -27,7 +27,7 @@
 <link rel="stylesheet" type="text/css" href="/resources/pc/css/content.css?ver=20230411">
 <link rel="stylesheet" type="text/css" href="/resources/pc/css/regular.css?ver=20230406">
 
-<link rel="icon" href="/resources/pc/images/icon/favicon.ico">
+<link rel="icon" href="https://www.rankingdak.com/resources/pc/images/icon/favicon.ico">
 
 <script async="" defer="" src="https://cdn.megadata.co.kr/dist/prod/enp_tracker_self_hosted.min.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-P3K4GPXK01&amp;l=dataLayer&amp;cx=c"></script><script src="https://connect.facebook.net/signals/config/163613154295945?v=2.9.101&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script src="/resources/common/js/lib/jquery-3.5.1.min.js"></script>
 <script src="/resources/common/js/lib/jquery.validate.min.js"></script>
@@ -99,7 +99,8 @@ src="https://www.facebook.com/tr?id=163613154295945&ev=PageView&noscript=1"
 <!-- ======================== APP 호출 alert ======================== -->
 <!--// ======================== APP 호출 alert ======================== -->
 
-<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/jbk/personal.css" />
+<!-- <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/jbk/personal.css" /> -->
+<link rel="stylesheet" href="../../static/css/jbk/personal.css" />
 <title>랭킹닭컴 </title>
 
 <!-- [Pub/Dev] 메인페이지의 경우 addClass main -->
@@ -127,114 +128,7 @@ src="https://www.facebook.com/tr?id=163613154295945&ev=PageView&noscript=1"
         </ul>
     </div><!--// util -->
 
-    <div class="header-search">
-
-
-        <div class="top-search">
-            <input type="search" class="input-search" id="rankKeyword" name="rankKeyword" value="" onkeydown="fnSearchKeyDown(this);" onkeyup="setAutoKeywordList();" autocomplete="off" placeholder="쿠폰 받고 여름 준비 시-작!" data-link-code="200" data-advert-url="https://www.rankingdak.com/landing/content?cont=oneHundredDays" maxlength="100">
-
-            <button type="button" class="btn-top-search" id="btnTopSearch" name="btnTopSearch" data-search-type="real" onclick="fnBtnTopSearch(this);">
-                <span class="blind">검색</span>
-            </button>
-        </div>
-
-        <div class="search-layer">
-            <div class="autoResultBox"></div>
-            <div class="tit-area"><h2>인기 검색어</h2></div>
-            <div class="search-rank">
-                <ol class="list">
-
-                    <li>
-                            <a href="javascript:;" data-search-type="popular" onclick="fnBtnTopSearch(this);">
-                                <em class="num">1</em><span class="word">다이어트 도시락</span>
-                                <span class="state text-primary"><i class="ico-arrfill-up"><span class="blind">UP</span></i>3</span>
-                                    </a>
-                        </li>
-                    <li>
-                            <a href="javascript:;" data-search-type="popular" onclick="fnBtnTopSearch(this);">
-                                <em class="num">2</em><span class="word">소스 닭가슴살 </span>
-                                <span class="state text-blue"><i class="ico-arrfill-down"><span class="blind">DOWN</span></i>1</span>
-                                    </a>
-                        </li>
-                    <li>
-                            <a href="javascript:;" data-search-type="popular" onclick="fnBtnTopSearch(this);">
-                                <em class="num">3</em><span class="word">프로모션</span>
-                                <span class="state">-</span>
-                                    </a>
-                        </li>
-                    <li>
-                            <a href="javascript:;" data-search-type="popular" onclick="fnBtnTopSearch(this);">
-                                <em class="num">4</em><span class="word">볶음밥</span>
-                                <span class="state text-blue"><i class="ico-arrfill-down"><span class="blind">DOWN</span></i>1</span>
-                                    </a>
-                        </li>
-                    <li>
-                            <a href="javascript:;" data-search-type="popular" onclick="fnBtnTopSearch(this);">
-                                <em class="num">5</em><span class="word">소시지</span>
-                                <span class="state text-primary"><i class="ico-arrfill-up"><span class="blind">UP</span></i>2</span>
-                                    </a>
-                        </li>
-                    <li>
-                            <a href="javascript:;" data-search-type="popular" onclick="fnBtnTopSearch(this);">
-                                <em class="num">6</em><span class="word">스팀 닭가슴살 </span>
-                                <span class="state text-blue"><i class="ico-arrfill-down"><span class="blind">DOWN</span></i>2</span>
-                                    </a>
-                        </li>
-                    <li>
-                            <a href="javascript:;" data-search-type="popular" onclick="fnBtnTopSearch(this);">
-                                <em class="num">7</em><span class="word">샐러드 </span>
-                                <span class="state">-</span>
-                                    </a>
-                        </li>
-                    <li>
-                            <a href="javascript:;" data-search-type="popular" onclick="fnBtnTopSearch(this);">
-                                <em class="num">8</em><span class="word">핫도그</span>
-                                <span class="state text-primary"><i class="ico-arrfill-up"><span class="blind">UP</span></i>1</span>
-                                    </a>
-                        </li>
-                    <li>
-                            <a href="javascript:;" data-search-type="popular" onclick="fnBtnTopSearch(this);">
-                                <em class="num">9</em><span class="word">고구마</span>
-                                <span class="state">-</span>
-                                    </a>
-                        </li>
-                    <li>
-                            <a href="javascript:;" data-search-type="popular" onclick="fnBtnTopSearch(this);">
-                                <em class="num">10</em><span class="word">현미밥</span>
-                                <span class="state text-green">NEW</span>
-                                    </a>
-                        </li>
-                    </ol>
-            </div><!--// search-rank -->
-
-
-            <div class="search-bottom">
-                <div class="tit">
-                    <h3>최근검색어</h3>
-                    <button type="button" class="text-guide-sm search-del-btn" onclick="fnAllDelKeyword(this)" style="display: none;"><span>전체삭제</span></button>
-                </div>
-                <div class="latest-search">
-                    <!-- 검색어 있을 경우 -->
-                    <ul class="srch-list" id="rankSearchArea">
-
-                        <li id="srhItem" style="display:none;">
-                            <div class="srch-keyword">
-                                <a href="javascript:;" class="txt" data-search-type="recent" onclick="fnBtnTopSearch(this)"></a>
-                                <button type="button" class="btn-x-xs del-body" title="" onclick="fnDelKeyword(this)"><i class="ico-x-grey2 del-body"></i><span class="blind del-body">삭제</span></button>
-                            </div>
-                        </li>
-
-
-                    </ul>
-                    <!--// 검색어 있을 경우 -->
-                    <!-- 검색어 없을 경우 -->
-                    <div class="no-data" style="">최근 검색어가 없습니다.</div>
-                    <!--// 검색어 없을 경우 -->
-                </div><!--// latest-search -->
-
-            </div><!--// search-bottom -->
-        </div><!--// search-layer -->
-    </div><!--// header-search -->
+<!-- 검색 이벤트 삭제 -->
 
     <div class="my-menu">
         <ul>
@@ -1455,12 +1349,12 @@ src="https://www.facebook.com/tr?id=163613154295945&ev=PageView&noscript=1"
             frm["pageSize"].value	= size;             
         }                                                   
 
-        frm.submit();                                       
-    }                                                       
-//]]>                                                       
-</script>                                                   
-    <div class="pagging-wrap page-area">       
-        <div class="page-number">    
+        frm.submit();
+    }
+//]]>
+</script>
+    <div class="pagging-wrap page-area">
+        <div class="page-number">
             <div class="pagination mt20">  
                 <a href="javascript:CmPageMove('0')" data-page="0" class="btn-page prev"><span class="blind">이전</span></a>
             <a href="#" class="current"><span>1</span></a>
