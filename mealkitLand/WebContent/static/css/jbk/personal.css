@@ -24,6 +24,22 @@ title {
     display: none;
 }
 
+legend, caption {
+    position: absolute;
+    left: -99999px;
+    display: block;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    text-indent: -99999px;
+    clip: rect(0,0,0,0);
+    *display: none;
+}
+
+.search-box ~ .board-list, .menu-title-area ~ .board-form, .menu-title-area ~ .board-list, .menu-title-area ~ .coupon-box, .menu-title-area ~ .top-search-box, .menu-title-area ~ .grid-list-wrap {
+    margin-top: 10px;
+}
+
 .wrap {
     position: relative;
     min-width: 1300px;
@@ -2396,6 +2412,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     -webkit-box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 html, body {
     height: 100%;
     word-break: break-all;
@@ -2423,7 +2446,7 @@ html, body {
     font-family: 'Pretendard', sans-serif;
 }
 
-html, body {
+html, body{
     height: 100%;
     font-weight: 400;
     font-family: 'Pretendard', sans-serif;
