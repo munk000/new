@@ -4,22 +4,23 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>밀키트랜드</title>
+<link rel="stylesheet" href="../../static/css/kgm/login.css">
 </head>
 <body>
+	<%@include file="/templates/kgm/header.jsp"%>
 	<section id="contents" class="container">
 
 		<form id="join-general-form" name="join-general-form"
 			action="/member/join/actionJoinGeneral" method="post"
-			onsubmit="return onSubmitJoinGeneral();" accept-charset="UTF-8"
-			data-gtm-form-interact-id="0">
+			onsubmit="return onSubmitJoinGeneral();" accept-charset="UTF-8">
 			<input type="hidden" name="_csrf"
-				value="a8cbdd42-3651-4cdf-ae1d-cccd1d99200f"><input
+				value="43b114cb-4ac0-40e2-baa1-d7604f8c7e33"><input
 				type="hidden" id="member-join-general-email-domain-text"
-				name="member-join-general-email-domain-text" value="naver.com">
-			<input type="hidden" id="member-easy-join" name="member-easy-join"
+				name="member-join-general-email-domain-text" value=""> <input
+				type="hidden" id="member-easy-join" name="member-easy-join"
 				value="Y">
-			<div class="frame-full terms-section" style="display: none;">
+			<div class="frame-full terms-section">
 				<div class="frame-sm">
 					<div class="form-group">
 						<div class="form-head">
@@ -33,8 +34,7 @@
 									<input type="checkbox" id="member-join-general-agree-all-check"
 										class="checkbox ui-check-all"
 										name="member-join-general-agree-all-check"
-										onclick="onClickMemberJoinCheckAll();"
-										data-gtm-form-interact-field-id="0"> <label
+										onclick="onClickMemberJoinCheckAll();"> <label
 										for="member-join-general-agree-all-check"
 										style="font-weight: bold;">약관 전체동의</label>
 									<p class="notice-text">선택 항목에 대한 동의를 거부하는 경우에도 서비스를 이용하실 수
@@ -57,8 +57,7 @@
 										<button type="button" class="btn-box-link1 ui-slide-btn">
 											<i class="ico-arr-toggle"></i>
 										</button>
-									</div>
-									<!--// inner-flex -->
+									</div> <!--// inner-flex -->
 									<div class="terms-inner-box ui-slide-content">
 										<!-- 내용 -->
 										&nbsp;제1조(목적)<br> 이 약관은 주식회사 (주)푸드나무(이하 “회사”라 한다)가 운영하는
@@ -385,8 +384,7 @@
 										[부칙]<br> 제1조(시행일)<br> ① 이 약관은 2022년 9월 22일부터 적용됩니다.<br>
 										② 종전의 약관은 이 약관으로 대체됩니다.&nbsp;
 										<!--// 내용 -->
-									</div>
-									<!--// ui-slide-content -->
+									</div> <!--// ui-slide-content -->
 								</li>
 								<!--// ui-toggle-slide -->
 								<!--// 회원가입 약관동의 -->
@@ -405,8 +403,7 @@
 										<button type="button" class="btn-box-link1 ui-slide-btn">
 											<i class="ico-arr-toggle"></i>
 										</button>
-									</div>
-									<!--// inner-flex -->
+									</div> <!--// inner-flex -->
 									<div class="terms-inner-box table-box ui-slide-content">
 										<!-- 내용 -->
 										<table class="policy-agree-table">
@@ -448,8 +445,7 @@
 											</tbody>
 										</table>
 										<!--// 내용 -->
-									</div>
-									<!--// ui-slide-content -->
+									</div> <!--// ui-slide-content -->
 								</li>
 								<!--// ui-toggle-slide -->
 								<!--// 개인정보처리방침 동의 -->
@@ -468,8 +464,7 @@
 										<button type="button" class="btn-box-link1 ui-slide-btn">
 											<i class="ico-arr-toggle"></i>
 										</button>
-									</div>
-									<!--// inner-flex -->
+									</div> <!--// inner-flex -->
 									<div class="terms-inner-box table-box ui-slide-content">
 										<!-- 내용 -->
 										<table class="policy-agree-table">
@@ -510,8 +505,7 @@
 											</tbody>
 										</table>
 										<!--// 내용 -->
-									</div>
-									<!--// ui-slide-content -->
+									</div> <!--// ui-slide-content -->
 								</li>
 								<!--// ui-toggle-slide -->
 								<!--// (선택) 개인정보처리방침 동의 -->
@@ -527,8 +521,7 @@
 												class="text-guide-sm2">(선택)</span> 이메일수신동의 <span
 												class="add-service-text">(상품 및 서비스 안내, 이벤트 정보 및 혜택제공)</span></label>
 										</div>
-									</div>
-									<!--// inner-flex -->
+									</div> <!--// inner-flex -->
 								</li>
 								<li>
 									<div class="inner-flex">
@@ -541,8 +534,7 @@
 												class="text-guide-sm2">(선택)</span> SMS(문자,카카오톡) 수신동의 <span
 												class="add-service-text">(상품 및 서비스 안내, 이벤트 정보 및 혜택제공)</span></label>
 										</div>
-									</div>
-									<!--// inner-flex -->
+									</div> <!--// inner-flex -->
 								</li>
 								<!--// 이메일수신동의, SMS 수신동의 -->
 							</ul>
@@ -557,13 +549,13 @@
 					</div>
 					<!--// form-group -->
 					<div class="terms-btn-wrap text-center" onclick="termsBtnClick()">
-						<button class="btn-primary" type="button">다음</button>
+						<button class="btn-dim" type="button">다음</button>
 					</div>
 				</div>
 			</div>
 
 
-			<div class="join-container join-container2" style="display: block;">
+			<div class="join-container join-container2" style="display: none;">
 				<div class="join-area">
 					<h2 class="join-title">회원가입</h2>
 					<fieldset class="form-group-area">
@@ -577,18 +569,14 @@
 							<div class="input-group type-lg w-full">
 								<input type="text" id="member-join-general-id-text"
 									name="member-join-general-id-text" class="input-text w571"
-									placeholder="4~16자 이상 영문 또는 숫자만 사용 가능" value=""
-									data-gtm-form-interact-field-id="1"> <span
+									placeholder="4~16자 이상 영문 또는 숫자만 사용 가능" value=""> <span
 									class="input-group-btn"><button type="button"
-										id="btn-id-check" class="btn-form btn-default btn-valid"
+										id="btn-id-check" class="btn-form btn-default-ex"
 										onclick="onClickMemberJoinVerifyLoginIdBtn();">
 										<span>중복확인</span>
 									</button></span>
 							</div>
-							<div id="member-join-general-id-text-error">
-								<p class="valid error">4~16자 영문 또는 숫자만 사용 가능합니다. 첫 글자는 숫자가
-									아니어야 합니다.</p>
-							</div>
+							<div id="member-join-general-id-text-error"></div>
 						</div>
 						<!--// form-group -->
 
@@ -604,8 +592,7 @@
 									name="member-join-general-pw-text" class="input-text w571"
 									placeholder="6 ~ 16자 영문, 숫자, 특수문자 1개 이상씩 혼용 필수"
 									onblur="onEventMemberJoinPasswords();"
-									onkeyup="onEventMemberJoinPasswords();"
-									aria-autocomplete="list" data-gtm-form-interact-field-id="3">
+									onkeyup="onEventMemberJoinPasswords();">
 							</div>
 							<div class="input-group type-lg w-full">
 								<label for="member-join-general-pw-confirm-text" class="blind">비밀번호
@@ -614,13 +601,13 @@
 									name="member-join-general-pw-confirm-text"
 									class="input-text w571" placeholder="비밀번호 확인"
 									onblur="onEventMemberJoinPasswords();"
-									onkeyup="onEventMemberJoinPasswords();"
-									data-gtm-form-interact-field-id="2">
+									onkeyup="onEventMemberJoinPasswords();">
 							</div>
-							<p class="text-guide-sm2 error" id="pw-guide-text1" style="">※
-								6 ~ 16자 영문, 숫자, 특수문자 1개 이상씩 혼용 필수.</p>
-							<p class="text-guide-sm2 error" id="pw-guide-text2" style="">※
-								특수문자는 !, @, #, $, %, ^, &amp;, * 만 사용 가능.</p>
+							<p class="text-guide-sm2" id="pw-guide-text1"
+								style="display: none;">※ 6 ~ 16자 영문, 숫자, 특수문자 1개 이상씩 혼용 필수.</p>
+							<p class="text-guide-sm2" id="pw-guide-text2"
+								style="display: none;">※ 특수문자는 !, @, #, $, %, ^, &amp;, * 만
+								사용 가능.</p>
 							<p class="valid error" id="pw-error-text1" style="display: none;">비밀번호가
 								일치하지 않습니다.</p>
 						</div>
@@ -636,18 +623,16 @@
 								<input type="text" id="member-join-general-email-text"
 									name="member-join-general-email-text" class="input-text w571"
 									placeholder="이메일 주소" value=""
-									onblur="onFocusOutMemberJoinEmailText();"
-									data-gtm-form-interact-field-id="4">
+									onblur="onFocusOutMemberJoinEmailText();">
 								<div class="input-group-form">
 									<div class="ui-select select-box w135"
 										id="member-join-general-email-domain"
 										name="member-join-general-email-domain" data-value="">
-										<a href="#none" title="선택" class="select-value"><span>naver.com</span></a>
+										<a href="#none" title="선택" class="select-value"><span>직접입력</span></a>
 										<div class="select-list">
 											<ul>
 												<li data-name=""><a href="#none"><span>직접입력</span></a></li>
-												<li data-name="naver.com"><a href="#none"
-													class="selected"><span>naver.com</span></a></li>
+												<li data-name="naver.com"><a href="#none"><span>naver.com</span></a></li>
 												<li data-name="daum.net"><a href="#none"><span>daum.net</span></a></li>
 												<li data-name="hanmail.net"><a href="#none"><span>hanmail.net</span></a></li>
 												<li data-name="gmail.com"><a href="#none"><span>gmail.com</span></a></li>
@@ -684,8 +669,7 @@
 
 								<input type="text" id="member-join-general-recomender-text"
 									name="member-join-general-recomender-text" class="input-text"
-									value="" placeholder="추천아이디 입력"
-									data-gtm-form-interact-field-id="5"> <span
+									value="" placeholder="추천아이디 입력"> <span
 									class="input-group-btn"><button type="button"
 										class="btn-form btn-default-ex" onclick="fncRecomConf();">
 										<span>확인하기</span>
@@ -705,8 +689,7 @@
 									<div class="custom-radio">
 										<input type="radio" id="member-join-general-forever-Y"
 											class="radio" name="member-join-general-forever" value="Y"
-											onclick="checkSubmitBtnState();"
-											data-gtm-form-interact-field-id="6"><label
+											onclick="checkSubmitBtnState();"><label
 											for="member-join-general-forever-Y"
 											onclick="checkSubmitBtnState();">동의</label>
 									</div>
@@ -715,8 +698,7 @@
 									<div class="custom-radio">
 										<input type="radio" id="member-join-general-forever-N"
 											class="radio" name="member-join-general-forever" value="N"
-											onclick="checkSubmitBtnState();"
-											data-gtm-form-interact-field-id="7"><label
+											onclick="checkSubmitBtnState();"><label
 											for="member-join-general-forever-N"
 											onclick="checkSubmitBtnState();">동의안함</label>
 									</div>
@@ -745,727 +727,823 @@
 			</div>
 			<div>
 				<input type="hidden" name="_csrf"
-					value="a8cbdd42-3651-4cdf-ae1d-cccd1d99200f">
+					value="43b114cb-4ac0-40e2-baa1-d7604f8c7e33">
 			</div>
 		</form>
-		<!-- <script type="text/javascript">
-    let memberJoinStatus = {
-        isProceeding: false,
-        isIdChecked: false,
-        isPwChecked: false,
-        isPw1Checked: false,
-        isPw2Checked: false,
-        isPwMatchCkecked: false,
-        isEmailChecked: false,
-        idErrorText: '',
-        // 각 문자의 코드를 확인하여 문자의 바이트 크기를 취득하여 합산
-        getByteLength: function(text) {
-            let byteLength = 0;
-            let charByte = 0;
-
-            for (let i = 0; i < text.length; i++) {
-                charByte = text.charCodeAt(i);
-                byteLength += ((charByte >> 7) ? 2 : 1);
-            }
-
-            return byteLength;
-        },
-        // 숫자 전체 자리 수 중 남는 앞의 빈 숫자를 0으로 채움
-        getPaddingZeroString: function(n, width) {
-            n = n + '';
-            return n.length >= width ? n : new Array(width - n.length + 1).join('0') + n;
-        },
-    };
-
-    $(document).ready(function () {
-
-        $('#join-general-form').attr('accept-charset', 'UTF-8');
-
-        memberJoinStatus.isProceeding=false;
-        memberJoinStatus.isIdChecked = false;
-        memberJoinStatus.isPwChecked = false;
-        memberJoinStatus.isEmailChecked = false;
-        memberJoinStatus.idErrorText = '';
-
-        $('#member-join-general-id-text-error').html('');
-        $('#member-join-general-agree-terms-check-error').html('');
-        $('#member-join-general-agree-user-info-check-error').html('');
-
-        if (verifyMemberJoinEmail()) {
-            memberJoinStatus.isEmailChecked = true;
-        }
-
-        checkSubmitBtnState();
-
-        // 커스텀 셀렉트 선택시 이벤트 처리
-        const selEmailDomain = $('#member-join-general-email-domain').find('.select-list').find('li').children('a');
-        selEmailDomain.on('click', function (e) {
-            const selectData = $(this).parents('li').data('name');
-            $('#member-join-general-email-domain').data('value', selectData.toString());
-            memberJoinStatus.isEmailChecked = false;
-            if (verifyMemberJoinEmail()) {
-                memberJoinStatus.isEmailChecked = true;
-            }
-            checkSubmitBtnState();
-            e.preventDefault();
-        });
-
-        //아이디 변경시
-        $('#member-join-general-id-text').on('keyup', function(){
-            $(this).val($(this).val().toLowerCase());
-            setIdBtnClass(false);
-        });
-
-        $('.terms-toggle-box input[type=checkbox]').each(function () {
-            $(this).prop('checked', false);
-        });
-    });
-
-    ///////////////////////////////////////////////////////
-    // 이벤트 핸들러
-
-    //id 버튼 class set
-    function setIdBtnClass(isValid){
-        if(isValid){
-            $('#btn-id-check').attr('class', 'btn-form btn-default-ex btn-done');
-            $('#btn-id-check').find('span').text('확인완료');
-        } else {
-            if(isEmpty($('#member-join-general-id-text').val())){
-                $('#btn-id-check').attr('class', 'btn-form btn-default-ex');
-                $('#btn-id-check').find('span').text('중복확인');
-                $('#member-join-general-id-text-error').html('');
-                memberJoinStatus.idErrorText = '';
-            } else {
-                $('#btn-id-check').attr('class', 'btn-form btn-default btn-valid');
-                $('#btn-id-check').find('span').text('중복확인');
-                $('#member-join-general-id-text-error').html(memberJoinStatus.idErrorText);
-            }
-        }
-    }
-
-    function onClickMemberJoinCheckAll() {
-        const checked = $('#member-join-general-agree-all-check').is(':checked');
-        if (checked) {
-            $('#member-join-general-agree-terms-check').prop('checked', true);
-            $('#member-join-general-agree-user-info-check').prop('checked', true);
-            $('#member-join-general-agree2-user-info-check').prop('checked', true);
-            $('#member-join-general-agree-sms-check').prop('checked', true);
-            $('#member-join-general-agree-email-check').prop('checked', true);
-        } else {
-            $('#member-join-general-agree-terms-check').prop('checked', false);
-            $('#member-join-general-agree-user-info-check').prop('checked', false);
-            $('#member-join-general-agree2-user-info-check').prop('checked', false);
-            $('#member-join-general-agree-sms-check').prop('checked', false);
-            $('#member-join-general-agree-email-check').prop('checked', false);
-        }
-
-        checkSubmitBtnState();
-    }
-
-    function onClickMemberJoinCheckItem() {
-        const termsChecked = $('#member-join-general-agree-terms-check').is(':checked');
-        const userInfoChecked = $('#member-join-general-agree-user-info-check').is(':checked');
-        const userInfoChecked2 = $('#member-join-general-agree2-user-info-check').is(':checked');
-        const smsChecked = $('#member-join-general-agree-sms-check').is(':checked');
-        const emailChecked = $('#member-join-general-agree-email-check').is(':checked');
-
-        if (termsChecked && userInfoChecked && userInfoChecked2 && smsChecked && emailChecked) {
-            $('#member-join-general-agree-all-check').prop('checked', true);
-        } else {
-            $('#member-join-general-agree-all-check').prop('checked', false);
-        }
-
-        checkSubmitBtnState();
-    }
-
-    function onClickMemberJoinVerifyLoginIdBtn() {
-        memberJoinStatus.isIdChecked = false;
-
-        if (verifyMemberJoinLoginIdAjax()) {
-            memberJoinStatus.isIdChecked = true;
-        }
-
-        checkSubmitBtnState();
-    }
-
-    function onEventMemberJoinPasswords() {
-        memberJoinStatus.isPwChecked = false;
-
-        const inputPw = $('#member-join-general-pw-text').val();
-        const inputPwConfirm = $('#member-join-general-pw-confirm-text').val();
-
-        if(isEmpty(inputPw) && isEmpty(inputPwConfirm)){
-            $('p[id^=pw-guide-text]').hide();
-            memberJoinStatus.isPwChecked = false;
-        } else {
-            $('p[id^=pw-guide-text]').show();
-
-            if(isEmpty(inputPw) == false) verifyMemberJoinPassword();
-            if(isEmpty(inputPwConfirm) == false) verifyMemberJoinPwConfirm();
-            if(isEmpty(inputPw) == false && isEmpty(inputPwConfirm) == false) {
-                verifyMemberJoinPasswordsMatching();
-            }
-
-            if(memberJoinStatus.isPw1Checked && memberJoinStatus.isPw2Checked && memberJoinStatus.isPwMatchChecked){
-                memberJoinStatus.isPwChecked = true;
-            } else {
-                memberJoinStatus.isPwChecked = false;
-            }
-        }
-
-        checkSubmitBtnState();
-    }
-
-    function onFocusOutMemberJoinEmailText() {
-        memberJoinStatus.isEmailChecked = false;
-
-        if (verifyMemberJoinEmail()) {
-            memberJoinStatus.isEmailChecked = true;
-        }
-        checkSubmitBtnState();
-    }
-
-    function onSubmitJoinGeneral() {
-        if ($("#member-join-general-submit-btn").hasClass("btn-dim") === true) {
-            return false;
-        }
-
-        //가입진행중인지 확인
-        if(memberJoinStatus.isProceeding){
-            alert('회원가입 진행 중입니다.\n잠시 기다려주세요.');
-            return false;
-        }
-
-        // 아이디 검증
-        if (!verifyMemberJoinLoginIdAjax(true)) {
-            memberJoinStatus.isIdChecked = false;
-            $('#member-join-general-id-text').focus();
-            checkSubmitBtnState();
-            return false;
-        }
-
-        //비밀번호 미입력 검증
-        if(!verifyMemberJoinPwEmpty()) {
-            memberJoinStatus.isPwChecked = false;
-            $('#member-join-general-pw-text').focus();
-            checkSubmitBtnState();
-            return false;
-        }
-
-        // 비밀번호 검증
-        if (!verifyMemberJoinPassword(true)) {
-            memberJoinStatus.isPwChecked = false;
-            $('#member-join-general-pw-text').focus();
-            checkSubmitBtnState();
-            return false;
-        }
-
-        // 확인 비밀번호 검증
-        if (!verifyMemberJoinPwConfirm(true)) {
-            memberJoinStatus.isPwChecked = false;
-            $('#member-join-general-pw-confirm-text').focus();
-            checkSubmitBtnState();
-            return false;
-        }
-
-        // 비밀번호/확인 비밀번호 같은지 확인
-        if (!verifyMemberJoinPasswordsMatching(true)) {
-            memberJoinStatus.isPwChecked = false;
-            $('#member-join-general-pw-text').focus();
-            checkSubmitBtnState();
-            return false;
-        }
-
-        // 이메일 검증
-        if (!verifyMemberJoinEmail(true)) {
-            memberJoinStatus.isEmailChecked = false;
-            $('#member-join-general-email-text').focus();
-            checkSubmitBtnState();
-            return false;
-        }
-
-        // 평생회원 체크여부
-        if(!$('input[name=member-join-general-forever]').is(':checked')){
-            alert("평생회원 여부를 체크해주세요.");
-            checkSubmitBtnState();
-            return false;
-        }
-
-        $('#member-join-general-recomender-text').val($('#member-join-general-recomender-text').val().toLowerCase());
-        const recomenderId = $('#member-join-general-recomender-text').val();
-
-        if (recomenderId.length > 0) {
-
-            if(recomenderId == $('#member-join-general-id-text').val()){
-                alert('본인을 추천인 아이디로 등록할 수 없습니다.');
-                return;
-            }
-
-            const paramMap = {
-                'vLoginid': recomenderId,
-                'srchTarget': 'RECOMMEND'
-            };
-
-            const paramStr = $.param(paramMap);
-            let isSuccess = false;
-
-            cmAjax({
-                url: "/member/join/verifyRecommendIdAjax"
-                , async: false
-                , type: "post"
-                , data: paramStr
-                , dataType: "json"
-                , isBlock: true
-                , success: function (data) {
-                    if (data.status === "1") {
-                        // alert(data.message);
-                        if (data.object === "N") {
-                            alert('추천하실 수 없는 아이디입니다.\n추천 아이디를 다시 확인해주세요.');
-                            isSuccess = false;
-                        } else {
-                            isSuccess = true;
-                        }
-                    } else if (data.status === "9") {
-                        alert(data.message);
-                    }
-                }
-                , error: function (e) {
-                    alert(e);
-                    alert("에러");
-                }
-            });
-
-            if (isSuccess === false) {
-                return false;
-            }
-        }
-
-        //이메일 검증
-        const emailDomain = $('#member-join-general-email-domain').data('value');
-        const inputEmail = $('#member-join-general-email-text').val() + (isEmpty(emailDomain) ? '' : '@' + emailDomain);
-
-        cmAjax({
-            url: "/member/join/verifyEmailAjax"
-            , async: false
-            , type: "post"
-            , data: {vEmail: inputEmail}
-            , dataType: "json"
-            , isBlock: true
-            , success: function (data) {
-                if (data.status === "1") {
-                    if (data.object === 0) {
-                        isSuccess = true;
-                    } else {
-                        alert('이미 가입된 이메일 주소입니다.');
-                        isSuccess = false;
-                    }
-                } else {
-                    const alertMsg = (isEmpty(data.message) ? '시스템 오류입니다. 잠시 후 다시 시도해주세요.' : data.message)
-                    alert(alertMsg);
-                }
-            }
-            , error: function (e) {
-                alert(e);
-                alert("에러");
-            }
-        });
-
-        if (isSuccess === false) {
-            return false;
-        }
-
-        memberJoinStatus.isProceeding = true;
-        return true;
-    }
-    ///////////////////////////////////////////////////////
-
-    ///////////////////////////////////////////////////////
-    // 항목 검증 함수
-    function verifyMemberJoinPwEmpty() {
-        let password = $('#member-join-general-pw-text').val();
-        const pwLength = password.length;
-
-        if(pwLength === 0) {
-            alert('비밀번호를 입력해주세요.');
-            $('#pw-guide-text1').addClass('error');
-            return false;
-        }
-
-        let pwConfirm = $('#member-join-general-pw-confirm-text').val();
-        const pwConfirmLen = pwConfirm.length;
-
-        if(pwConfirmLen === 0) {
-            alert('비밀번호 확인을 입력해주세요.');
-            $('#pw-guide-text1').addClass('error');
-            return false;
-        }
-
-        return true;
-    }
-    // 아이디 중복 체크
-    function verifyMemberJoinLoginIdAjax(alertYn) {
-        if(alertYn == null || alertYn == '') {
-            alertYn = false;
-        }
-
-        $('#member-join-general-id-text').val($('#member-join-general-id-text').val().toLowerCase());
-        const loginId = $('#member-join-general-id-text').val();
-
-        if (loginId.length === 0) {
-            alert('회원 ID를 입력해주세요.');
-            return false;
-        }
-
-        const isValid = (loginId.length >= 4 && loginId.length <= 16) && (loginId.search(/^[a-zA-Z]+(\w+)*$/) !== -1);
-
-        if (!isValid) {
-            memberJoinStatus.idErrorText = '<p class="valid error">4~16자 영문 또는 숫자만 사용 가능합니다. 첫 글자는 숫자가 아니어야 합니다.</p>';
-            if(alertYn) alert('회원 ID를 확인해 주세요.');
-            return false;
-        }
-
-        const paramMap = {
-            'vLoginid': loginId,
-            'srchTarget': 'ID'
-        };
-
-        const paramStr = $.param(paramMap);
-
-        let isSuccess = false;
-
-        cmAjax({
-            url: "/member/join/verifyLoginIdAjax"
-            , async: false
-            , type: "post"
-            , data: paramStr
-            , dataType: "json"
-            , isBlock: true
-            , success: function (data) {
-                if (data.status === "1") {
-                    // alert(data.message);
-                    if (data.object === "N") {
-                        $('#member-join-general-id-text-error').html('<p class="valid">사용 가능한 아이디입니다.</p>');
-                        memberJoinStatus.idErrorText = '';
-                        isSuccess = true;
-                    } else {
-                        memberJoinStatus.idErrorText = '<p class="valid error">사용 할 수 없는 아이디입니다.</p>';
-                        if(alertYn) alert('회원 ID를 확인해 주세요.');
-                        isSuccess = false;
-                    }
-                } else if (data.status === "9") {
-                    alert(data.message);
-                }
-            }
-            , error: function (e) {
-                alert(e);
-                alert("에러");
-            }
-        });
-
-        if (!isSuccess) {
-            return false;
-        }
-
-        return true;
-    }
-
-    // 패스워드 입력란 검증
-    function verifyMemberJoinPassword(alertYn) {
-        memberJoinStatus.isPw1Checked = false;
-        let password = $('#member-join-general-pw-text').val();
-        const pwLength = password.length;
-
-        if(alertYn == null || alertYn == '') {
-            alertYn = false;
-        }
-
-        if (pwLength > 16) {
-            $('#member-join-general-pw-text').val(password.substring(0, 16));
-        } else if (pwLength < 6) {
-            $('#pw-guide-text1').addClass('error');
-            if(alertYn) alert('비밀번호를 확인해주세요.');
-            return false;
-        }
-
-        if (password.search(/^[a-zA-Z0-9!@#$%^&*]+( [a-zA-Z0-9!@#$%^&*]+)*$/) === -1) {
-            $('#pw-guide-text2').addClass('error');
-            if(alertYn) alert('비밀번호를 확인해주세요.');
-            return false;
-        }
-
-        if (password.search(/[A-Za-z]/) === -1 || password.search(/[0-9]/) === -1 || password.search(/[!@#$%^&*]/) === -1) {
-            $('#pw-guide-text1').addClass('error');
-            $('#pw-guide-text2').addClass('error');
-            if(alertYn) alert('비밀번호를 확인해주세요.');
-            return false;
-        }
-
-        $('p[id^=pw-guide-text]').removeClass('error');
-
-        memberJoinStatus.isPw1Checked = true;
-
-        return true;
-    }
-
-    // 패스워드 확인란 검증
-    function verifyMemberJoinPwConfirm(alertYn) {
-        memberJoinStatus.isPw2Checked = false;
-        let pwConfirm = $('#member-join-general-pw-confirm-text').val();
-        const pwConfirmLen = pwConfirm.length;
-
-        if(alertYn == null || alertYn == '') {
-            alertYn = false;
-        }
-
-        if (pwConfirmLen > 16) {
-            $('#member-join-general-pw-confirm-text').val(pwConfirm.substring(0, 16));
-        } else if (pwConfirmLen < 6) {
-            $('#pw-guide-text1').addClass('error');
-            if(alertYn) alert('비밀번호를 확인해주세요.');
-            return false;
-        }
-
-        if (pwConfirm.search(/^[a-zA-Z0-9!@#$%^&*]+( [a-zA-Z0-9!@#$%^&*]+)*$/) === -1) {
-            $('#pw-guide-text2').addClass('error');
-            if(alertYn) alert('비밀번호를 확인해주세요.');
-            return false;
-        }
-
-        if (pwConfirm.search(/[A-Za-z]/) === -1 || pwConfirm.search(/[0-9]/) === -1 || pwConfirm.search(/[!@#$%^&*]/) === -1) {
-            $('#pw-guide-text1').addClass('error');
-            $('#pw-guide-text2').addClass('error');
-            if(alertYn) alert('비밀번호를 확인해주세요.');
-            return false;
-        }
-
-        $('p[id^=pw-guide-text]').removeClass('error');
-        memberJoinStatus.isPw2Checked = true;
-
-        return true;
-    }
-
-    // 패스워드와 패스워드 확인란 일치 여부 검증
-    function verifyMemberJoinPasswordsMatching(alertYn) {
-        memberJoinStatus.isPwMatchChecked = false;
-        let password = $('#member-join-general-pw-text').val();
-        let pwConfirm = $('#member-join-general-pw-confirm-text').val();
-
-        if(alertYn == null || alertYn == '') {
-            alertYn = false;
-        }
-
-        if (password !== pwConfirm) {
-            $('#pw-error-text1').show();
-            if(alertYn) alert('비밀번호를 확인해주세요.');
-            return false;
-        }
-
-        $('#pw-error-text1').hide();
-
-        memberJoinStatus.isPwMatchChecked = true;
-
-        return true;
-    }
-
-    // 이메일 입력란 검증
-    function verifyMemberJoinEmail(isEmptyAlert) {
-        $('#member-join-general-email-text').val($.trim($('#member-join-general-email-text').val()));
-        let email = $('#member-join-general-email-text').val();
-        const emailDomain = $('#member-join-general-email-domain').data('value');
-
-        if(emailDomain != null && $.trim(emailDomain) != ''){
-            email += '@' + emailDomain;
-        }
-
-        const emailLen = email.length;
-        const emailDomainLen = emailDomain.length;
-
-        $('#member-join-general-email-text-error').html('');
-        if(isEmpty(email)){
-            if(isEmptyAlert){
-                alert('이메일을 입력해주세요.');
-            }
-            return false;
-        }
-
-        if (emailLen < 1) {
-            $('#member-join-general-email-text-error').html('<p class="valid error">이메일을 입력해주세요.</p>');
-            if (isEmptyAlert) alert('이메일을 입력해주세요.');
-            return false;
-        }
-
-        $('#member-join-general-email-text-error').html('');
-
-        if(!email_check(email)){
-
-            if(emailDomainLen < 1){
-                $('#emailError').html('<p class="valid error">직접입력의 경우 전체 이메일을 정확하게 입력해주세요.</p>');
-            } else {
-                $('#emailError').html('<p class="valid error">직접입력이 아닌 경우 도메인을 제외한 이메일 아이디를 정확하게 입력해주세요.</p>');
-            }
-
-            if (isEmptyAlert) alert('이메일을 확인해주세요.');
-            return false;
-        }
-
-        /*
-        if (emailDomainLen === 0 && (email.search(/(\w+\.)*\w+@(\w+\.)+[A-Za-z]+$/)) === -1) {
-            $('#member-join-general-email-text-error').html('<p class="valid error">직접입력의 경우 전체 이메일을 정확하게 입력해주세요.</p>');
-            return false;
-        } else if (emailDomainLen > 0 && (email.search(/(\w+\.)*\w+$/) === -1)) {
-            $('#member-join-general-email-text-error').html('<p class="valid error">직접입력이 아닌 경우 도메인을 제외한 이메일 아이디를 정확하게 입력해주세요.</p>');
-            return false;
-        }
-        */
-
-        $('#member-join-general-email-text-error').html('');
-
-        if (emailLen + emailDomainLen > 100) {
-            $('#member-join-general-name-text-error').html('<p class="valid error">이메일은 100자를 넘을 수 없습니다.</p>');
-            if (isEmptyAlert) alert('이메일을 확인해주세요.');
-            return false;
-        }
-
-        $('#member-join-general-email-domain-text').val(emailDomain);
-
-        return true;
-    }
-
-    //이메일 정규식 체크
-    function email_check(email) {
-        var reg = /^[0-9a-zA-Z]([\.]?[-_0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
-        return reg.test(email);
-    }
-
-    // 필수 입력 조건에 따라 회원 가입 버튼 활성화 여부 및 회원가입 약관, 개인정보처리 방침 에러 표시, 휴대전화번호 인증 완료 시 여부 체크 표시
-    function checkSubmitBtnState() {
-        //아이디 중복확인 후 버튼
-        setIdBtnClass(memberJoinStatus.isIdChecked);
-
-        console.log('memberJoinStatus.isIdChecked : ' ,memberJoinStatus.isIdChecked);
-        console.log('memberJoinStatus.isPwChecked : ' ,memberJoinStatus.isPwChecked);
-        console.log('memberJoinStatus.isEmailChecked : ' ,memberJoinStatus.isEmailChecked);
-        console.log('member-join-general-forever : ' ,$('input[name=member-join-general-forever]').is(':checked'));
-
-        if (memberJoinStatus.isIdChecked
-            && memberJoinStatus.isPwChecked
-            && memberJoinStatus.isEmailChecked
-            && $('input[name=member-join-general-forever]').is(':checked')
-        ) {
-            $('#member-join-general-submit-btn').removeClass('btn-dim');
-            $('#member-join-general-submit-btn').addClass("btn-primary");
-        } else {
-            $('#member-join-general-submit-btn').addClass('btn-dim');
-            $('#member-join-general-submit-btn').removeClass("btn-primary");
-        }
-    }
-    ///////////////////////////////////////////////////////
-
-    function mathTrunc(num){
-        if(num > 0){
-            return Math.floor(num);
-        } else {
-            return Math.ceil(num)
-        }
-    }
-
-    // 추천인 확인
-    function fncRecomConf(){
-
-        const recomenderId = $('#member-join-general-recomender-text').val().toLowerCase();
-
-        if (recomenderId.length > 0) {
-            if(recomenderId == $('#member-join-general-id-text').val().toLowerCase()){
-                alert('본인을 추천인 아이디로 등록할 수 없습니다.');
-                return;
-            }
-
-            const paramMap = {
-                'vLoginid': recomenderId,
-                'srchTarget': 'RECOMMEND'
-            };
-
-            const paramStr = $.param(paramMap);
-
-            cmAjax({
-                url: "/member/join/verifyRecommendIdAjax"
-                , async: false
-                , type: "post"
-                , data: paramStr
-                , dataType: "json"
-                , isBlock: true
-                , success: function (data) {
-                    if (data.status === "1") {
-                        // alert(data.message);
-                        if (data.object === "N") {
-                            alert('추천하실 수 없는 아이디입니다.\n추천 아이디를 다시 확인해주세요.');
-                        } else {
-                            alert('추천 가능 아이디 입니다.');
-                            $(".reco-check .input-group-btn .btn-form.btn-default-ex span").text("확인완료");
-                        }
-                    } else if (data.status === "9") {
-                        alert(data.message);
-                    }
-                }
-                , error: function (e) {
-                    alert(e);
-                    alert("에러");
-                }
-            });
-
-        } else {
-            alert('추천 아이디를 입력해주세요.');
-        }
-
-    }
-
-    function termsBtn(){
-        if (!$('#member-join-general-agree-terms-check').is(':checked')) {
-            //$('#member-join-general-agree-terms-check-error').html('<p class="valid error">회원가입 약관에 동의해주세요.</p>');
-        } else {
-            //$('#member-join-general-agree-terms-check-error').html('');
-        }
-
-        if (!$('#member-join-general-agree-user-info-check').is(':checked')) {
-            //$('#member-join-general-agree-user-info-check-error').html('<p class="valid error">개인정보처리방침에 동의해주세요.</p>');
-        } else {
-            //$('#member-join-general-agree-user-info-check-error').html('');
-        }
-
-        if($('#member-join-general-agree-terms-check').is(':checked') && $('#member-join-general-agree-user-info-check').is(':checked')) {
-            $(".terms-btn-wrap button").removeClass('btn-dim');
-            $(".terms-btn-wrap button").addClass("btn-primary");
-
-        } else {
-            $(".terms-btn-wrap button").addClass('btn-dim');
-            $(".terms-btn-wrap button").removeClass("btn-primary");
-        }
-    }
-
-    function termsBtnClick(){
-        if($(".terms-btn-wrap button").hasClass('btn-primary')){
-            // 이메일, SMS 수신 미동의 시 처리
-            if (!$('#member-join-general-agree-email-check').is(':checked') || !$('#member-join-general-agree-sms-check').is(':checked')) {
-                if (confirm('이메일, SMS 수신에 동의하지 않으시는 경우, 할인쿠폰의 발급 또는 이벤트 참여가 제한될 수 있습니다. 이메일, SMS 수신에 동의하시겠습니까?')) {
-                    $('#member-join-general-agree-sms-check').prop('checked', true);
-                    $('#member-join-general-agree-email-check').prop('checked', true);
-
-                }
-            }
-            if (!$('#member-join-general-agree2-user-info-check').is(':checked') ) {
-                if (confirm('(선택) 개인정보 수집 및 이용 동의하지 않으시는 경우, 추천아이디를 제한될 수 있습니다. (선택) 개인정보 수집 및 이용 동의하시겠습니까?')) {
-                    $('#member-join-general-agree2-user-info-check').prop('checked', true);
-                }
-            }
-            $(".terms-section").css("display",'none');
-            $(".join-container2").css('display','block');
-            if (!$('#member-join-general-agree2-user-info-check').is(':checked') ){
-                $(".reco-check").css("display",'none');
-            }
-        }
-    }
-</script> -->
-	</section>
+
+	<!-- <script type="text/javascript">
+		let memberJoinStatus = {
+			isProceeding : false,
+			isIdChecked : false,
+			isPwChecked : false,
+			isPw1Checked : false,
+			isPw2Checked : false,
+			isPwMatchCkecked : false,
+			isEmailChecked : false,
+			idErrorText : '',
+			// 각 문자의 코드를 확인하여 문자의 바이트 크기를 취득하여 합산
+			getByteLength : function(text) {
+				let byteLength = 0;
+				let charByte = 0;
+
+				for (let i = 0; i < text.length; i++) {
+					charByte = text.charCodeAt(i);
+					byteLength += ((charByte >> 7) ? 2 : 1);
+				}
+
+				return byteLength;
+			},
+			// 숫자 전체 자리 수 중 남는 앞의 빈 숫자를 0으로 채움
+			getPaddingZeroString : function(n, width) {
+				n = n + '';
+				return n.length >= width ? n : new Array(width - n.length + 1)
+						.join('0')
+						+ n;
+			},
+		};
+
+		$(document).ready(
+				function() {
+
+					$('#join-general-form').attr('accept-charset', 'UTF-8');
+
+					memberJoinStatus.isProceeding = false;
+					memberJoinStatus.isIdChecked = false;
+					memberJoinStatus.isPwChecked = false;
+					memberJoinStatus.isEmailChecked = false;
+					memberJoinStatus.idErrorText = '';
+
+					$('#member-join-general-id-text-error').html('');
+					$('#member-join-general-agree-terms-check-error').html('');
+					$('#member-join-general-agree-user-info-check-error').html(
+							'');
+
+					if (verifyMemberJoinEmail()) {
+						memberJoinStatus.isEmailChecked = true;
+					}
+
+					checkSubmitBtnState();
+
+					// 커스텀 셀렉트 선택시 이벤트 처리
+					const selEmailDomain = $(
+							'#member-join-general-email-domain').find(
+							'.select-list').find('li').children('a');
+					selEmailDomain.on('click', function(e) {
+						const selectData = $(this).parents('li').data('name');
+						$('#member-join-general-email-domain').data('value',
+								selectData.toString());
+						memberJoinStatus.isEmailChecked = false;
+						if (verifyMemberJoinEmail()) {
+							memberJoinStatus.isEmailChecked = true;
+						}
+						checkSubmitBtnState();
+						e.preventDefault();
+					});
+
+					//아이디 변경시
+					$('#member-join-general-id-text').on('keyup', function() {
+						$(this).val($(this).val().toLowerCase());
+						setIdBtnClass(false);
+					});
+
+					$('.terms-toggle-box input[type=checkbox]').each(
+							function() {
+								$(this).prop('checked', false);
+							});
+				});
+
+		///////////////////////////////////////////////////////
+		// 이벤트 핸들러
+
+		//id 버튼 class set
+		function setIdBtnClass(isValid) {
+			if (isValid) {
+				$('#btn-id-check').attr('class',
+						'btn-form btn-default-ex btn-done');
+				$('#btn-id-check').find('span').text('확인완료');
+			} else {
+				if (isEmpty($('#member-join-general-id-text').val())) {
+					$('#btn-id-check').attr('class', 'btn-form btn-default-ex');
+					$('#btn-id-check').find('span').text('중복확인');
+					$('#member-join-general-id-text-error').html('');
+					memberJoinStatus.idErrorText = '';
+				} else {
+					$('#btn-id-check').attr('class',
+							'btn-form btn-default btn-valid');
+					$('#btn-id-check').find('span').text('중복확인');
+					$('#member-join-general-id-text-error').html(
+							memberJoinStatus.idErrorText);
+				}
+			}
+		}
+
+		function onClickMemberJoinCheckAll() {
+			const checked = $('#member-join-general-agree-all-check').is(
+					':checked');
+			if (checked) {
+				$('#member-join-general-agree-terms-check').prop('checked',
+						true);
+				$('#member-join-general-agree-user-info-check').prop('checked',
+						true);
+				$('#member-join-general-agree2-user-info-check').prop(
+						'checked', true);
+				$('#member-join-general-agree-sms-check').prop('checked', true);
+				$('#member-join-general-agree-email-check').prop('checked',
+						true);
+			} else {
+				$('#member-join-general-agree-terms-check').prop('checked',
+						false);
+				$('#member-join-general-agree-user-info-check').prop('checked',
+						false);
+				$('#member-join-general-agree2-user-info-check').prop(
+						'checked', false);
+				$('#member-join-general-agree-sms-check')
+						.prop('checked', false);
+				$('#member-join-general-agree-email-check').prop('checked',
+						false);
+			}
+
+			checkSubmitBtnState();
+		}
+
+		function onClickMemberJoinCheckItem() {
+			const termsChecked = $('#member-join-general-agree-terms-check')
+					.is(':checked');
+			const userInfoChecked = $(
+					'#member-join-general-agree-user-info-check')
+					.is(':checked');
+			const userInfoChecked2 = $(
+					'#member-join-general-agree2-user-info-check').is(
+					':checked');
+			const smsChecked = $('#member-join-general-agree-sms-check').is(
+					':checked');
+			const emailChecked = $('#member-join-general-agree-email-check')
+					.is(':checked');
+
+			if (termsChecked && userInfoChecked && userInfoChecked2
+					&& smsChecked && emailChecked) {
+				$('#member-join-general-agree-all-check').prop('checked', true);
+			} else {
+				$('#member-join-general-agree-all-check')
+						.prop('checked', false);
+			}
+
+			checkSubmitBtnState();
+		}
+
+		function onClickMemberJoinVerifyLoginIdBtn() {
+			memberJoinStatus.isIdChecked = false;
+
+			if (verifyMemberJoinLoginIdAjax()) {
+				memberJoinStatus.isIdChecked = true;
+			}
+
+			checkSubmitBtnState();
+		}
+
+		function onEventMemberJoinPasswords() {
+			memberJoinStatus.isPwChecked = false;
+
+			const inputPw = $('#member-join-general-pw-text').val();
+			const inputPwConfirm = $('#member-join-general-pw-confirm-text')
+					.val();
+
+			if (isEmpty(inputPw) && isEmpty(inputPwConfirm)) {
+				$('p[id^=pw-guide-text]').hide();
+				memberJoinStatus.isPwChecked = false;
+			} else {
+				$('p[id^=pw-guide-text]').show();
+
+				if (isEmpty(inputPw) == false)
+					verifyMemberJoinPassword();
+				if (isEmpty(inputPwConfirm) == false)
+					verifyMemberJoinPwConfirm();
+				if (isEmpty(inputPw) == false
+						&& isEmpty(inputPwConfirm) == false) {
+					verifyMemberJoinPasswordsMatching();
+				}
+
+				if (memberJoinStatus.isPw1Checked
+						&& memberJoinStatus.isPw2Checked
+						&& memberJoinStatus.isPwMatchChecked) {
+					memberJoinStatus.isPwChecked = true;
+				} else {
+					memberJoinStatus.isPwChecked = false;
+				}
+			}
+
+			checkSubmitBtnState();
+		}
+
+		function onFocusOutMemberJoinEmailText() {
+			memberJoinStatus.isEmailChecked = false;
+
+			if (verifyMemberJoinEmail()) {
+				memberJoinStatus.isEmailChecked = true;
+			}
+			checkSubmitBtnState();
+		}
+
+		function onSubmitJoinGeneral() {
+			if ($("#member-join-general-submit-btn").hasClass("btn-dim") === true) {
+				return false;
+			}
+
+			//가입진행중인지 확인
+			if (memberJoinStatus.isProceeding) {
+				alert('회원가입 진행 중입니다.\n잠시 기다려주세요.');
+				return false;
+			}
+
+			// 아이디 검증
+			if (!verifyMemberJoinLoginIdAjax(true)) {
+				memberJoinStatus.isIdChecked = false;
+				$('#member-join-general-id-text').focus();
+				checkSubmitBtnState();
+				return false;
+			}
+
+			//비밀번호 미입력 검증
+			if (!verifyMemberJoinPwEmpty()) {
+				memberJoinStatus.isPwChecked = false;
+				$('#member-join-general-pw-text').focus();
+				checkSubmitBtnState();
+				return false;
+			}
+
+			// 비밀번호 검증
+			if (!verifyMemberJoinPassword(true)) {
+				memberJoinStatus.isPwChecked = false;
+				$('#member-join-general-pw-text').focus();
+				checkSubmitBtnState();
+				return false;
+			}
+
+			// 확인 비밀번호 검증
+			if (!verifyMemberJoinPwConfirm(true)) {
+				memberJoinStatus.isPwChecked = false;
+				$('#member-join-general-pw-confirm-text').focus();
+				checkSubmitBtnState();
+				return false;
+			}
+
+			// 비밀번호/확인 비밀번호 같은지 확인
+			if (!verifyMemberJoinPasswordsMatching(true)) {
+				memberJoinStatus.isPwChecked = false;
+				$('#member-join-general-pw-text').focus();
+				checkSubmitBtnState();
+				return false;
+			}
+
+			// 이메일 검증
+			if (!verifyMemberJoinEmail(true)) {
+				memberJoinStatus.isEmailChecked = false;
+				$('#member-join-general-email-text').focus();
+				checkSubmitBtnState();
+				return false;
+			}
+
+			// 평생회원 체크여부
+			if (!$('input[name=member-join-general-forever]').is(':checked')) {
+				alert("평생회원 여부를 체크해주세요.");
+				checkSubmitBtnState();
+				return false;
+			}
+
+			$('#member-join-general-recomender-text').val(
+					$('#member-join-general-recomender-text').val()
+							.toLowerCase());
+			const recomenderId = $('#member-join-general-recomender-text')
+					.val();
+
+			if (recomenderId.length > 0) {
+
+				if (recomenderId == $('#member-join-general-id-text').val()) {
+					alert('본인을 추천인 아이디로 등록할 수 없습니다.');
+					return;
+				}
+
+				const paramMap = {
+					'vLoginid' : recomenderId,
+					'srchTarget' : 'RECOMMEND'
+				};
+
+				const paramStr = $.param(paramMap);
+				let isSuccess = false;
+
+				cmAjax({
+					url : "/member/join/verifyRecommendIdAjax",
+					async : false,
+					type : "post",
+					data : paramStr,
+					dataType : "json",
+					isBlock : true,
+					success : function(data) {
+						if (data.status === "1") {
+							// alert(data.message);
+							if (data.object === "N") {
+								alert('추천하실 수 없는 아이디입니다.\n추천 아이디를 다시 확인해주세요.');
+								isSuccess = false;
+							} else {
+								isSuccess = true;
+							}
+						} else if (data.status === "9") {
+							alert(data.message);
+						}
+					},
+					error : function(e) {
+						alert(e);
+						alert("에러");
+					}
+				});
+
+				if (isSuccess === false) {
+					return false;
+				}
+			}
+
+			//이메일 검증
+			const emailDomain = $('#member-join-general-email-domain').data(
+					'value');
+			const inputEmail = $('#member-join-general-email-text').val()
+					+ (isEmpty(emailDomain) ? '' : '@' + emailDomain);
+
+			cmAjax({
+				url : "/member/join/verifyEmailAjax",
+				async : false,
+				type : "post",
+				data : {
+					vEmail : inputEmail
+				},
+				dataType : "json",
+				isBlock : true,
+				success : function(data) {
+					if (data.status === "1") {
+						if (data.object === 0) {
+							isSuccess = true;
+						} else {
+							alert('이미 가입된 이메일 주소입니다.');
+							isSuccess = false;
+						}
+					} else {
+						const alertMsg = (isEmpty(data.message) ? '시스템 오류입니다. 잠시 후 다시 시도해주세요.'
+								: data.message)
+						alert(alertMsg);
+					}
+				},
+				error : function(e) {
+					alert(e);
+					alert("에러");
+				}
+			});
+
+			if (isSuccess === false) {
+				return false;
+			}
+
+			memberJoinStatus.isProceeding = true;
+			return true;
+		}
+		///////////////////////////////////////////////////////
+
+		///////////////////////////////////////////////////////
+		// 항목 검증 함수
+		function verifyMemberJoinPwEmpty() {
+			let password = $('#member-join-general-pw-text').val();
+			const pwLength = password.length;
+
+			if (pwLength === 0) {
+				alert('비밀번호를 입력해주세요.');
+				$('#pw-guide-text1').addClass('error');
+				return false;
+			}
+
+			let pwConfirm = $('#member-join-general-pw-confirm-text').val();
+			const pwConfirmLen = pwConfirm.length;
+
+			if (pwConfirmLen === 0) {
+				alert('비밀번호 확인을 입력해주세요.');
+				$('#pw-guide-text1').addClass('error');
+				return false;
+			}
+
+			return true;
+		}
+		// 아이디 중복 체크
+		function verifyMemberJoinLoginIdAjax(alertYn) {
+			if (alertYn == null || alertYn == '') {
+				alertYn = false;
+			}
+
+			$('#member-join-general-id-text').val(
+					$('#member-join-general-id-text').val().toLowerCase());
+			const loginId = $('#member-join-general-id-text').val();
+
+			if (loginId.length === 0) {
+				alert('회원 ID를 입력해주세요.');
+				return false;
+			}
+
+			const isValid = (loginId.length >= 4 && loginId.length <= 16)
+					&& (loginId.search(/^[a-zA-Z]+(\w+)*$/) !== -1);
+
+			if (!isValid) {
+				memberJoinStatus.idErrorText = '<p class="valid error">4~16자 영문 또는 숫자만 사용 가능합니다. 첫 글자는 숫자가 아니어야 합니다.</p>';
+				if (alertYn)
+					alert('회원 ID를 확인해 주세요.');
+				return false;
+			}
+
+			const paramMap = {
+				'vLoginid' : loginId,
+				'srchTarget' : 'ID'
+			};
+
+			const paramStr = $.param(paramMap);
+
+			let isSuccess = false;
+
+			cmAjax({
+				url : "/member/join/verifyLoginIdAjax",
+				async : false,
+				type : "post",
+				data : paramStr,
+				dataType : "json",
+				isBlock : true,
+				success : function(data) {
+					if (data.status === "1") {
+						// alert(data.message);
+						if (data.object === "N") {
+							$('#member-join-general-id-text-error').html(
+									'<p class="valid">사용 가능한 아이디입니다.</p>');
+							memberJoinStatus.idErrorText = '';
+							isSuccess = true;
+						} else {
+							memberJoinStatus.idErrorText = '<p class="valid error">사용 할 수 없는 아이디입니다.</p>';
+							if (alertYn)
+								alert('회원 ID를 확인해 주세요.');
+							isSuccess = false;
+						}
+					} else if (data.status === "9") {
+						alert(data.message);
+					}
+				},
+				error : function(e) {
+					alert(e);
+					alert("에러");
+				}
+			});
+
+			if (!isSuccess) {
+				return false;
+			}
+
+			return true;
+		}
+
+		// 패스워드 입력란 검증
+		function verifyMemberJoinPassword(alertYn) {
+			memberJoinStatus.isPw1Checked = false;
+			let password = $('#member-join-general-pw-text').val();
+			const pwLength = password.length;
+
+			if (alertYn == null || alertYn == '') {
+				alertYn = false;
+			}
+
+			if (pwLength > 16) {
+				$('#member-join-general-pw-text')
+						.val(password.substring(0, 16));
+			} else if (pwLength < 6) {
+				$('#pw-guide-text1').addClass('error');
+				if (alertYn)
+					alert('비밀번호를 확인해주세요.');
+				return false;
+			}
+
+			if (password
+					.search(/^[a-zA-Z0-9!@#$%^&*]+( [a-zA-Z0-9!@#$%^&*]+)*$/) === -1) {
+				$('#pw-guide-text2').addClass('error');
+				if (alertYn)
+					alert('비밀번호를 확인해주세요.');
+				return false;
+			}
+
+			if (password.search(/[A-Za-z]/) === -1
+					|| password.search(/[0-9]/) === -1
+					|| password.search(/[!@#$%^&*]/) === -1) {
+				$('#pw-guide-text1').addClass('error');
+				$('#pw-guide-text2').addClass('error');
+				if (alertYn)
+					alert('비밀번호를 확인해주세요.');
+				return false;
+			}
+
+			$('p[id^=pw-guide-text]').removeClass('error');
+
+			memberJoinStatus.isPw1Checked = true;
+
+			return true;
+		}
+
+		// 패스워드 확인란 검증
+		function verifyMemberJoinPwConfirm(alertYn) {
+			memberJoinStatus.isPw2Checked = false;
+			let pwConfirm = $('#member-join-general-pw-confirm-text').val();
+			const pwConfirmLen = pwConfirm.length;
+
+			if (alertYn == null || alertYn == '') {
+				alertYn = false;
+			}
+
+			if (pwConfirmLen > 16) {
+				$('#member-join-general-pw-confirm-text').val(
+						pwConfirm.substring(0, 16));
+			} else if (pwConfirmLen < 6) {
+				$('#pw-guide-text1').addClass('error');
+				if (alertYn)
+					alert('비밀번호를 확인해주세요.');
+				return false;
+			}
+
+			if (pwConfirm
+					.search(/^[a-zA-Z0-9!@#$%^&*]+( [a-zA-Z0-9!@#$%^&*]+)*$/) === -1) {
+				$('#pw-guide-text2').addClass('error');
+				if (alertYn)
+					alert('비밀번호를 확인해주세요.');
+				return false;
+			}
+
+			if (pwConfirm.search(/[A-Za-z]/) === -1
+					|| pwConfirm.search(/[0-9]/) === -1
+					|| pwConfirm.search(/[!@#$%^&*]/) === -1) {
+				$('#pw-guide-text1').addClass('error');
+				$('#pw-guide-text2').addClass('error');
+				if (alertYn)
+					alert('비밀번호를 확인해주세요.');
+				return false;
+			}
+
+			$('p[id^=pw-guide-text]').removeClass('error');
+			memberJoinStatus.isPw2Checked = true;
+
+			return true;
+		}
+
+		// 패스워드와 패스워드 확인란 일치 여부 검증
+		function verifyMemberJoinPasswordsMatching(alertYn) {
+			memberJoinStatus.isPwMatchChecked = false;
+			let password = $('#member-join-general-pw-text').val();
+			let pwConfirm = $('#member-join-general-pw-confirm-text').val();
+
+			if (alertYn == null || alertYn == '') {
+				alertYn = false;
+			}
+
+			if (password !== pwConfirm) {
+				$('#pw-error-text1').show();
+				if (alertYn)
+					alert('비밀번호를 확인해주세요.');
+				return false;
+			}
+
+			$('#pw-error-text1').hide();
+
+			memberJoinStatus.isPwMatchChecked = true;
+
+			return true;
+		}
+
+		// 이메일 입력란 검증
+		function verifyMemberJoinEmail(isEmptyAlert) {
+			$('#member-join-general-email-text').val(
+					$.trim($('#member-join-general-email-text').val()));
+			let email = $('#member-join-general-email-text').val();
+			const emailDomain = $('#member-join-general-email-domain').data(
+					'value');
+
+			if (emailDomain != null && $.trim(emailDomain) != '') {
+				email += '@' + emailDomain;
+			}
+
+			const emailLen = email.length;
+			const emailDomainLen = emailDomain.length;
+
+			$('#member-join-general-email-text-error').html('');
+			if (isEmpty(email)) {
+				if (isEmptyAlert) {
+					alert('이메일을 입력해주세요.');
+				}
+				return false;
+			}
+
+			if (emailLen < 1) {
+				$('#member-join-general-email-text-error').html(
+						'<p class="valid error">이메일을 입력해주세요.</p>');
+				if (isEmptyAlert)
+					alert('이메일을 입력해주세요.');
+				return false;
+			}
+
+			$('#member-join-general-email-text-error').html('');
+
+			if (!email_check(email)) {
+
+				if (emailDomainLen < 1) {
+					$('#emailError')
+							.html(
+									'<p class="valid error">직접입력의 경우 전체 이메일을 정확하게 입력해주세요.</p>');
+				} else {
+					$('#emailError')
+							.html(
+									'<p class="valid error">직접입력이 아닌 경우 도메인을 제외한 이메일 아이디를 정확하게 입력해주세요.</p>');
+				}
+
+				if (isEmptyAlert)
+					alert('이메일을 확인해주세요.');
+				return false;
+			}
+
+			/*
+			if (emailDomainLen === 0 && (email.search(/(\w+\.)*\w+@(\w+\.)+[A-Za-z]+$/)) === -1) {
+			    $('#member-join-general-email-text-error').html('<p class="valid error">직접입력의 경우 전체 이메일을 정확하게 입력해주세요.</p>');
+			    return false;
+			} else if (emailDomainLen > 0 && (email.search(/(\w+\.)*\w+$/) === -1)) {
+			    $('#member-join-general-email-text-error').html('<p class="valid error">직접입력이 아닌 경우 도메인을 제외한 이메일 아이디를 정확하게 입력해주세요.</p>');
+			    return false;
+			}
+			 */
+
+			$('#member-join-general-email-text-error').html('');
+
+			if (emailLen + emailDomainLen > 100) {
+				$('#member-join-general-name-text-error').html(
+						'<p class="valid error">이메일은 100자를 넘을 수 없습니다.</p>');
+				if (isEmptyAlert)
+					alert('이메일을 확인해주세요.');
+				return false;
+			}
+
+			$('#member-join-general-email-domain-text').val(emailDomain);
+
+			return true;
+		}
+
+		//이메일 정규식 체크
+		function email_check(email) {
+			var reg = /^[0-9a-zA-Z]([\.]?[-_0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
+			return reg.test(email);
+		}
+
+		// 필수 입력 조건에 따라 회원 가입 버튼 활성화 여부 및 회원가입 약관, 개인정보처리 방침 에러 표시, 휴대전화번호 인증 완료 시 여부 체크 표시
+		function checkSubmitBtnState() {
+			//아이디 중복확인 후 버튼
+			setIdBtnClass(memberJoinStatus.isIdChecked);
+
+			console.log('memberJoinStatus.isIdChecked : ',
+					memberJoinStatus.isIdChecked);
+			console.log('memberJoinStatus.isPwChecked : ',
+					memberJoinStatus.isPwChecked);
+			console.log('memberJoinStatus.isEmailChecked : ',
+					memberJoinStatus.isEmailChecked);
+			console.log('member-join-general-forever : ', $(
+					'input[name=member-join-general-forever]').is(':checked'));
+
+			if (memberJoinStatus.isIdChecked
+					&& memberJoinStatus.isPwChecked
+					&& memberJoinStatus.isEmailChecked
+					&& $('input[name=member-join-general-forever]').is(
+							':checked')) {
+				$('#member-join-general-submit-btn').removeClass('btn-dim');
+				$('#member-join-general-submit-btn').addClass("btn-primary");
+			} else {
+				$('#member-join-general-submit-btn').addClass('btn-dim');
+				$('#member-join-general-submit-btn').removeClass("btn-primary");
+			}
+		}
+		///////////////////////////////////////////////////////
+
+		function mathTrunc(num) {
+			if (num > 0) {
+				return Math.floor(num);
+			} else {
+				return Math.ceil(num)
+			}
+		}
+
+		// 추천인 확인
+		function fncRecomConf() {
+
+			const recomenderId = $('#member-join-general-recomender-text')
+					.val().toLowerCase();
+
+			if (recomenderId.length > 0) {
+				if (recomenderId == $('#member-join-general-id-text').val()
+						.toLowerCase()) {
+					alert('본인을 추천인 아이디로 등록할 수 없습니다.');
+					return;
+				}
+
+				const paramMap = {
+					'vLoginid' : recomenderId,
+					'srchTarget' : 'RECOMMEND'
+				};
+
+				const paramStr = $.param(paramMap);
+
+				cmAjax({
+					url : "/member/join/verifyRecommendIdAjax",
+					async : false,
+					type : "post",
+					data : paramStr,
+					dataType : "json",
+					isBlock : true,
+					success : function(data) {
+						if (data.status === "1") {
+							// alert(data.message);
+							if (data.object === "N") {
+								alert('추천하실 수 없는 아이디입니다.\n추천 아이디를 다시 확인해주세요.');
+							} else {
+								alert('추천 가능 아이디 입니다.');
+								$(
+										".reco-check .input-group-btn .btn-form.btn-default-ex span")
+										.text("확인완료");
+							}
+						} else if (data.status === "9") {
+							alert(data.message);
+						}
+					},
+					error : function(e) {
+						alert(e);
+						alert("에러");
+					}
+				});
+
+			} else {
+				alert('추천 아이디를 입력해주세요.');
+			}
+
+		}
+
+		function termsBtn() {
+			if (!$('#member-join-general-agree-terms-check').is(':checked')) {
+				//$('#member-join-general-agree-terms-check-error').html('<p class="valid error">회원가입 약관에 동의해주세요.</p>');
+			} else {
+				//$('#member-join-general-agree-terms-check-error').html('');
+			}
+
+			if (!$('#member-join-general-agree-user-info-check').is(':checked')) {
+				//$('#member-join-general-agree-user-info-check-error').html('<p class="valid error">개인정보처리방침에 동의해주세요.</p>');
+			} else {
+				//$('#member-join-general-agree-user-info-check-error').html('');
+			}
+
+			if ($('#member-join-general-agree-terms-check').is(':checked')
+					&& $('#member-join-general-agree-user-info-check').is(
+							':checked')) {
+				$(".terms-btn-wrap button").removeClass('btn-dim');
+				$(".terms-btn-wrap button").addClass("btn-primary");
+
+			} else {
+				$(".terms-btn-wrap button").addClass('btn-dim');
+				$(".terms-btn-wrap button").removeClass("btn-primary");
+			}
+		}
+
+		function termsBtnClick() {
+			if ($(".terms-btn-wrap button").hasClass('btn-primary')) {
+				// 이메일, SMS 수신 미동의 시 처리
+				if (!$('#member-join-general-agree-email-check').is(':checked')
+						|| !$('#member-join-general-agree-sms-check').is(
+								':checked')) {
+					if (confirm('이메일, SMS 수신에 동의하지 않으시는 경우, 할인쿠폰의 발급 또는 이벤트 참여가 제한될 수 있습니다. 이메일, SMS 수신에 동의하시겠습니까?')) {
+						$('#member-join-general-agree-sms-check').prop(
+								'checked', true);
+						$('#member-join-general-agree-email-check').prop(
+								'checked', true);
+
+					}
+				}
+				if (!$('#member-join-general-agree2-user-info-check').is(
+						':checked')) {
+					if (confirm('(선택) 개인정보 수집 및 이용 동의하지 않으시는 경우, 추천아이디를 제한될 수 있습니다. (선택) 개인정보 수집 및 이용 동의하시겠습니까?')) {
+						$('#member-join-general-agree2-user-info-check').prop(
+								'checked', true);
+					}
+				}
+				$(".terms-section").css("display", 'none');
+				$(".join-container2").css('display', 'block');
+				if (!$('#member-join-general-agree2-user-info-check').is(
+						':checked')) {
+					$(".reco-check").css("display", 'none');
+				}
+			}
+		}
+	</script> -->
+</section>
+
+	<%@include file="/templates/kgm/footer.jsp"%>
 
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </html>
