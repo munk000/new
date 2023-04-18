@@ -1,171 +1,169 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>밀키트랜드</title>
-<link rel="stylesheet" href="../../static/css/kgm/fix.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>밀키트랜드</title>
+    <link rel="stylesheet" href="../../static/css/kgm/header.css">
 </head>
+
 <body>
-	<header id="header" class="header">
-		<div class="header-inner">
-			<!--헤더 로고 -->
-			<h1 class="logo">
-				<a href="../../static/image/logo.png"> <span class="blind">밀키트랜드</span>
-				</a>
-			</h1>
 
-			<!-- 상단 로그인 회원가입 로고 -->
-			<div class="util">
-				<ul>
-					<li>
-						<!--경로 지정 해야함 --> <a href="">로그인</a>
-					</li>
-					<li><!-- ::before --> <!--경로 지정 해야함 --> <a href="">회원가입</a>
-					</li>
-					<li><!-- ::before --> <!--경로 지정 해야함 --> <a href="">구독조회</a>
-					</li>
-					<li><!-- ::before --> <!--경로 지정 해야함 --> <a href="">고객센터</a>
-					</li>
-				</ul>
-			</div>
-			<!--//util -->
-			<!-- 검색창  구현 아직 모름-->
-			<!-- <div class="header-search"></div> -->
-			<div class="my-menu">
-				<ul>
-					<!-- 		            <li><a href="" class="btn-util-coupon" title=""><span class="blind"></span></a></li> -->
-					<li><a href="" class="btn-util-mypage" title=""><span
-							class="blind">마이페이지</span></a></li>
-					<li><a href="" class="btn-util-cart" title=""><span
-							class="blind">장바구니</span> <em class="count">0</em></a></li>
-				</ul>
-			</div>
-		</div>
-			<!-- my-menu -->
+    <header id="header" class="header">
+        <!-- ## header,gnb :: include.header() 영역 -->
+        <div class="header-inner">
+            <h1 class="logo"><a href="/"><span class="blind">밀키트랜드</span></a></h1>
 
-			<!-- header-inner -->
-			<!-- 카테고리 네비게이션 -->
-			<div class="gnb-wrap">
-				<div class="inner">
-					<div class="category-wrap">
-						<a href="all-category" class="btn-menu-all"> <!-- ::before --> <span>카테고리</span>
-							<!-- ::after -->
-						</a>
-						<nav id="all-category" class="category-menu">
-							<ul class="cate-dep1" style="display:none; max-height:647px;">
-								<li>
-									<a href=""> 
-										<i class="ico-cate-gnb"> <img src="" alt>
-										</i> 
-											<span class="menu">아침</span>
-									</a>
-								</li>
-							</ul>
-						</nav>
-						<nav id="all-category" class="category-menu">
-							<ul class="cate-dep1" style="display:none; max-height:647px;">
-								<li>
-									<a href=""> 
-										<i class="ico-cate-gnb"> <img src="" alt>
-										</i> 
-											<span class="menu">점심</span>
-									</a>
-								</li>
-							</ul>
-						</nav>
-						<nav id="all-category" class="category-menu">
-							<ul class="cate-dep1" style="display:none; max-height:647px;">
-								<li>
-									<a href=""> 
-										<i class="ico-cate-gnb"> <img src="" alt>
-										</i> 
-											<span class="menu">저녁</span>
-									</a>
-								</li>
-							</ul>
-						</nav>
-						<nav id="all-category" class="category-menu">
-							<ul class="cate-dep1" style="display:none; max-height:647px;">
-								<li>
-									<a href=""> 
-										<i class="ico-cate-gnb"> <img src="" alt>
-										</i> 
-											<span class="menu">지역 특산물</span>
-									</a>
-								</li>
-							</ul>
-						</nav>
-						<nav id="all-category" class="category-menu">
-							<ul class="cate-dep1" style="display:none; max-height:647px;">
-								<li>
-									<a href=""> 
-										<i class="ico-cate-gnb"> <img src="" alt>
-										</i> 
-											<span class="menu">술 안주</span>
-									</a>
-								</li>
-							</ul>
-						</nav>
-						<nav id="all-category" class="category-menu">
-							<ul class="cate-dep1" style="display:none; max-height:647px;">
-								<li>
-									<a href=""> 
-										<i class="ico-cate-gnb"> <img src="" alt>
-										</i> 
-											<span class="menu">야식</span>
-									</a>
-								</li>
-							</ul>
-						</nav>
-						<nav id="all-category" class="category-menu">
-							<ul class="cate-dep1" style="display:none; max-height:647px;">
-								<li>
-									<a href=""> 
-										<i class="ico-cate-gnb"> <img src="" alt>
-										</i> 
-											<span class="menu">건강</span>
-									</a>
-								</li>
-							</ul>
-						</nav>
-						<!-- //category-menu  -->
-					</div>
-					<!-- //categorty-wrap-->
-					<!--헤더 카테고리 -->
-					<nav id="gnb" class="gnb">
-						<ul>
-							<li class=""><a href="/display/rank/sale"> <span>메뉴판</span>
-							</a></li>
-							<li class=""><a href="/promotion/exhibit/list"> <span>문의 게시판 목록</span>
-							</a></li>
-							<li class=""><a href="/display/benefits/view"> <span>공지 사항</span>
-							</a></li>
-							<!-- <li class=""><a href="/display/onePack/list"> <span>1팩
-										담기</span>
-							</a></li>
-							<li class=""><a href="/display/brand/list"> <span>브랜드관</span>
-							</a></li>
-							<li class=""><a href="/promotion/event/list"> <span>이벤트</span>
-							</a></li>
-							<li class=""><a href="/display/expressDeliveryList"> <em
-									class="ico-txt-gnb"
-									style="background-image: url(&quot;https://file.rankingdak.com/image/RANK/BANNER/GNB_ICON/20220330/IMG1648CEL614146730.png&quot;)">
-							 --><!-- 			<span class="blind">특급배송</span> -->
-								<!-- </em> -->
-							<!-- </a></li> -->
-						</ul>
-					</nav>
-					
-				</div>
-					<!--//gnb  -->
-			</div>
-				<!-- // inner -->
-			<!--  //gnb-wrap-->
-			<input type="hidden" name="eventCd" value>
-			<input type="hidden" name="eventtype" value>
-			<input type="hidden" name="landingPage" value>
-	</header>
+            <div class="util">
+                <ul>
+                    <li><a href="/auth/login">로그인</a></li>
+                    <li><a href="/member/join/general">회원가입</a></li>
+                    <li><a href="/mypage/orderlist">주문조회</a></li>
+                    <li><a href="/service/center">고객센터</a></li>
+                </ul>
+            </div>
+            <!--// util -->
+            <div class="my-menu">
+                <ul>
+                    <li><a href="/display/coupon/list" class="btn-util-coupon" title=""><span
+                                class="blind">쿠폰</span></a>
+                    </li>
+                    <li><a href="/mypage/main" class="btn-util-mypage" title=""><span class="blind">마이페이지</span></a>
+                    </li>
+                    <li>
+                        <a href="/order/cart" class="btn-util-cart" title="">
+                            <span class="blind">장바구니</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--// my-menu -->
+        <!-- </div> -->
+        <!--// header-inner -->
+
+        <div class="gnb-wrap">
+            <div class="inner">
+                <div class="category-wrap">
+
+                    <a href="#all-category" class="btn-menu-all"><span>카테고리</span></a>
+                    <nav id="all-category" class="category-menu">
+                        <ul class="cate-dep1">
+                            <li>
+                                <a href="/product/list?depth1=R402" data-cd1="R402">
+                                    <i class="ico-cate-gnb">
+                                        <img src="https://file.rankingdak.com/image/RANK/BANNER/CATE_PC1_1/20230414/IMG1681xmY450972761.png"
+                                            alt="">
+                                    </i>
+                                    <span class="menu new">아침</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/promotion/exhibit/hiddenList?exhibitionCd=EX202204150000000014"
+                                    data-cd1="R254">
+                                    <i class="ico-cate-gnb">
+                                        <img src="https://file.rankingdak.com/image/RANK/BANNER/CATE_PC1_1/20220523/IMG1653WAC282333226.png"
+                                            alt="">
+                                    </i>
+                                    <span class="menu ">점심</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/promotion/exhibit/hiddenList?exhibitionCd=EX202204150000000014"
+                                    data-cd1="R254">
+                                    <i class="ico-cate-gnb">
+                                        <img src="https://file.rankingdak.com/image/RANK/BANNER/CATE_PC1_1/20220523/IMG1653WAC282333226.png"
+                                            alt="">
+                                    </i>
+                                    <span class="menu ">저녁</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/promotion/exhibit/hiddenList?exhibitionCd=EX202204150000000014"
+                                    data-cd1="R254">
+                                    <i class="ico-cate-gnb">
+                                        <img src="https://file.rankingdak.com/image/RANK/BANNER/CATE_PC1_1/20220523/IMG1653WAC282333226.png"
+                                            alt="">
+                                    </i>
+                                    <span class="menu ">지역 특산물</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/promotion/exhibit/hiddenList?exhibitionCd=EX202204150000000014"
+                                    data-cd1="R254">
+                                    <i class="ico-cate-gnb">
+                                        <img src="https://file.rankingdak.com/image/RANK/BANNER/CATE_PC1_1/20220523/IMG1653WAC282333226.png"
+                                            alt="">
+                                    </i>
+                                    <span class="menu ">술 안주</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/promotion/exhibit/hiddenList?exhibitionCd=EX202204150000000014"
+                                    data-cd1="R254">
+                                    <i class="ico-cate-gnb">
+                                        <img src="https://file.rankingdak.com/image/RANK/BANNER/CATE_PC1_1/20220523/IMG1653WAC282333226.png"
+                                            alt="">
+                                    </i>
+                                    <span class="menu ">야식</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/promotion/exhibit/hiddenList?exhibitionCd=EX202204150000000014"
+                                    data-cd1="R254">
+                                    <i class="ico-cate-gnb">
+                                        <img src="https://file.rankingdak.com/image/RANK/BANNER/CATE_PC1_1/20220523/IMG1653WAC282333226.png"
+                                            alt="">
+                                    </i>
+                                    <span class="menu ">건강</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--// category-menu -->
+
+                </div>
+                <!--// category-wrap -->
+                <nav id="gnb" class="gnb">
+                    <ul>
+                        <li class="">
+                            <a href="/display/rank/sale">
+
+                                <span>메뉴판</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="/promotion/exhibit/list">
+
+                                <span>문의 게시판 목록</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="/display/onePack/list">
+
+                                <span>공지 사항</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--// gnb -->
+            </div>
+            <!--// inner -->
+        </div>
+        <!--// gnb-wrap -->
+        <input type="hidden" name="eventCd" value="">
+        <input type="hidden" name="eventType" value="">
+        <input type="hidden" name="landingPage" value="">
+        <div id="evntFindWinPopUp"></div>
+
+
+        <!--// ## header,gnb :: include.header() 영역 -->
+    </header>
 </body>
+
 </html>

@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="../../static/css/kgm/findId.css">
 
 <body>
-
+<div class="wrap">
 <%@include file="/templates/kgm/header.jsp"%>
     <section id="contents" class="container" style="padding-bottom: 0px;">
 
@@ -174,6 +174,7 @@
 
     </section>
 	<%@include file="/templates/kgm/footer.jsp"%>
+	</div>
 </body>
 
 </html>

@@ -12,6 +12,7 @@
 </head>
 
 <body>
+	<div class="wrap">
 	<%@include file="/templates/kgm/header.jsp"%> 
     <section id="contents" class="container" style="padding-bottom: 0px;">
 
@@ -204,6 +205,7 @@
         </div>
     </section>
     	<%@include file="/templates/kgm/footer.jsp"%>
+    	</div>
 </body>
 
 </html>
