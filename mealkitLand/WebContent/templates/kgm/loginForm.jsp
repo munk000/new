@@ -38,19 +38,19 @@
                             <div class="input-group w-full">
                                 <label for="pw" class="blind">비밀번호</label>
                                 <input type="password" id="pw" class="input-text type-lg" placeholder="비밀번호"
-                                    maxlength="100" data-gtm-form-interact-field-id="0">
+                                    maxlength="100">
                             </div>
                             <div class="chk-area remember-me-con">
                                 <div class="custom-checkbox remember-me1-con">
                                     <input type="checkbox" id="remember-me" class="checkbox" name="remember-me"
-                                        checked=""><label for="remember-me"> 자동로그인</label>
+                                        checked="checked"><label for="remember-me"> 자동로그인</label>
                                 </div>
                                 <div class="custom-checkbox">
                                     <input type="checkbox" id="remember-me2" class="checkbox" name="remember-me2"
                                         checked="checked"><label for="remember-me2"> 아이디저장</label>
                                 </div>
                             </div>
-                            <button type="submit" class="btn-basic-lg2 btn-primary w-full"><span>로그인</span></button>
+                            <button type="button" onclick="login_check();"class="btn-basic-lg2 btn-primary w-full"><span>로그인</span></button>
                         </fieldset>
 
                         <div class="page-guide-center find-con">
@@ -63,12 +63,6 @@
                         <div id="member-login-error-text" style="display:none;">
                         </div>
 
-                        <input type="hidden" name="cartType" value="">
-                        <input type="hidden" name="nonmemberYn" value="">
-
-                        <div>
-                            <input type="hidden" name="_csrf" value="a8cf66ae-8a65-4a1c-b7a0-e8e30e00acc1">
-                        </div>
                     </form>
                 </div>
                 <!-- //login-area -->
@@ -79,5 +73,22 @@
     </div>
     <!-- //wrap -->
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script>
+		function login_check(){
+			const $id = $("#id");
+			const $pw = $("#pw");
+				if($id.val() == ""){
+					alert("아이디를 입력하세요.");
+					$id.focus();
+					return false;
+				}
+				if($pw.val() == ""){
+					alert("비밀번호를 입력하세요.")
+					$pw.focus();
+					return false;
+				}
+		}
+	</script>
 
 </html>
