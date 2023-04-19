@@ -1071,3 +1071,14 @@ element.style {
     top: 3px;
     float: right;
 }
+
+button, input {
+    overflow: visible;
+}
+
+label, select, input, textarea {
+    vertical-align: middle;
+}
+
+
+
