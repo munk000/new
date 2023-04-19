@@ -79,7 +79,8 @@
                 </div>
             </div>
         </div>
-    </div>
     </section>
+    <%@include file = "/templates/kgm/footer.jsp" %>
+    </div>
 </body>
 </html>
