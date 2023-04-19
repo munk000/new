@@ -121,14 +121,14 @@ h5 {
 ol, ul {
     list-style: none;
 }
-ul {
+/* ul {
     display: block;
-    /* list-style-type: disc; */
+    list-style-type: disc;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-}
+} */
 .footer-biz-info li .company-name {
     font-size: 14px;
     color: #333;
