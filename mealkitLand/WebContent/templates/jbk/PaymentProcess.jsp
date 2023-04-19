@@ -98,7 +98,8 @@ src="https://www.facebook.com/tr?id=163613154295945&ev=PageView&noscript=1"
 
 
 <link rel="stylesheet" href="../../static/css/jbk/PaymentProcess.css" />
-<link rel="stylesheet" href="../../static/css/kgm/fix.css" />
+<link rel="stylesheet" href="../../static/css/kgm/header.css" />
+<link rel="stylesheet" href="../../static/css/kgm/footer.css" />
 <title>랭킹닭컴 </title>
 
 <!-- [Pub/Dev] 메인페이지의 경우 addClass main -->
