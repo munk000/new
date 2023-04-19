@@ -700,14 +700,6 @@ input[readonly] {
     z-index: 1;
 }
 
-ul {
-    display: block;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
 .select-box .select-list li:first-child {
     margin-top: 0;
 }
@@ -734,3 +726,1581 @@ ul {
     z-index: 2;
 }
 
+element.style {
+    display: none;
+}
+
+.order-info .dlv-guide-box {
+    margin-bottom: -30px;
+    margin-top: 30px;
+}
+
+.dlv-guide-box {
+    padding-top: 4px;
+}
+
+.dlv-guide-box.type02 .inner {
+    border-radius: 3px;
+}
+
+.dlv-guide-box .inner {
+    text-align: center;
+    background: #F3F3F3;
+    border-radius: 10px;
+    max-height: 90px;
+}
+
+.dlv-guide-box .message-exp {
+    overflow: hidden;
+    position: relative;
+    padding: 15px 25px;
+}
+
+.dlv-guide-box .message-exp .left-item {
+    float: left;
+}
+
+.dlv-guide-box .message-exp .left-item .guide-message {
+    color: #666;
+    line-height: 20px;
+    vertical-align: top;
+}
+
+.dlv-guide-box .message-exp .left-item .guide-message strong {
+    color: #333;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.dlv-guide-box .message-exp .left-item .imgbadge-dlv-exp {
+    vertical-align: top;
+}
+
+.imgbadge-dlv-exp {
+    display: inline-block;
+    width: 64px;
+    height: 20px;
+    background: url(/resources/pc/images/txt/txt_badge_dlv.png) no-repeat 0 0;
+    vertical-align: middle;
+}
+
+.imgbadge-dlv-exp {
+    display: inline-block;
+    width: 64px;
+    height: 20px;
+    background: url("https://www.rankingdak.com/resources/pc/images/txt/txt_badge_dlv.png") no-repeat 0 0;
+    vertical-align: middle;
+}
+
+.dlv-guide-box .message-exp .right-item {
+    float: right;
+}
+
+.dlv-guide-box .message-exp .right-item .prd-add {
+    color: #3A4C67;
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: top;
+    text-decoration: underline;
+}
+
+.order-info .list-head {
+    position: relative;
+    padding: 30px 0 20px;
+    border-top: 1px solid #666;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.order-info .title-list + .btn-icon-mark {
+    vertical-align: middle;
+    margin-top: -9px;
+}
+
+.order-info .title-list + .btn-icon-mark {
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+.btn-icon-mark {
+    vertical-align: top;
+    line-height: 1;
+    height: 14px;
+}
+
+[class*="btn-icon-"] {
+    display: inline-block;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    /* border: 0; */
+    padding: 0;
+    background-image: none;
+}
+
+button {
+    background: none;
+    font-family: 'Pretendard', sans-serif;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    font: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+button {
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+.btn-icon-mark > [class^="ico-"] {
+    vertical-align: top;
+}
+
+.ico-quest {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border: 2px solid #999;
+    text-align: center;
+}
+
+i {
+    font-style: italic;
+}
+
+button .blind {
+    position: relative;
+    font-size: 0;
+    color: transparent;
+}
+
+[class*="ui-tooltipbox-"] {
+    display: none;
+    position: absolute;
+    z-index: 10;
+}
+
+element.style {
+    width: 300px;
+}
+
+.tooltip-box .inner {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #999;
+    padding: 20px 15px;
+    border-radius: 5px;
+}
+
+.dlv-guide-tip .tit {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+.dlv-guide-tip .tit strong {
+    font-weight: 500;
+}
+
+.text-primary {
+    color: #FF6001 !important;
+}
+
+.dlv-guide-tip .tit {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.dlv-guide-tip .tip-desc {
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+element.style {
+    font-weight: bold;
+    color: #333333;
+}
+
+.text-primary {
+    color: #FF6001 !important;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.dlv-guide-tip .tip-desc li + li {
+    margin-top: 4px;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.dlv-guide-tip .bl-list-type2 {
+    border-top: 1px solid #eee;
+    padding-top: 8px;
+    margin-top: 8px;
+}
+
+.bl-text-type2, .bl-list-type2 > li {
+    color: #999;
+    font-size: 12px;
+    padding-left: 15px;
+    word-break: break-word;
+    text-align: left;
+}
+
+.bl-text-type2, .bl-list-type2 > li {
+    color: #999;
+    font-size: 12px;
+    padding-left: 15px;
+    word-break: break-word;
+    text-align: left;
+}
+
+.dlv-guide-tip .bl-list-type2 li + li {
+    margin-top: 0;
+}
+
+.bl-list-type2 > li + li {
+    margin-top: 5px;
+}
+
+.bl-text-type2, .bl-list-type2 > li {
+    color: #999;
+    font-size: 12px;
+    padding-left: 15px;
+    word-break: break-word;
+    text-align: left;
+}
+
+element.style {
+    color: #999;
+    font-size: 12px;
+    word-break: break-word;
+    text-align: left;
+}
+
+.tooltip-box .inner .ui-tooltip-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.btn-x-sm {
+    padding: 10px;
+    height: 34px;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    /* border: 0; */
+    padding: 0;
+    background-image: none;
+}
+
+button {
+    background: none;
+    font-family: 'Pretendard', sans-serif;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+button, select {
+    text-transform: none;
+}
+
+.btn-x-sm [class^="ico-x-"] {
+    width: 14px;
+    height: 14px;
+}
+
+.ico-x-grey2 {
+    color: #b9b9b9;
+}
+
+[class^="ico-x-"] {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+button .blind {
+    position: relative;
+    font-size: 0;
+    color: transparent;
+}
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.order-info .list-head .dlv-tab {
+    position: absolute;
+    top: 17px;
+    right: 0;
+}
+
+.radio-box-group .custom-radio {
+    margin-left: -4px;
+}
+
+.custom-radio {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-radio input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+button, input, optgroup, select, textarea {
+    font: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+label, select, input, textarea {
+    vertical-align: middle;
+}
+
+.dlv-tab .custom-radio:first-child .radio-box-type2 + label {
+    line-height: 50px;
+}
+
+.radio-box-group .custom-radio:first-child .radio-box-type2 + label {
+    border-radius: 3px 0 0 3px;
+}
+
+.custom-radio .radio-box-type2 + label {
+    display: inline-block;
+    position: relative;
+    min-width: 140px;
+    height: 44px;
+    padding: 0 20px;
+    cursor: pointer;
+    color: #888;
+    font-size: 14px;
+    line-height: 2.9;
+    background: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    background: #f8f8f8;
+}
+
+.order-info .dlv-tab .dlv-tipbox-bottom {
+    bottom: 55px;
+    background-color: #444444;
+    border-radius: 4px;
+    padding: 13px 26px;
+    left: 49%;
+    width: 280px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.dlv-tipbox-bottom.type2 {
+    padding: 10px 30px;
+    border-radius: 100px;
+}
+
+.dlv-tab .dlv-tipbox-bottom {
+    left: 23%;
+    bottom: -35px;
+}
+
+.dlv-tipbox-bottom {
+    background: #333;
+    padding: 5px 15px 6px;
+    border-radius: 4px;
+}
+
+.dlv-tipbox-bottom {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    min-width: 200px;
+}
+
+.order-info .dlv-tab .dlv-tipbox-bottom p {
+    color: white;
+    font-size: 13px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.dlv-tipbox-bottom > .txt {
+    color: #fff;
+    font-size: 13px;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.txt, .txt span {
+    word-break: break-all;
+}
+
+.order-info .dlv-tab .dlv-tipbox-bottom p b {
+    color: #FFA891;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+address, caption, strong[lang=en], em, cite, b {
+    font-weight: normal;
+    font-style: normal;
+}
+
+.dlv-tipbox-bottom > .txt {
+    color: #fff;
+    font-size: 13px;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.txt, .txt span {
+    word-break: break-all;
+}
+
+.srch-keyword > .btn-x-xs {
+    position: absolute;
+    right: -10px;
+    padding: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    /* border: 0; */
+    padding: 0;
+    background-image: none;
+}
+
+button {
+    background: none;
+    font-family: 'Pretendard', sans-serif;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-x-xs [class^="ico-x-"] {
+    width: 8px;
+    height: 8px;
+}
+
+.ico-x-grey2 {
+    color: #b9b9b9;
+}
+
+[class^="ico-x-"] {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.srch-keyword > .btn-x-xs .blind {
+    position: absolute;
+}
+
+.srch-keyword {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.srch-keyword > .txt {
+    display: block;
+    text-align: left;
+    font-size: 13px;
+    line-height: 20px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.txt, .txt span {
+    word-break: break-all;
+}
+
+a {
+    background: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+
+.order-item-box {
+    padding-top: 11px;
+}
+
+.delivery-state.normal {
+    background: #93a0b5;
+}
+
+.delivery-state {
+    position: relative;
+    padding: 16px 30px;
+}
+
+.delivery-state .tit {
+    color: #fff;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.delivery-state .right-dlv-info {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+}
+
+.right-dlv-info [class^="ico-bl-"] {
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+.ico-bl-box2 {
+    background-position: -30px -30px;
+    width: 14px;
+    height: 14px;
+}
+
+[class^="ico-bl-"] {
+    display: inline-block;
+    background-image: url("https://www.rankingdak.com/resources/pc/images/icon/ico_bullet.png");
+}
+
+.delivery-state .right-dlv-info .txt {
+    color: #fff;
+}
+
+.right-dlv-info .txt {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.txt, .txt span {
+    word-break: break-all;
+}
+
+.right-dlv-info .txt > span {
+    font-weight: 500;
+}
+
+.txt, .txt span {
+    word-break: break-all;
+}
+
+.delivery-state .right-dlv-info .txt {
+    color: #fff;
+}
+
+.right-dlv-info .txt {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.txt, .txt span {
+    word-break: break-all;
+}
+
+.delivery-guide.type02 {
+    border-top: none;
+    border-bottom: none;
+    padding-bottom: 0;
+    background: none;
+}
+
+.delivery-guide {
+    position: relative;
+    overflow: hidden;
+    padding: 15px 25px;
+    background: #F7F7F7;
+    border-bottom: 1px solid #EBEBEB;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.delivery-guide.type02 .type02-inner {
+    position: relative;
+    overflow: hidden;
+    padding: 11px 15px;
+    border-radius: 4px;
+    background: #f5f5f5;
+}
+
+.delivery-guide.type02 .txt {
+    color: #666;
+}
+
+.delivery-guide .txt {
+    font-size: 13px;
+}
+
+.txt, .txt span {
+    word-break: break-all;
+}
+
+.order-item-box .cart-list {
+    padding: 0;
+}
+
+.cart-list {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.order-item-box .cart-list > li {
+    padding: 20px 0;
+}
+
+.cart-list > li {
+    position: relative;
+    border-top: 0;
+    padding: 30px 0 0 0;
+}
+
+.cart-list > li .prd-info-area:not(.option-line) {
+    padding: 0 25px;
+}
+
+.prd-info-area {
+    position: relative;
+}
+
+.prd-info-area .inner {
+    display: table;
+    table-layout: auto;
+    width: 100%;
+}
+
+.prd-info-area .column.img {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+}
+
+.prd-info-area .column {
+    display: table-cell;
+    vertical-align: top;
+    text-align: center;
+}
+
+.prd-info-area .column.img img {
+    width: 80px;
+    height: 80px;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.prd-info-area .column.tit {
+    padding: 0 10px 0 15px;
+    text-align: left;
+}
+
+.prd-info-area .column {
+    display: table-cell;
+    vertical-align: top;
+    text-align: center;
+}
+
+.prd-info-area .column.tit .tit {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.prd-info-area .column.tit .desc {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.prd-info-area .column.tit .price-item > li {
+    font-size: 14px;
+    color: #333;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.cart-list .prd-info-area .column.tit .price-item > li:first-child .num {
+    font-size: 16px;
+}
+
+.prd-info-area .column.tit .price-item > li:not(:first-child) {
+    padding-left: 7px;
+    position: relative;
+}
+
+.prd-info-area .column.tit .price-item > li:not(:first-child):before {
+    display: block;
+    content: '';
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: #666;
+    transform: translateY(-50%);
+}
+
+.prd-info-area .column.tit .price-item > li .num {
+}
+
+.prd-info-area .column.w70 {
+    width: 70px;
+    vertical-align: middle;
+}
+
+.prd-info-area .column.price {
+    width: 130px;
+    vertical-align: middle;
+    text-align: right;
+    word-break: keep-all;
+}
+
+.prd-info-area .column {
+    display: table-cell;
+    vertical-align: top;
+    text-align: center;
+}
+
+
+.prd-info-area .column.price .num {
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+}
+
+
+element.style {
+    display: block;
+}
+
+.order-item-box .cart-list > li {
+    padding: 20px 0;
+}
+
+.cart-list > li + li {
+    border-top: 1px solid #E5E5E5;
+}
+
+.cart-list .added-btn {
+    padding: 0;
+    text-align: center;
+    margin-top: -21px;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-blue-line {
+    background: #eef7ff;
+    color: #3c89fd;
+    border: 1px solid #3c89fd;
+}
+
+.btn-rud-sm, .btn-rud-sm2 {
+    height: 36px;
+    padding: 5px 15px;
+}
+
+[class*="btn-rud-"] {
+    border-radius: 20px;
+}
+
+[class*="btn-basic-"], [class*="btn-option"], [class*="btn-rud-"] {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.btn-rud-sm > i, .btn-rud-sm2 > i {
+    vertical-align: middle;
+}
+
+.ico-btn-ice {
+    background-position: -90px 0;
+    width: 12px;
+    height: 14px;
+    vertical-align: middle;
+    margin-top: 3px;
+}
+
+[class^="ico-btn-"] {
+    display: inline-block;
+    background-image: url("https://www.rankingdak.com/resources/pc/images/icon/ico_btns.png");
+}
+
+.btn-rud-sm > i + span, .btn-rud-sm2 > i + span {
+    margin-left: 5px;
+}
+
+.btn-rud-sm > span, .btn-rud-sm2 > span {
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+[class*="btn-basic-"] > span, [class*="btn-option"] > span, [class*="btn-rud-"] > span {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dlv-request-box {
+    border: 1px solid #ccc;
+    border-top: 0;
+    background-color: #f7f7f7;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    font: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+label, select, input, textarea {
+    vertical-align: middle;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    font: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+label, select, input, textarea {
+    vertical-align: middle;
+}
+
+.dlv-day-tit .tit {
+    float: left;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+h5 {
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.dlv-day-tit .tit .es2 {
+    vertical-align: top;
+    margin-top: 6px;
+    margin-left: 3px;
+}
+
+.es2 {
+    width: 4px;
+    height: 4px;
+    background: #FF6001;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.dlv-day-tit .tit {
+    float: left;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.dlv-day-tit .dlv-time {
+    float: right;
+    font-size: 13px;
+    color: #666;
+}
+
+.dlv-day-tit .dlv-time > i {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.ico-bl-alarm {
+    background-position: -60px 0;
+    width: 15px;
+    height: 16px;
+}
+
+[class^="ico-bl-"] {
+    display: inline-block;
+    background-image: url("https://www.rankingdak.com/resources/pc/images/icon/ico_bullet.png");
+}
+
+.div-check-list {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.div-check-list li {
+    float: left;
+    cursor: pointer;
+}
+
+.custom-radio {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-radio input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+button, input, optgroup, select, textarea {
+    font: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+label, select, input, textarea {
+    vertical-align: middle;
+}
+
+.order-info .custom-radio .radio-btn + label {
+    background: transparent;
+}
+
+.custom-radio .radio-btn + label {
+    display: block;
+    width: 350px;
+    height: 50px;
+    border: 1px solid #888;
+    padding: 5px 10px;
+    text-align: center;
+    background: #fff;
+    line-height: 2.4;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.order-info .custom-radio .radio-btn + label {
+    background: transparent;
+}
+
+.div-check-list li:last-child {
+    float: right;
+}
+
+.custom-radio {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-radio input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.order-info .custom-radio .radio-btn + label {
+    background: transparent;
+}
+
+.custom-radio .radio-btn:checked + label {
+    color: #FF6001;
+    border: 2px solid #FF6001;
+}
+
+.custom-radio .radio-btn + label {
+    display: block;
+    width: 350px;
+    height: 50px;
+    border: 1px solid #888;
+    padding: 5px 10px;
+    text-align: center;
+    background: #fff;
+    line-height: 2.4;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.dlv-request-box .inner-div + .inner-div {
+    border-top: 1px solid #E0E0E0;
+}
+
+.dlv-request-box .inner-div {
+    padding: 25px;
+}
+
+.inner-div .request-tit {
+    float: left;
+    width: 160px;
+}
+
+.inner-div .request-tit h5 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+h5 {
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.inner-div .request-tit h5 .es2 {
+    vertical-align: top;
+    margin-top: 5px;
+}
+
+.es2 {
+    width: 4px;
+    height: 4px;
+    background: #FF6001;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.inner-div .request-tit h5 .custom-checkbox {
+    margin: 16px 0 0;
+}
+
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+    vertical-align: top;
+}
+
+
+.custom-checkbox input[type="checkbox"] + label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.custom-checkbox .checkbox + label {
+    padding-left: 26px;
+    min-height: 18px;
+}
+
+.inner-div .request-detail {
+    float: right;
+    width: 540px;
+}
+
+.inner-div .request-detail .epx-m-chk-con .custom-radio.s-li {
+    display: block;
+    margin: 0 0 15px 0;
+}
+
+.custom-radio {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-radio input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.inner-div .request-detail .epx-m-chk-con .custom-radio .radio + label {
+    font-size: 14px;
+}
+
+.custom-radio .radio + label {
+    display: inline-block;
+    color: #333;
+    position: relative;
+    padding-left: 28px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.4;
+    vertical-align: top;
+}
+
+.inner-div .request-detail .epx-m-chk-con .custom-radio.s-li > p#express-memo-p {
+    display: block;
+}
+
+.inner-div .request-detail .epx-m-chk-con .custom-radio.s-li > p {
+    display: none;
+    padding: 12px 0 0 28px;
+}
+
+.inner-div .request-detail .epx-m-chk-con .custom-radio.s-li > p .epx-txt {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.select-box .select-value.placeholder {
+    color: #999;
+}
+
+.select-box .select-value {
+    display: block;
+    position: relative;
+    height: 100%;
+    padding: 0 36px 0 15px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.inner-div .request-detail .select-box ~ .ui-direct-input {
+    margin-top: 5px;
+}
+
+.wp100, .w-full {
+    width: 100% !important;
+}
+
+.input-text {
+    height: 40px;
+    padding: 5px 15px;
+    background: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 13px;
+    border-radius: 0;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    font: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.dlv-request-box .inner-div::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.dlv-request-box .inner-div {
+    padding: 25px;
+}
+
+.order-info {
+    position: relative;
+    padding: 0 0 60px;
+}
+
+.order-info .list-head {
+    position: relative;
+    padding: 30px 0 20px;
+    border-top: 1px solid #666;
+}
+
+.orangeMembers-skin-banner {
+    background-color: #444444;
+    padding: 15px 0;
+    margin: 10px 0 48px 0;
+}
+
+.orangeMembers-skin-banner p {
+    color: #cccccc;
+    font-size: 14px;
+}
+
+.ico-orangeMembers {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(/resources/pc/images/icon/orangeMember-icon-1.png);
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-right: 1px;
+}
+
+.orangeMembers-skin-banner p strong {
+    font-weight: 700;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+}
+
+.order-payment-area .payment-info-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.payment-info-box {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 30px 25px;
+    background: #FFF;
+}
+
+.payment-info-box > .tit {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+div {
+    display: block;
+}
+
+.order-price .div-price > li {
+    padding: 20px 0;
+}
+
+.order-price .list-inner {
+    overflow: hidden;
+}
+
+.order-price .list-inner .tit {
+    float: left;
+    display: block;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.order-price .list-inner .price {
+    float: right;
+    font-size: 18px;
+    text-align: right;
+}
+
+.order-price .list-inner .price .num {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+}
+
+.order-price .list-inner .price .text-guide-sm {
+    display: block;
+    margin-top: 2px;
+}
+
+.text-guide-sm {
+    font-size: 12px;
+    color: #666;
+    font-weight: normal;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    font: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+label, select, input, textarea {
+    vertical-align: middle;
+}
+
+.order-price .list-inner {
+    overflow: hidden;
+}
+
+.order-price .div-price > li {
+    padding: 20px 0;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.order-price:not(.type2) .div-price > li + li:not(:last-child) {
+    border-top: 1px solid #ccc;
+}
+
+.order-price .div-price > li {
+    padding: 20px 0;
+}
+
+.order-price .list-inner {
+    overflow: hidden;
+}
+
+.order-price .list-inner .tit {
+    float: left;
+    display: block;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.order-price .list-inner .price {
+    float: right;
+    font-size: 18px;
+    text-align: right;
+}
+
+.order-price .list-inner .price .num {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.div-price .list-sub-inner {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    padding-left: 10px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.div-price .list-sub-inner > li > span {
+    display: table-cell;
+    color: #666;
+    padding: 3px 0;
+}
+
+.div-price .list-sub-inner > li > .txt {
+    text-align: right;
+    font-size: 16px;
+}
+
+.txt, .txt span {
+    word-break: break-all;
+}
+
+.div-price .list-sub-inner > li > .txt {
+    text-align: right;
+    font-size: 16px;
+}
+
+.txt, .txt span {
+    word-break: break-all;
+}
+
+.div-price .list-sub-inner > li > span {
+    display: table-cell;
+    color: #666;
+    padding: 3px 0;
+}
