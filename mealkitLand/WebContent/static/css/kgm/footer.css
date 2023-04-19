@@ -121,14 +121,6 @@ h5 {
 ol, ul {
     list-style: none;
 }
-ul {
-    display: block;
-    /* list-style-type: disc; */
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
 .footer-biz-info li .company-name {
     font-size: 14px;
     color: #333;
@@ -169,13 +161,6 @@ a {
     margin-bottom: 3px;
 }
 
-p {
-    display: block;
-    /* margin-block-start: 1em; */
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
 .footer-info .customer-info > li {
     display: inline-block;
     margin-right: 10px;
