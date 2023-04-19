@@ -1,16 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿ÂπŸ±∏¥œ</title>
+    <title>Ïû•Î∞îÍµ¨Îãà</title>
     <link rel="stylesheet" href="../../static/css/hdh/mypage5.css">
 </head>
 <body>
     <div class="wrap" style>
+    <%@include file = "/templates/kgm/header.jsp" %>
     <section id="contents" class="container">
         <div class="content-wrap">
             <div class="frame-sm">
@@ -19,30 +20,30 @@
                         <nav class="aside-menu">
                             <ul class="menu-list">
                                 <li>
-                                    <a class="menu">≥ª ¡§∫∏∞¸∏Æ</a>
+                                    <a class="menu">ÎÇ¥ Ï†ïÎ≥¥Í¥ÄÎ¶¨</a>
                                     <ul class="depth2">
                                         <li>
-                                            <a>»∏ø¯¡§∫∏ ºˆ¡§</a>
+                                            <a>ÌöåÏõêÏ†ïÎ≥¥ ÏàòÏ†ï</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a class="menu">∏ﬁ¥∫</a>
+                                    <a class="menu">Î©îÎâ¥</a>
                                     <ul class="depth2">
                                         <li class>
-                                            <a>≥™¿« ±∏µ∂≥ªø™</a>
+                                            <a>ÎÇòÏùò Íµ¨ÎèÖÎÇ¥Ïó≠</a>
                                         </li>
                                         <li class>
-                                            <a>πËº€ ¡∂»∏</a>
+                                            <a>Î∞∞ÏÜ° Ï°∞Ìöå</a>
                                         </li>
                                         <li class>
-                                            <a>∞·¡¶/√Îº“≥ªø™</a>
+                                            <a>Í≤∞Ï†ú/Ï∑®ÏÜåÎÇ¥Ïó≠</a>
                                         </li>
                                         <li class>
-                                            <a>¿ÂπŸ±∏¥œ</a>
+                                            <a>Ïû•Î∞îÍµ¨Îãà</a>
                                         </li>
                                         <li class>
-                                            <a>≥ª ∞‘Ω√±€ ºˆ¡§/ªË¡¶</a>
+                                            <a>ÎÇ¥ Í≤åÏãúÍ∏Ä ÏàòÏ†ï/ÏÇ≠Ï†ú</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -53,18 +54,18 @@
                 <div class="frame-right">
                     <div class="frame-cnt-inner">
                         <div class="menu-title-area">
-                            <h3 class="title-menu">¿ÂπŸ±∏¥œ</h3>
+                            <h3 class="title-menu">Ïû•Î∞îÍµ¨Îãà</h3>
                             <div class="right" style="display: none">
                                 <button type="button" class="btn-link-txt5" id="btnDeltAll">
                                     <i class="ico-btn-delete"></i>
-                                    <span>¿¸√ºªË¡¶</span>
+                                    <span>Ï†ÑÏ≤¥ÏÇ≠Ï†ú</span>
                                 </button>
                             </div>
                         </div>
                         <div class="grid-list-wrap ui-compare-select">
                             <ul id="wishList" class="prd-item-list grid-area-span4 gap33">
                                 <div class="no-data">
-                                    <p class="message">¿ÂπŸ±∏¥œ∞° ∫ÒæÓ¿÷Ω¿¥œ¥Ÿ.</p>
+                                    <p class="message">Ïû•Î∞îÍµ¨ÎãàÍ∞Ä ÎπÑÏñ¥ÏûàÏäµÎãàÎã§.</p>
                                 </div>
                             </ul>
                         </div>
@@ -72,7 +73,8 @@
                 </div>
             </div>
         </div>
-    </div>
     </section>
+	<%@include file = "/templates/kgm/footer.jsp" %>
+    </div>
 </body>
 </html>

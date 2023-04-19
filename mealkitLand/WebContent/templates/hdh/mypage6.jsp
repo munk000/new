@@ -1,16 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>≥ª ∞‘Ω√±€ ºˆ¡§/ªË¡¶</title>
+    <title>ÎÇ¥ Í≤åÏãúÍ∏Ä ÏàòÏ†ï/ÏÇ≠Ï†ú</title>
     <link rel="stylesheet" href="../../static/css/hdh/mypage6.css">
 </head>
 <body>
     <div class="wrap" style>
+    <%@include file = "/templates/kgm/header.jsp" %>
     <section id="contents" class="container">
         <div class="content-wrap">
             <div class="frame-sm">
@@ -19,30 +20,30 @@
                         <nav class="aside-menu">
                             <ul class="menu-list">
                                 <li>
-                                    <a class="menu">≥ª ¡§∫∏∞¸∏Æ</a>
+                                    <a class="menu">ÎÇ¥ Ï†ïÎ≥¥Í¥ÄÎ¶¨</a>
                                     <ul class="depth2">
                                         <li>
-                                            <a>»∏ø¯¡§∫∏ ºˆ¡§</a>
+                                            <a>ÌöåÏõêÏ†ïÎ≥¥ ÏàòÏ†ï</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a class="menu">∏ﬁ¥∫</a>
+                                    <a class="menu">Î©îÎâ¥</a>
                                     <ul class="depth2">
                                         <li class>
-                                            <a>≥™¿« ±∏µ∂≥ªø™</a>
+                                            <a>ÎÇòÏùò Íµ¨ÎèÖÎÇ¥Ïó≠</a>
                                         </li>
                                         <li class>
-                                            <a>πËº€ ¡∂»∏</a>
+                                            <a>Î∞∞ÏÜ° Ï°∞Ìöå</a>
                                         </li>
                                         <li class>
-                                            <a>∞·¡¶/√Îº“≥ªø™</a>
+                                            <a>Í≤∞Ï†ú/Ï∑®ÏÜåÎÇ¥Ïó≠</a>
                                         </li>
                                         <li class>
-                                            <a>¿ÂπŸ±∏¥œ</a>
+                                            <a>Ïû•Î∞îÍµ¨Îãà</a>
                                         </li>
                                         <li class>
-                                            <a>≥ª ∞‘Ω√±€ ºˆ¡§/ªË¡¶</a>
+                                            <a>ÎÇ¥ Í≤åÏãúÍ∏Ä ÏàòÏ†ï/ÏÇ≠Ï†ú</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -53,20 +54,20 @@
                 <div class="frame-right">
                     <div class="frame-cnt-inner">
                         <div class="menu-title-area">
-                            <h3 class="title-menu">≥ª ∞‘Ω√±€ ºˆ¡§/ªË¡¶</h3>
+                            <h3 class="title-menu">ÎÇ¥ Í≤åÏãúÍ∏Ä ÏàòÏ†ï/ÏÇ≠Ï†ú</h3>
                         </div>
                         <div id="div_done" class="mt10">
                             <form id="frmDone">
                                 <div class="board-list ui-toggle">
                                     <div class="list-toggle-head">
                                         <p class="title">
-                                            "≥ª ∞‘Ω√±€"
-                                            <span class="text-primary">0∞«</span>
+                                            "ÎÇ¥ Í≤åÏãúÍ∏Ä"
+                                            <span class="text-primary">0Í±¥</span>
                                         </p>
                                     </div>
                                     <div class="ui-toggle-content">
                                         <table class="sub-tb-list">
-                                            <caption>∞‘Ω√±€ ∏Ò∑œ</caption>
+                                            <caption>Í≤åÏãúÍ∏Ä Î™©Î°ù</caption>
                                             <colgroup>
                                                 <col style="width:96px">
                                                 <col style="width:auto">
@@ -75,16 +76,16 @@
                                             </colgroup>
                                             <thead>
                                                 <tr>
-                                                    <th scope="col" colspan="2">ªÛ«∞</th>
-                                                    <th scope="col">¿€º∫¿œ</th>
-                                                    <th scope="col">∞‘Ω√±€¿€º∫ </th>
+                                                    <th scope="col" colspan="2">ÏÉÅÌíà</th>
+                                                    <th scope="col">ÏûëÏÑ±Ïùº</th>
+                                                    <th scope="col">Í≤åÏãúÍ∏ÄÏûëÏÑ± </th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td colspan="4" style="text-align: center">
                                                         <div class="no-data">
-                                                            <p class="message">¿€º∫µ» ∞‘Ω√±€¿Ã æ¯Ω¿¥œ¥Ÿ.</p>
+                                                            <p class="message">ÏûëÏÑ±Îêú Í≤åÏãúÍ∏ÄÏù¥ ÏóÜÏäµÎãàÎã§.</p>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -101,7 +102,8 @@
                 </div>
             </div>
         </div>
-    </div>
     </section>
+	<%@include file = "/templates/kgm/footer.jsp" %>
+    </div>
 </body>
 </html>
