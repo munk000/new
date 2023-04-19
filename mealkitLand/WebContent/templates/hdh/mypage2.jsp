@@ -1,16 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>≥™¿« ±∏µ∂≥ªø™</title>
+    <title>ÎÇòÏùò Íµ¨ÎèÖÎÇ¥Ïó≠</title>
     <link rel="stylesheet" href="../../static/css/hdh/mypage2.css">
 </head>
 <body>
     <div class="wrap" style>
+    <%@include file = "/templates/kgm/header.jsp" %>
     <section id="contents" class="container">
         <div class="content-wrap">
             <div class="frame-sm">
@@ -19,30 +20,30 @@
                         <nav class="aside-menu">
                             <ul class="menu-list">
                                 <li>
-                                    <a class="menu">≥ª ¡§∫∏∞¸∏Æ</a>
+                                    <a class="menu">ÎÇ¥ Ï†ïÎ≥¥Í¥ÄÎ¶¨</a>
                                     <ul class="depth2">
                                         <li>
-                                            <a>»∏ø¯¡§∫∏ ºˆ¡§</a>
+                                            <a>ÌöåÏõêÏ†ïÎ≥¥ ÏàòÏ†ï</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a class="menu">∏ﬁ¥∫</a>
+                                    <a class="menu">Î©îÎâ¥</a>
                                     <ul class="depth2">
                                         <li class>
-                                            <a>≥™¿« ±∏µ∂≥ªø™</a>
+                                            <a>ÎÇòÏùò Íµ¨ÎèÖÎÇ¥Ïó≠</a>
                                         </li>
                                         <li class>
-                                            <a>πËº€ ¡∂»∏</a>
+                                            <a>Î∞∞ÏÜ° Ï°∞Ìöå</a>
                                         </li>
                                         <li class>
-                                            <a>∞·¡¶/√Îº“≥ªø™</a>
+                                            <a>Í≤∞Ï†ú/Ï∑®ÏÜåÎÇ¥Ïó≠</a>
                                         </li>
                                         <li class>
-                                            <a>¿ÂπŸ±∏¥œ</a>
+                                            <a>Ïû•Î∞îÍµ¨Îãà</a>
                                         </li>
                                         <li class>
-                                            <a>≥ª ∞‘Ω√±€ ºˆ¡§/ªË¡¶</a>
+                                            <a>ÎÇ¥ Í≤åÏãúÍ∏Ä ÏàòÏ†ï/ÏÇ≠Ï†ú</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -53,32 +54,33 @@
                 <div class="frame-right">
                     <div class="frame-cnt-inner">
                         <div class="menu-title-area">
-                            <h3 class="title-menu">≥™¿« ±∏µ∂≥ªø™</h3>
+                            <h3 class="title-menu">ÎÇòÏùò Íµ¨ÎèÖÎÇ¥Ïó≠</h3>
                         </div>
                         <div class="page-mid">
                             <ul class="top-tab-menu">
                                 <li class="current">
-                                    <a>¡÷πÆ≥ªø™</a>
+                                    <a>Ï£ºÎ¨∏ÎÇ¥Ïó≠</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="search-box ui-toggle">
                             <div class="search-head">
-                                <p class="search-period">¡∂»∏±‚∞£ 2023.03.18 ~ 2023.04.18 (√÷±Ÿ 1∞≥ø˘)</p>
+                                <p class="search-period">Ï°∞ÌöåÍ∏∞Í∞Ñ 2023.03.18 ~ 2023.04.18 (ÏµúÍ∑º 1Í∞úÏõî)</p>
                                 <botton type="botton" class="btn-link-txt2 ui toggle-btn">
-                                    <span>¡∂»∏º≥¡§</span>
+                                    <span>Ï°∞ÌöåÏÑ§Ï†ï</span>
                                     <i class="ico-arr-toggle"></i>
                                 </botton>
                             </div>
                         </div>
                         <div class="no-data-type1 id=noDataWrap">
-                            <p class="message">√÷±Ÿ 1∞≥ø˘ ≥ªø° ¡÷πÆ≥ªø™¿Ã æ¯Ω¿¥œ¥Ÿ.</p>
+                            <p class="message">ÏµúÍ∑º 1Í∞úÏõî ÎÇ¥Ïóê Ï£ºÎ¨∏ÎÇ¥Ïó≠Ïù¥ ÏóÜÏäµÎãàÎã§.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
+    <%@include file = "/templates/kgm/footer.jsp" %>
+    </div>
 </body>
 </html>

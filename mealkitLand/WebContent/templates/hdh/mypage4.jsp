@@ -1,16 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>∞·¡¶/√Îº“≥ªø™</title>
+    <title>Í≤∞Ï†ú/Ï∑®ÏÜåÎÇ¥Ïó≠</title>
     <link rel="stylesheet" href="../../static/css/hdh/mypage4.css">
 </head>
 <body>
     <div class="wrap" style>
+    <%@include file = "/templates/kgm/header.jsp" %>
     <section id="contents" class="container">
         <div class="content-wrap">
             <div class="frame-sm">
@@ -19,30 +20,30 @@
                         <nav class="aside-menu">
                             <ul class="menu-list">
                                 <li>
-                                    <a class="menu">≥ª ¡§∫∏∞¸∏Æ</a>
+                                    <a class="menu">ÎÇ¥ Ï†ïÎ≥¥Í¥ÄÎ¶¨</a>
                                     <ul class="depth2">
                                         <li>
-                                            <a>»∏ø¯¡§∫∏ ºˆ¡§</a>
+                                            <a>ÌöåÏõêÏ†ïÎ≥¥ ÏàòÏ†ï</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a class="menu">∏ﬁ¥∫</a>
+                                    <a class="menu">Î©îÎâ¥</a>
                                     <ul class="depth2">
                                         <li class>
-                                            <a>≥™¿« ±∏µ∂≥ªø™</a>
+                                            <a>ÎÇòÏùò Íµ¨ÎèÖÎÇ¥Ïó≠</a>
                                         </li>
                                         <li class>
-                                            <a>πËº€ ¡∂»∏</a>
+                                            <a>Î∞∞ÏÜ° Ï°∞Ìöå</a>
                                         </li>
                                         <li class>
-                                            <a>∞·¡¶/√Îº“≥ªø™</a>
+                                            <a>Í≤∞Ï†ú/Ï∑®ÏÜåÎÇ¥Ïó≠</a>
                                         </li>
                                         <li class>
-                                            <a>¿ÂπŸ±∏¥œ</a>
+                                            <a>Ïû•Î∞îÍµ¨Îãà</a>
                                         </li>
                                         <li class>
-                                            <a>≥ª ∞‘Ω√±€ ºˆ¡§/ªË¡¶</a>
+                                            <a>ÎÇ¥ Í≤åÏãúÍ∏Ä ÏàòÏ†ï/ÏÇ≠Ï†ú</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -54,49 +55,49 @@
                     <div class="frame-cnt-inner">
                         <form id="myPageOrderList">
                             <div class="menu-title-area">
-                                <h3 class="title-menu">∞·¡¶/√Îº“≥ªø™</h3>
+                                <h3 class="title-menu">Í≤∞Ï†ú/Ï∑®ÏÜåÎÇ¥Ïó≠</h3>
                             </div>
                             <div class="search-box ui-toggle on" style="margin-top: 10px">
                                 <div class="search-head">
-                                    <p class="searn-period">¡∂»∏±‚∞£ 2023.03.19 ~ 2023.04.19(√÷±Ÿ 1∞≥ø˘)</p>
+                                    <p class="searn-period">Ï°∞ÌöåÍ∏∞Í∞Ñ 2023.03.19 ~ 2023.04.19(ÏµúÍ∑º 1Í∞úÏõî)</p>
                                 </div>
                                 <div class="search-detail ui-toggle-content">
                                     <fieldset>
-                                        <legend>ªÛºº ∞Àªˆ</legend>
+                                        <legend>ÏÉÅÏÑ∏ Í≤ÄÏÉâ</legend>
                                         <ul class="radio-list">
                                             <li>
                                                 <div class="custom-radio">
                                                     <input type="radio" id="mypage-order-search-radio-2weeks" class="radio-btn-type2" name="mypage-order-search-radio" value="2WEEKS">
-                                                    <label for="mypage-order-search-radio-2weeks">2¡÷¿œ</label>
+                                                    <label for="mypage-order-search-radio-2weeks">2Ï£ºÏùº</label>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="custom-radio">
                                                     <input type="radio" id="mypage-order-search-radio-1month" class="radio-btn-type2" name="mypage-order-search-radio" value="1MONTH" checked="">
-                                                    <label for="mypage-order-search-radio-1month">1∞≥ø˘</label>
+                                                    <label for="mypage-order-search-radio-1month">1Í∞úÏõî</label>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="custom-radio">
                                                     <input type="radio" id="mypage-order-search-radio-3months" class="radio-btn-type2" name="mypage-order-search-radio" value="3MONTHS">
-                                                    <label for="mypage-order-search-radio-3months">3∞≥ø˘</label>
+                                                    <label for="mypage-order-search-radio-3months">3Í∞úÏõî</label>
                                             </li>
                                             <li>
                                                 <div class="custom-radio">
                                                     <input type="radio" id="mypage-order-search-radio-6months" class="radio-btn-type2" name="mypage-order-search-radio" value="6MONTHS">
-                                                    <label for="mypage-order-search-radio-6months">6∞≥ø˘</label>
+                                                    <label for="mypage-order-search-radio-6months">6Í∞úÏõî</label>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="custom-radio">
                                                     <input type="radio" id="mypage-order-search-radio-12months" class="radio-btn-type2" name="mypage-order-search-radio" value="12MONTHS">
-                                                    <label for="mypage-order-search-radio-12months">12∞≥ø˘</label>
+                                                    <label for="mypage-order-search-radio-12months">12Í∞úÏõî</label>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="custom-radio">
                                                     <input type="radio" id="mypage-order-search-radio-period" class="radio-btn-type2 date-setting" name="mypage-order-search-radio" value="PERIOD">
-                                                    <label for="mypage-order-search-radio-period">±‚∞£º≥¡§</label>
+                                                    <label for="mypage-order-search-radio-period">Í∏∞Í∞ÑÏÑ§Ï†ï</label>
                                                 </div>
                                             </li>
                                         </ul>
@@ -106,19 +107,19 @@
                                                     <div class="custom-checkbox">
                                                         <input type="checkbox" id="dlvTypeAll" class="checkbox dlvTypeAll" name="dlvTypeAll" value="N" checked="">
                                                         <label for="dlvTypeAll">
-                                                            ¿¸√º
+                                                            Ï†ÑÏ≤¥
                                                         </label>
                                                     </div>
                                                     <div class="custom-checkbox">
                                                         <input type="checkbox" id="dlvNrm" class="checkbox dlvType" name="dlvNrm" value="N" checked="">
                                                         <label for="dlvNrm">
-                                                            ¿œπ›πËº€
+                                                            ÏùºÎ∞òÎ∞∞ÏÜ°
                                                         </label>
                                                     </div>
                                                     <div class="custom-checkbox">
                                                         <input type="checkbox" id="dlvRtn" class="checkbox dlvType" name="dlvRtn" value="N" checked="">
                                                         <label for="dlvRtn">
-                                                            ¡§±‚πËº€
+                                                            Ï†ïÍ∏∞Î∞∞ÏÜ°
                                                         </label>
                                                     </div>
                                                 </div>
@@ -126,13 +127,13 @@
                                                     <div class="input-group-btn dis-inb">
                                                         <a href="javascript:;" onclick="onSubmitMyPageOrderSearch();"
                                                         class="btn-form btn-black">
-                                                        <span>¡∂»∏«œ±‚</span>
+                                                        <span>Ï°∞ÌöåÌïòÍ∏∞</span>
                                                         </a>
                                                     </div>
                                                     <div class="input-group-btn dis-inb">
                                                         <button type="button" id="btnInit" class="btn-form btn-link-txt5">
                                                             <i class="ico-btn-refresh"></i>
-                                                            <span>√ ±‚»≠</span>
+                                                            <span>Ï¥àÍ∏∞Ìôî</span>
                                                         </button>
                                                     </div>
                                                 </div>
@@ -143,13 +144,14 @@
                             </div>
                          </form>
                         <div class="no-data-typel">
-                            <p class="message">√÷±Ÿ 1∞≥ø˘ ≥ªø° ¡÷πÆ≥ªø™¿Ã æ¯Ω¿¥œ¥Ÿ.  </p>
+                            <p class="message">ÏµúÍ∑º 1Í∞úÏõî ÎÇ¥Ïóê Ï£ºÎ¨∏ÎÇ¥Ïó≠Ïù¥ ÏóÜÏäµÎãàÎã§.  </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
+	<%@include file = "/templates/kgm/footer.jsp" %>
+    </div>
 </body>
 </html>

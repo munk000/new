@@ -354,6 +354,7 @@ button, input {
     max-width: 1100px;
     margin: 0 auto;
     margin-top: 45px;
+    padding-top: 100px;
 }
 
 .content-wrap {
