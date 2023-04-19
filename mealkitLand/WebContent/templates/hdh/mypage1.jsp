@@ -1,16 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¸¶ÀÌÆäÀÌÁö</title>
+    <title>ë§ˆì´íŽ˜ì´ì§€</title>
     <link rel="stylesheet" href="../../static/css/hdh/mypage1.css">
 </head>
 <body>
     <div class="wrap" style>
+    <%@include file = "/templates/kgm/header.jsp" %>
     <section id="contents" class="container">
         <div class="content-wrap">
             <div class="frame-sm">
@@ -19,30 +20,30 @@
                         <nav class="aside-menu">
                             <ul class="menu-list">
                                 <li>
-                                    <a class="menu">³» Á¤º¸°ü¸®</a>
+                                    <a class="menu">ë‚´ ì •ë³´ê´€ë¦¬</a>
                                     <ul class="depth2">
                                         <li>
-                                            <a>È¸¿øÁ¤º¸ ¼öÁ¤</a>
+                                            <a>íšŒì›ì •ë³´ ìˆ˜ì •</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a class="menu">¸Þ´º</a>
+                                    <a class="menu">ë©”ë‰´</a>
                                     <ul class="depth2">
                                         <li class>
-                                            <a>³ªÀÇ ±¸µ¶³»¿ª</a>
+                                            <a>ë‚˜ì˜ êµ¬ë…ë‚´ì—­</a>
                                         </li>
                                         <li class>
-                                            <a>¹è¼Û Á¶È¸</a>
+                                            <a>ë°°ì†¡ ì¡°íšŒ</a>
                                         </li>
                                         <li class>
-                                            <a>°áÁ¦/Ãë¼Ò³»¿ª</a>
+                                            <a>ê²°ì œ/ì·¨ì†Œë‚´ì—­</a>
                                         </li>
                                         <li class>
-                                            <a>Àå¹Ù±¸´Ï</a>
+                                            <a>ìž¥ë°”êµ¬ë‹ˆ</a>
                                         </li>
                                         <li class>
-                                            <a>³» °Ô½Ã±Û ¼öÁ¤/»èÁ¦</a>
+                                            <a>ë‚´ ê²Œì‹œê¸€ ìˆ˜ì •/ì‚­ì œ</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -54,16 +55,16 @@
                     <div class="frame-right" id="memberInfoContents">
                         <div class="frame-cnt-inner">
                             <div class="menu-title-area">
-                                <h3 class="title-menu">È¸¿øÁ¤º¸ ¼öÁ¤ </h3>
+                                <h3 class="title-menu">íšŒì›ì •ë³´ ìˆ˜ì • </h3>
                             </div><!--// menu-title-area -->
                                 <div class="board-form type3">
                                     <div class="input-guide-box">
                                         <div class="inner">
-                                            <h4 class="box-tit">ºñ¹Ð¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.</h4>
-                                            <p class="txt">È¸¿ø´ÔÀÇ °³ÀÎÁ¤º¸ º¸È£¸¦ À§ÇØ ºñ¹Ð¹øÈ£¸¦ ´Ù½Ã ÇÑ¹ø È®ÀÎ ÇÕ´Ï´Ù.<br>ºñ¹Ð¹øÈ£°¡ ³ëÃâµÇÁö ¾Êµµ·Ï ÁÖÀÇÇØÁÖ¼¼¿ä.</p>
+                                            <h4 class="box-tit">ë¹„ë°€ë²ˆí˜¸ë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”.</h4>
+                                            <p class="txt">íšŒì›ë‹˜ì˜ ê°œì¸ì •ë³´ ë³´í˜¸ë¥¼ ìœ„í•´ ë¹„ë°€ë²ˆí˜¸ë¥¼ ë‹¤ì‹œ í•œë²ˆ í™•ì¸ í•©ë‹ˆë‹¤.<br>ë¹„ë°€ë²ˆí˜¸ê°€ ë…¸ì¶œë˜ì§€ ì•Šë„ë¡ ì£¼ì˜í•´ì£¼ì„¸ìš”.</p>
                                             <div class="input-group type-lg w-full">
-                                                <input type="password" id="password" name="password" class="input-text" placeholder="ºñ¹Ð¹øÈ£ ÀÔ·Â">
-                                                <span class="input-group-btn"><button type="button" class="btn-form btn-primary btn_submit"><span>È®ÀÎ</span></button></span>
+                                                <input type="password" id="password" name="password" class="input-text" placeholder="ë¹„ë°€ë²ˆí˜¸ ìž…ë ¥">
+                                                <span class="input-group-btn"><button type="button" class="btn-form btn-primary btn_submit"><span>í™•ì¸</span></button></span>
                                             </div>
                                         </div>
                                     </div><!--// input-guide-box -->
@@ -75,7 +76,8 @@
                 </div></form>
             </div>
         </div>
-    </div>
 	</section>
+	<%@include file = "/templates/kgm/footer.jsp" %>
+    </div>
 </body>
 </html>
