@@ -520,6 +520,24 @@ input[type="radio" i] {
 	transform: rotate(-45deg);
 }
 
+.ico-arr-toggle:before {
+	top: 50%;
+	right: 0;
+	width: 60%;
+	height: 1px;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.ico-arr-toggle:after {
+	top: 50%;
+	left: 0;
+	width: 60%;
+	height: 1px;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
 .ui-accordion-view {
 	position: relative;
 	display: none;
