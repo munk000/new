@@ -1,1 +1,934 @@
 @charset "UTF-8";
+
+/* Font  */
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url('font/Pretendard-Bold.subset.woff2')
+		format('woff2'), url('font/Pretendard-Bold.subset.woff')
+		format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'),
+		url('font/Pretendard-Medium.subset.woff2') format('woff2'),
+		url('font/Pretendard-Medium.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'),
+		url('font/Pretendard-Regular.subset.woff2') format('woff2'),
+		url('font/Pretendard-Regular.subset.woff') format('woff');
+}
+/* 태그 선택자 */
+/* 태그선택자 다가져오기 */
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	    position: relative;
+    min-width: 1300px;
+}
+
+html, body {
+	height: 100%;
+	color: #333;
+	font-size: 14px;
+	font-weight: 400; /*line-height:1.4; */
+	font-family: 'Pretendard', sans-serif;
+	word-break: break-all;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+	b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+	details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+	output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup,
+	main, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table td, table th {
+	word-break: keep-all;
+	word-wrap: break-word;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style: normal;
+}
+
+hr {
+	display: block;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #b5b1b2;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+}
+
+a {
+	background: transparent;
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover, a:active {
+	text-decoration: none;
+	outline: 0;
+}
+
+address, caption, strong[lang=en], em, cite, b {
+	font-weight: normal;
+	font-style: normal;
+}
+
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+legend, caption {
+	position: absolute;
+	left: -99999px;
+	display: block;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	text-indent: -99999px;
+	clip: rect(0, 0, 0, 0);
+	*display: none;
+}
+
+fieldset, img {
+	border: 0
+}
+
+label, select, input, textarea {
+	vertical-align: middle;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: top;
+}
+
+img:not([src]) {
+	visibility: hidden;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+legend.block {
+	display: block;
+	position: static;
+	left: 0;
+	width: auto;
+	height: auto;
+	overflow: visible;
+	text-indent: 0;
+}
+
+/*---------------  */
+
+/* 전체를 감싸는 컨테이너 클래스 */
+.container {
+	position: relative;
+	min-height: 700px;
+	padding-bottom: 100px;
+}
+
+/* 그안에 또 내용을 감싸는 div 태그 */
+.content-wrap {
+	min-height: 700px;
+}
+
+.frame-sm {
+	position: relative;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+/* result-page-top 페이지 */
+.result-page-top {
+	text-align: center;
+	padding-top: 70px;
+}
+/* 그안에 ico-img-check i태그  */
+.ico-img-check {
+	width: 56px;
+	height: 60px;
+	background-position: -150px 0;
+}
+
+[class^="ico-img-"] {
+	display: inline-block;
+	background-image: url(https://www.rankingdak.com/resources/pc/images/icon/ico_img.png);
+}
+
+/* 결과페이지탑 태그안에 h2 태그 */
+.result-page-top .title {
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 40px;
+	margin-top: 20px;
+}
+
+.result-page-top .title strong {
+	font-weight: 700;
+}
+
+/* order-info-box 클래스명을 가진 div 태그 */
+.result-page-top ~ .orderer-info-box {
+	margin-top: 50px;
+}
+
+.orderer-info-box {
+	position: relative;
+	padding: 25px 240px 25px 25px;
+	width: 100%;
+	border: 1px solid #333;
+	border-top: 2px solid #333;
+}
+
+/* order-info-box 안에 inner-area */
+.orderer-info-box .inner-area {
+	display: table;
+	min-height: 67px;
+}
+/* order-info-box 안에 name-area */
+.orderer-info-box .inner-area .name-area {
+	display: table-cell;
+	vertical-align: middle;
+	padding-right: 30px;
+	border-right: 1px solid #ccc;
+}
+
+/* name area 안에 h3태그 */
+.blind {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+/* name area 안에 inner div태그 */
+
+/* 그 안에 ico-bl-home i태그 */
+.name-area .ico-bl-home {
+	vertical-align: middle;
+	margin-top: -3px;
+}
+
+.ico-bl-home {
+	background-position: 0 -110px;
+	width: 22px;
+	height: 25px;
+}
+
+[class^="ico-bl-"] {
+	display: inline-block;
+	background-image: url(/resources/pc/images/icon/ico_bullet.png);
+}
+/* name 클래스를 가진 strong 태그 */
+.name-area .name {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	font-size: 18px;
+}
+/* order-info-box 안에 address-area */
+.orderer-info-box .inner-area .address-area {
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 30px;
+}
+/* address-area 안에 addr 클래스를 가진 p 태그 */
+.address-area .addr {
+	color: #333;
+	font-size: 18px;
+}
+
+/* phone 클래스를 가진 p태그 */
+.address-area .phone {
+	color: #666;
+	font-size: 18px;
+	margin-top: 5px;
+}
+
+/* 배송지 변경 버튼 */
+.orderer-info-box .btn-basic-sm {
+	position: absolute;
+	right: 50px;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	width: 140px;
+	height: 40px;
+}
+
+.btn-black {
+	color: #fff;
+	background: #333;
+	border: 1px solid #333;
+}
+
+.btn-basic-sm {
+	height: 34px;
+	padding: 5px 10px;
+}
+
+[class*="btn-basic-"], [class*="btn-option"] {
+	border-radius: 6px;
+}
+
+[class*="btn-basic-"], [class*="btn-option"], [class*="btn-rud-"] {
+	display: inline-block;
+	text-align: center;
+	border: 1px solid transparent;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+
+/* 배송지변경 버튼 안에 span태그 */
+.orderer-info-box .btn-basic-sm>span {
+	line-height: 1.9;
+	font-size: 15px;
+}
+
+.btn-basic-sm>span {
+	font-size: 13px;
+	line-height: 1.7;
+}
+
+[class*="btn-basic-"]>span, [class*="btn-option"]>span, [class*="btn-rud-"]>span
+	{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* orderer-info-box 입력값 히든  */
+
+/* 주문상품 내역  */
+
+/* cart-list-area와 order-complete을 가진 div태그 */
+.orderer-info-box ~ .cart-list-area.order-complete {
+	margin-top: 30px;
+}
+
+.result-page-top ~ .cart-list-area.order-complete {
+	margin-top: 65px;
+}
+
+.cart-list-area {
+	border-top: 1px solid #666;
+}
+
+/* 리스트 헤드 */
+.cart-list-area.order-complete .list-head {
+	padding: 18px 30px 17px;
+}
+
+.cart-list-area .list-head {
+	position: relative;
+	padding: 20px 25px 20px 15px;
+	border: 1px solid #ccc;
+	border-top: 0;
+	border-bottom: 1px solid #ccc;
+}
+
+/*그안에 h3 태그 주문상품내역 글을 담은 태그  */
+.cart-list-area .list-head .tit {
+	font-size: 16px;
+}
+
+/*cart-list를 담은 ul 태그  */
+.cart-list {
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+/* 위에 ul 안에 li 태그 */
+.cart-list-area.order-complete .cart-list>li {
+	padding: 30px 0;
+}
+
+.cart-list>li {
+	position: relative;
+	border-top: 0;
+	padding: 30px 0 0 0;
+}
+
+/* li 태그안에 prd-info-area 클래스를 가진 div 태그 */
+.cart-list>li .prd-info-area:not(.option-line) {
+	padding: 0 25px;
+}
+
+.prd-info-area {
+	position: relative;
+}
+
+/* 위에 안에 inner 클래스를 가진 태그 */
+.prd-info-area .inner {
+	display: table;
+	table-layout: auto;
+	width: 100%;
+}
+
+/* colum img 클래스를 가진 div 태그 */
+.prd-info-area .column.img {
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	position: relative;
+}
+
+.prd-info-area .column {
+	display: table-cell;
+	vertical-align: top;
+	text-align: center;
+}
+
+/* colum와 img 클래스를 가진 div 태그안에 img태그 */
+.prd-info-area .column.img img {
+	width: 80px;
+	height: 80px;
+}
+
+/* column와 tit 클래스명을 가진 div 태그 */
+.prd-info-area .column.tit {
+	padding: 0 10px 0 15px;
+	text-align: left;
+}
+
+/* tit 클래스명을 가진 p태그 */
+.prd-info-area .column.tit .tit {
+	font-size: 15px;
+	color: #333;
+	margin-bottom: 3px;
+}
+
+/* 위에 p태그 안에 a 태그 */
+/* css 없음 */
+
+/*desc라는 class 명을 가진 p 태그 */
+.prd-info-area .column.tit .desc {
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 15px;
+}
+
+/* price-item 클래스명을 가진 ul 태그 */
+
+/* 그 안에 li 태그  */
+.prd-info-area .column.tit .price-item>li {
+	font-size: 14px;
+	color: #333;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 4px;
+}
+/* price-item 안에 li 태그 안에 span태그 */
+.cart-list .prd-info-area .column.tit .price-item>li:first-child .num {
+	font-size: 16px;
+}
+
+/* column와 ea를 가진 div 태그 */
+.prd-info-area .column.ea {
+	width: 100px;
+	vertical-align: middle;
+}
+
+/* column와 price 와 text-center 클래스명을 가진 div 태그 */
+.prd-info-area .column.price {
+	width: 130px;
+	vertical-align: middle;
+	text-align: right;
+	word-break: keep-all;
+}
+
+/* 그 안에 span 태그 */
+.prd-info-area .column.price .num {
+	font-size: 18px;
+	color: #333;
+	font-weight: 700;
+}
+
+/* colum과 point 클래스명을가진 div 태그 */
+.prd-info-area .column.point {
+	font-size: 15px;
+}
+
+.prd-info-area .column.point {
+	width: 80px;
+	vertical-align: middle;
+	word-break: keep-all;
+}
+
+/* order-payment-area order-complete 클래스명을 가진 div태그 */
+.cart-list-area ~ .order-payment-area.order-complete {
+	margin-top: 30px;
+}
+
+.order-payment-area.order-complete {
+	padding: 0;
+}
+
+.order-payment-area {
+	position: relative;
+	padding-right: 340px;
+}
+
+/* order-info 명을 가진 클래스 */
+.order-payment-area.order-complete .order-info {
+	float: left;
+	width: 760px;
+	border: 1px solid #ccc;
+	border-top: 0;
+	padding-bottom: 19px;
+}
+
+.order-info {
+	position: relative;
+	padding: 0 0 60px;
+}
+
+/* list-head 클래스명을 가진 div 태그 */
+.order-payment-area.order-complete .list-head {
+	padding: 18px 30px 17px;
+	border-bottom: 1px solid #ccc;
+}
+
+.order-info .list-head {
+	position: relative;
+	padding: 30px 0 20px;
+	border-top: 1px solid #666;
+}
+
+/* title-list 클래스명을가진 h3 */
+.order-info .title-list {
+	font-size: 16px;
+	font-weight: 700;
+	display: inline-block;
+}
+
+/* inner 클래스명을 가진 div 태그  */
+.order-payment-area.order-complete .inner {
+	padding: 27px 30px 26px;
+}
+
+/* lineless-table와 type1을 가진 div 태그 */
+.order-info .lineless-table.type1 {
+	margin-bottom: -10px;
+}
+
+/* table 태그 */
+.lineless-table table {
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+
+/* 테이블안에 tr th 들 */
+.order-payment-area.order-complete .order-info .lineless-table td,
+	.order-payment-area.order-complete .order-info .lineless-table th {
+	padding: 15px 0;
+}
+
+.lineless-table th {
+	text-align: left;
+	font-weight: normal;
+	padding: 10px 0;
+	font-size: 13px;
+	vertical-align: middle;
+}
+
+.lineless-table td {
+	text-align: left;
+	font-weight: normal;
+	padding: 10px 0;
+	font-size: 15px;
+	vertical-align: middle;
+}
+
+table td, table th {
+	word-break: keep-all;
+	word-wrap: break-word;
+}
+
+/* order-info 부분 */
+.order-payment-area.order-complete .payment-info-box {
+	border: 2px solid #333;
+	background: #fff;
+}
+
+.payment-info-box>.tit.type2 {
+	padding-bottom: 18px;
+	border-bottom: 1px solid #ccc;
+}
+
+.payment-info-box>.tit {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.order-price.type2 .div-price {
+	padding: 10px 0;
+}
+
+.order-price .total-price {
+	border-top: 2px solid #999;
+	padding: 10px 0;
+}
+
+.order-price .list-inner {
+	overflow: hidden;
+}
+
+.order-price .list-inner .tit {
+	float: left;
+	display: block;
+	padding: 5px 0;
+	font-size: 14px;
+}
+
+.order-price .list-inner .price {
+	float: right;
+	font-size: 18px;
+	text-align: right;
+}
+
+.order-price.type2 .total-price .list-inner .price .num {
+	font-size: 26px;
+	font-weight: 700;
+}
+
+.point-container-box {
+	width: 250px;
+	padding: 20px;
+	box-sizing: border-box;
+	background-color: #F8F8F8;
+	border-radius: 8px;
+	margin-bottom: 30px;
+}
+
+.point-container-box ul li:last-child {
+	margin-bottom: 0;
+}
+
+.point-container-box ul li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.point-container-box ul li:last-child span {
+	color: #333333;
+	font-size: 14px;
+}
+
+.point-container-box ul li:last-child span:last-child {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.point-container-box ul li:last-child span {
+	color: #333333;
+	font-size: 14px;
+}
+
+.point-container-box ul li:last-child span:last-child {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.txt, .txt span {
+	word-break: break-all;
+}
+
+/* order-after 클래스명을 가진 div */
+.order-after {
+	padding-top: 20px;
+	border-top: 1px solid #ccc;
+}
+
+.bl-list-type3 {
+	padding-left: 5px;
+}
+
+.bl-list-type3>li {
+	color: #333;
+	font-size: 11px;
+	padding-left: 7px;
+	padding-top: 6px;
+	word-break: break-word;
+	text-align: left;
+}
+
+.bl-list-type3>li:before {
+	display: inline-block;
+	vertical-align: middle;
+	margin: -3px 5px 0 -10px;
+	content: '';
+	border-width: 4px 0 4px 5px;
+	border-style: solid;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+}
+
+.order-payment-area.order-complete::after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+.order-payment-area.order-complete ~ .btn-bottom-area {
+	margin-top: 80px;
+}
+
+.btn-bottom-area {
+	position: relative;
+	text-align: center;
+}
+
+.btn-bottom-area>[class*="btn-"]:first-child:not(.w-full):not(:only-child)
+	{
+	margin: 0 2px 0 0;
+}
+
+.btn-bottom-area>[class*="btn-"]:not(.w-full) {
+	margin: 0 3px;
+	vertical-align: top;
+}
+
+.btn-default {
+	background: #fff;
+	color: #333;
+	border: 1px solid #ccc;
+}
+
+.btn-basic-xxlg {
+	min-width: 370px;
+	height: 70px;
+	padding: 15px 25px;
+}
+
+[class*="btn-basic-"], [class*="btn-option"] {
+	border-radius: 6px;
+}
+
+[class*="btn-basic-"], [class*="btn-option"], [class*="btn-rud-"] {
+	display: inline-block;
+	text-align: center;
+	border: 1px solid transparent;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+
+[class*="btn-basic-"]>span, [class*="btn-option"]>span, [class*="btn-rud-"]>span
+	{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.btn-bottom-area>[class*="btn-"]:last-child:not(.w-full):not(:only-child)
+	{
+	margin: 0 0 0 2px;
+}
+
+.btn-bottom-area>[class*="btn-"]:not(.w-full) {
+	margin: 0 3px;
+	vertical-align: top;
+}
+
+.btn-primary {
+	background: #ff6001;
+	color: #fff;
+	border: 1px solid #ff6001;
+}
+
+.btn-basic-xxlg {
+	min-width: 370px;
+	height: 70px;
+	padding: 15px 25px;
+}
+
+.frame-wrap, .clear:after, [class*="frame-"]:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.frame-sm {
+	position: relative;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.frame-wrap, .clear:after, [class*="frame-"]:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+/* 적용안되서 css 직접 파일에서 태그 찾아서 복붙한코드들*/
+
+.btn-basic-xxlg {
+	min-width: 370px;
+	height: 70px;
+	padding: 15px 25px
+}
+
+.btn-basic-xxlg>span {
+	font-size: 24px;
+	line-height: 1.7;
+}
+
+.btn-default {
+	background: #fff;
+	color: #333;
+	border: 1px solid #ccc;
+}
+
+.btn-default-ex {
+	background: #fff;
+	color: #333;
+	border: 1px solid #666;
+}
+
+.btn-default-ex2 {
+	background: #fff;
+	color: #333;
+	border: 1px solid #999;
+}
+
+.order-payment-area .payment-info-box {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.payment-info-box {
+	width: 300px;
+	border: 1px solid #ccc;
+	padding: 12px 12px;
+	background: #FFF;
+}
+
+.payment-info-box>.tit {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.point-container-box {
+	width: 250px;
+	padding: 20px;
+	box-sizing: border-box;
+	background-color: #F8F8F8;
+	border-radius: 8px;
+	margin-bottom: 30px;
+}
+
+.point-container-box ul li {
+	margin-bottom: 12px;
+}
+
+.point-container-box ul li:first-child:nth-child(1) {
+	margin-top: 0;
+	margin-top: 0;
+}
+
+.point-container-box ul li:last-child {
+	margin-bottom: 0;
+}
+
+.point-container-box ul li span {
+	color: #666666;
+	font-size: 14px;
+}
+
+.point-container-box ul li:last-child span {
+	color: #333333;
+	font-size: 14px;
+}
+
+.point-container-box ul li:last-child span:last-child {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.point-container-box ul li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.payment-info-box>.tit.type2 {
+	padding-bottom: 18px;
+	border-bottom: 1px solid #ccc
+}
+
+
+.frame-sm {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+}
