@@ -452,14 +452,14 @@ element.style {
     vertical-align: top;
 }
 
-.btn-util-coupon {
+/* .btn-util-coupon {
     display: inline-block;
     width: 48px;
     height: 48px;
     background-image: url("https://www.rankingdak.com/resources/pc/images/icon/top-util-compiltaion.png");
     background-size: auto 48px;
     background-position: 0% center;
-}
+} */
 
 .my-menu > ul > li {
     display: inline-block;
@@ -1008,10 +1008,20 @@ script {
     border-top: 1px solid #eee;
 }
 
-.aside-menu .menu-list > li .menu {
+.aside-menu .menu-list > li .menu1 {
     font-size: 15px;
     color: #000;
     font-weight: 500;
+    position: relative;
+    top: -9px;
+}
+
+.aside-menu .menu-list > li .menu2 {
+    font-size: 15px;
+    color: #000;
+    font-weight: 500;
+    position: relative;
+    top: 8px;
 }
 
 .aside-guide-box dl dt {
@@ -1261,7 +1271,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     -webkit-transform: translateY(-50%);
     display: block;
     max-width: 100%;
-    text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     word-break: break-all;
@@ -1565,7 +1574,7 @@ table td, table th {
 
 .pagination .btn-page {
     width: 25px;
-    background: url(/resources/pc/images/icon/ico_pagination.png);
+    background: url("https://www.rankingdak.com/resources/pc/images/icon/ico_pagination.png");
 }
 
 .pagination > a {
