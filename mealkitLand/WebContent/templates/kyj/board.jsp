@@ -9,18 +9,20 @@
 </head>
 <body>
 	
-  <div class="container">
+    <div class="container">
     <header></header>
     <div class="left-panel">
+  
+   
       <ul class="menu_ul">
-    <li><a href="#">밀키트랜드</a></li> 
-    <li><a href="#">사이트 바로가기</a></li>
+    <li><a href="#"></a></li> 
+    <li><a href="main.jsp">사이트 바로가기</a></li>
     <li><a href="member.jsp">회원관리</a></li>
-    <li><a href="order.jsp">상품관리</a></li>
+    <li><a href="register.jsp">상품등록</a></li>
     <li><a href="board.jsp">문의게시판 관리</a></li>
     <li><a href="#">공지사항 관리</a></li>
-    <li><a href="#">주문관리</a></li>
-    <li><a href="#">로그아웃</a></li>
+    <li><a href="order.jsp">주문관리</a></li>
+    <li><a href="main.jsp">로그아웃</a></li>
       </ul>
 
     
@@ -50,9 +52,12 @@
             <tr><td><input type="checkbox" class="box" name="check"></td> <td>008</td> <td>배송</td> <td>문의합니다</td> <td>테스트중입니다</td> <td>2023-01-01</td> <td>002</td></tr>
             <tr><td><input type="checkbox" class="box" name="check"></td> <td>009</td> <td>주문</td> <td>문의합니다</td> <td>테스트중입니다</td> <td>2023-01-01</td> <td>002</td></tr>
             <tr><td><input type="checkbox" class="box" name="check"></td> <td>111</td> <td>주문</td> <td>문의합니다</td> <td>테스트중입니다</td> <td>2023-01-01</td> <td>002</td></tr>
-          <tr class="height_tr"> <td class="height_td"></td> </tr>
-          <div class="pagination">
-           
+          <tr class="height_tr">
+             <td class="height_td">
+          
+        </td>
+         </tr>
+              <div class="pagination">
             <a href="#">1</a>
             <a href="#">2</a>
             <a href="#">3</a>
@@ -66,6 +71,5 @@
 
     </div>
   </div>
-	
 </body>
 </html>
