@@ -128,6 +128,7 @@ li {
 .my-menu > ul {
     font-size: 0;
 }
+<<<<<<< HEAD
 /* ul {
     display: block;
     margin-block-start: 1em;
@@ -137,6 +138,8 @@ li {
     padding-inline-start: 40px;
 } */
 
+=======
+>>>>>>> kgm
 .my-menu > ul > li {
     display: inline-block;
     vertical-align: top;
