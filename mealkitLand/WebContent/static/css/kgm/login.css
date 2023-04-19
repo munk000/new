@@ -81,11 +81,11 @@ address, caption, cite, code, dfn, em, strong, th, var {
     height: 100px;
     object-fit: contain;
 }
-[class^="ico-logo-"] {
+/* [class^="ico-logo-"] {
     display: inline-block;
     background: url(../../image/logo.png) 0 0;
     background-size: cover;
-}
+} */
 i {
     font-style: italic;
 }

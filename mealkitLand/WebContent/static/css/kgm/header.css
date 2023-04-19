@@ -46,10 +46,10 @@ div {
 .header-inner .logo {
     display: block;
     position: absolute;
-    top: 50px;
+    top: 27px;
     left: 0;
     width: 180px;
-    height: 69px;
+    height: 90px;
     background: url(../../image/logo.png) no-repeat;
     background-size: contain;
 }
@@ -113,6 +113,9 @@ ol, ul {
     vertical-align: middle;
     background: #E6E6E6;
     margin: -2px 11px 0 0;
+}
+.util > ul > li:first-child:before {
+	display:none;
 }
 li {
     text-align: -webkit-match-parent;
@@ -215,7 +218,7 @@ ul {
     font-weight: 500;
     transition: .1s;
     -webkit-transition: .1s;
-    padding: 19px 0;
+    padding: 30px 0;
     /* line-height: 1; */
     line-height: 20px;
 }
@@ -225,7 +228,7 @@ ul {
     height: 12px;
     content: '';
     vertical-align: middle;
-    background: url(/resources/pc/images/icon/ico_gnb_all.png) 0 0;
+    background: url(https://www.rankingdak.com/resources/pc/images/icon/ico_gnb_all.png) 0 0;
     margin: -3px 10px 0 20px;
 }
 
@@ -233,7 +236,7 @@ ul {
     display: block;
     content: '';
     position: absolute;
-    top: 21px;
+    top: 30px;
     right: 0;
     width: 1px;
     height: 16px;
