@@ -99,6 +99,9 @@ i {
     clip: rect(0,0,0,0);
     border: 0;
 }
+button{
+	cursor:pointer;
+}
 button, input {
     overflow: visible;
 }
@@ -254,7 +257,7 @@ input[type="checkbox"], input[type="radio"] {
     border-radius: 3px;
 }
 .custom-checkbox .checkbox:checked + label:before {
-    background: #FF6001 url(/resources/pc/images/icon/ico_form.png?ver=20220511) -50px -30px;
+    background: #FF6001 url(https://www.rankingdak.com/resources/pc/images/icon/ico_form.png?ver=20220511) -50px -30px;
     width: 18px;
     height: 18px;
     border: 1px solid #FF6001;
@@ -319,12 +322,6 @@ input[type="checkbox"], input[type="radio"] {
     width: 22px;
     height: 22px;
     border-radius: 3px;
-}
-.custom-checkbox .checkbox:checked + label:before {
-    background: #FF6001 url(/resources/pc/images/icon/ico_form.png?ver=20220511) -50px -30px;
-    width: 18px;
-    height: 18px;
-    border: 1px solid #FF6001;
 }
 .custom-checkbox .checkbox + label:before {
     display: block;
