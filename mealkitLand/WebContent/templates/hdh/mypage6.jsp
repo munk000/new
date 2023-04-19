@@ -13,7 +13,7 @@
     <div class="wrap" style>
     <%@include file = "/templates/kgm/header.jsp" %>
     <section id="contents" class="container">
-        <div class="content-wrap">
+        <div class="content-wrap frame-sm-mypage">
             <div class="frame-sm">
                 <div class="frame-left">
                     <div class="aside-menu-wrap">
