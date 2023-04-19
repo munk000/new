@@ -2,6 +2,86 @@
  * 
  */
 
+function fnOpen() {
+	$('#popup-sample01').css('display', 'block')
+}
+
+function fnClose() {
+	// $('#orderProductPopUp').html('');
+	// $('body').removeAttr('style');
+	$('#popup-sample01').css('display', 'none')
+}
+
+
+
+function goChoose() {
+	let arr = [];
+	const check = $("input:radio[name^='radio_chk']:checked");
+	if (check.length == 0) {
+		alert("상품을 선택해주세요.");
+		return false;
+	}
+	$.each(check, function(i, v) {
+		arr.push(v.dataset);
+	});
+
+	fnSetProduct(arr);
+	fnClose();
+}
+
+// function selectBox (e) {
+$(document).on('click', '.select-value', function(e) {
+	if (!$(this).hasClass('disabled')) {
+		if ($(this).parent('.ui-select').hasClass('on')) {
+			selectBoxClose();
+		} else {
+			selectBoxClose();
+			$(this).parent('.ui-select').addClass('on');
+			$('.select-list').css('display', 'block');
+		}
+
+		$('body').on('click', function(e) {
+			if ($(e.target).closest('.ui-select').length === 0 && $('.ui-select').hasClass('on')) {
+				selectBoxClose()
+			}
+		})
+	}
+});
+
+$(document).on('click', '.select-list a', function() {
+	selectBoxAction(this);
+})
+// }
+
+function selectBoxAction(el) {
+	var listValue = $(el).children('span').text();
+
+	$(el).parents('.select-list').find('ul li a').removeClass('selected');
+	$(el).addClass('selected');
+	$(el).parents('.ui-select').find('.select-value span').text(listValue);
+
+	var selectedValue = $(el).parent('li').data('name');
+	$(el).parents('.ui-select').data('value', selectedValue);
+
+	if ($(el).hasClass('selected')) {
+		if (!$(el).parent('li').hasClass('first')) {
+			$(el).parents('.select-list').prev('.select-value').removeClass('placeholder');
+		} else if ($(el).parent('li').hasClass('first')) {
+			$(el).parents('.select-list').prev('.select-value').addClass('placeholder');
+			$(el).parents('.ui-select').attr('data-value', '');
+		}
+	}
+
+	selectBoxClose();
+}
+
+
+function selectBoxClose() {
+	$('.ui-select').removeClass('on');
+	$('.select-list').css('display', 'none');
+	// return false;
+}
+
 var listWrap = $('.ui-accordion').children('.ui-accordion-list'),
 	click = listWrap.children('li').find('.ui-accordion-click');
 
@@ -20,3 +100,5 @@ click.on('click', function() {
 		$(this).next('.ui-accordion-view').toggle();
 	}
 });
+
+
