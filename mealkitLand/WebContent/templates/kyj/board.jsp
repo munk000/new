@@ -12,8 +12,6 @@
   <div class="container">
     <header></header>
     <div class="left-panel">
-  
-   
       <ul class="menu_ul">
     <li><a href="#">밀키트랜드</a></li> 
     <li><a href="#">사이트 바로가기</a></li>
