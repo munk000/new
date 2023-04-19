@@ -1,7 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html lang="ko" xml:lang="ko"><head>
 
-    <meta charset="utf-8">
+<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="_csrf" content="d1c1f0d5-fe0a-4ec6-9d86-b1bb66dcda2b">
@@ -94,6 +96,9 @@ src="https://www.facebook.com/tr?id=163613154295945&ev=PageView&noscript=1"
 <!-- ======================== APP 호출 alert ======================== -->
 <!--// ======================== APP 호출 alert ======================== -->
 
+
+<link rel="stylesheet" href="../../static/css/jbk/PaymentProcess.css" />
+<link rel="stylesheet" href="../../static/css/kgm/fix.css" />
 <title>랭킹닭컴 </title>
 
 <!-- [Pub/Dev] 메인페이지의 경우 addClass main -->
@@ -5578,7 +5583,4 @@ kakaoPixel('6767047130576800104').pageView();
 </script>
 
 
-<form method="POST"></form><div id="criteo-tags-div" style="display: none;">
-</div>
-</body>
-</html>
+<form method="POST"></form><div id="criteo-tags-div" style="display: none;"></div></body></html>
