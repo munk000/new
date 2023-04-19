@@ -72,6 +72,9 @@ a {
     background: #ccc;
     margin: 0px 20px 0 0;
 }
+.footer-menu-list > li:first-child:before{
+	display:none;
+}
 .footer-info {
     position: relative;
     max-width: 1100px;
@@ -138,11 +141,11 @@ ul {
     display: inline;
     letter-spacing: -0.4px;
 }
-.footer-biz-info li::after {
+/* .footer-biz-info li::after {
     display: inline-block;
     content: '|';
     padding: 0 3px;
-}
+} */
 .footer-biz-info li {
     font-size: 13px;
     color: #777;
