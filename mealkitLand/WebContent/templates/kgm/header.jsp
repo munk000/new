@@ -51,7 +51,7 @@
             <div class="inner">
                 <div class="category-wrap">
 
-                    <a href="#all-category" class="btn-menu-all"><span>카테고리</span></a>
+                    <a href="#all-category" class="btn-menu-all category-ul"><span>카테고리</span></a>
                     <nav id="all-category" class="category-menu">
                         <ul class="cate-dep1">
                             <li>

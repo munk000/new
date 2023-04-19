@@ -128,18 +128,6 @@ li {
 .my-menu > ul {
     font-size: 0;
 }
-<<<<<<< HEAD
-/* ul {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-} */
-
-=======
->>>>>>> kgm
 .my-menu > ul > li {
     display: inline-block;
     vertical-align: top;
@@ -209,7 +197,7 @@ li {
 .gnb-wrap .category-wrap {
     position: absolute;
     width: 160px;
-    bottom: 0px;
+    bottom: -12px;
     left: -20px;
 }
 .category-wrap .btn-menu-all {
