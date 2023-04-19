@@ -2304,3 +2304,102 @@ ol, ul {
     color: #666;
     padding: 3px 0;
 }
+
+.txt, .txt span {
+    word-break: break-all;
+}
+
+.div-price .list-sub-inner > li > .txt {
+    text-align: right;
+    font-size: 16px;
+}
+
+.div-price .list-sub-inner > li > span {
+    display: table-cell;
+    color: #666;
+    padding: 3px 0;
+}
+
+.div-price .list-sub-inner > li > span {
+    display: table-cell;
+    color: #666;
+    padding: 3px 0;
+}
+
+.div-price .list-sub-inner > li > .txt {
+    text-align: right;
+    font-size: 16px;
+}
+
+.txt, .txt span {
+    word-break: break-all;
+}
+
+.order-price .total-price {
+    border-top: 2px solid #999;
+    padding: 10px 0;
+}
+
+.payment-info-box .btn-basic-xlg {
+    width: 100%;
+}
+
+.btn-primary {
+    background: #ff6001;
+    color: #fff;
+    border: 1px solid #ff6001;
+}
+
+.btn-basic-xlg {
+    min-width: 215px;
+    height: 60px;
+    padding: 12px 25px;
+}
+
+[class*="btn-basic-"], [class*="btn-option"] {
+    border-radius: 6px;
+}
+
+[class*="btn-basic-"], [class*="btn-option"], [class*="btn-rud-"] {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    /* border: 0; */
+    padding: 0;
+    background-image: none;
+}
+
+.btn-basic-xlg > span {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.8;
+}
+
+[class*="btn-basic-"] > span, [class*="btn-option"] > span, [class*="btn-rud-"] > span {
+    display: inline-block;
+    vertical-align: top;
+}
+
+button span {
+    position: relative;
+}
+
+.btn-basic-xlg > span {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.8;
+}
+
+.order-payment-area .payment-info-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
