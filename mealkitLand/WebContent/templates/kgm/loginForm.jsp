@@ -19,7 +19,7 @@
                 <div class="login-area">
                     <div class="login-greeting">
                         <strong class="txt">안녕하세요 :) </strong>
-                        <p class="message"><i class="ico-logo-login"></i><span class="blind"></span>입니다.</p>
+                        <p class="message"><span class="blind"></span>밀키트랜드 입니다.</p>
                     </div>
                     <!--// login-greeting -->
 
