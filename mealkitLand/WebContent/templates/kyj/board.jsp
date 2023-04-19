@@ -10,7 +10,6 @@
 <body>
 	
   <div class="container">
-    <header></header>
     <div class="left-panel">
       <ul class="menu_ul">
     <li><a href="#">밀키트랜드</a></li> 
@@ -23,13 +22,8 @@
     <li><a href="#">로그아웃</a></li>
       </ul>
 
-    
     </div>
     <div class="right-panel">
-
-     
-      
-        
        
        <div class="tbl_div">
       
@@ -39,7 +33,7 @@
          <button class="btn_quit">게시글삭제</button>
          <tr class="height_tr"> <td class="height_td" rowspan="2"></td> </tr>
          <tr class="height_tr"> <td class="height_td"></td> </tr>
-          <tr>  <th><input type="checkbox" class="box" name="check"> <th>게시글번호</th> <th>카테고리</th> <th>제목</th> <th>내용</th> <th>작성날짜</th> <th>회원번호</th></tr>
+          	<tr><th><input type="checkbox" class="box" name="check"> <th>게시글번호</th> <th>카테고리</th> <th>제목</th> <th>내용</th> <th>작성날짜</th> <th>회원번호</th></tr>
             <tr><td><input type="checkbox" class="box" name="check"></td> <td>001</td> <td>결제</td> <td>문의합니다</td> <td>테스트중입니다</td> <td>2023-01-01</td> <td>002</td></tr>
             <tr><td><input type="checkbox" class="box" name="check"></td> <td>002</td> <td>배송</td> <td>문의합니다</td> <td>테스트중입니다</td> <td>2023-01-01</td> <td>002</td></tr>
             <tr><td><input type="checkbox" class="box" name="check"></td> <td>003</td> <td>주문</td> <td>문의합니다</td> <td>테스트중입니다</td> <td>2023-01-01</td> <td>002</td></tr>
