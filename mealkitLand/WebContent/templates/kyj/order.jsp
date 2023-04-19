@@ -13,15 +13,15 @@
     <div class="left-panel">
   
    
-      <ul class="menu_ul">
-    <li><a href="#">밀키트랜드</a></li> 
-    <li><a href="#">사이트 바로가기</a></li>
+     <ul class="menu_ul">
+    <li><a href="#"></a></li> 
+    <li><a href="main.jsp">사이트 바로가기</a></li>
     <li><a href="member.jsp">회원관리</a></li>
-    <li><a href="order.jsp">상품관리</a></li>
+    <li><a href="register.jsp">상품등록</a></li>
     <li><a href="board.jsp">문의게시판 관리</a></li>
     <li><a href="#">공지사항 관리</a></li>
-    <li><a href="#">주문관리</a></li>
-    <li><a href="#">로그아웃</a></li>
+    <li><a href="order.jsp">주문관리</a></li>
+    <li><a href="main.jsp">로그아웃</a></li>
       </ul>
 
     

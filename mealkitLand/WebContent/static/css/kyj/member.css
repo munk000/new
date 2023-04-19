@@ -1,5 +1,5 @@
 @charset "UTF-8";
-   * {
+    * {
       margin:0;
       padding:0;
    
@@ -33,9 +33,9 @@ html, body {
   bottom: 0;
   right: 0;
   width: 85%;
-  height: 95%;
+  height: 94%;
   background-color:  #f2f2f2;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  
 }
 
 
@@ -64,41 +64,56 @@ table {
 
 
 table th, table td {
-  border: 1px solid rgba(204, 204, 204, 0.2);
-  border-left: none; border-right: none;
-  border-spacing: 10px;
-  padding:0px 12px;
+
+ border: 1px solid rgba(204, 204, 204, 0.2);
+border-right: none;
+font-weight: 250;
+font-size: 14px;
   
 }
 
+.search {
+    top:25px;
+    left:10px;
+    position:absolute;
+    border:none;
+    border-radius: 12px;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding:12px;
+    outline: none;
+}
+
 .btn_quit {
-  background-color: #DC143C;
-  color:white;
-  padding:7px 20px;
-  position:absolute;
-  top:10px;
-  right:10px;
-  border:none;
-  cursor:pointer;
-  border-radius: 3px;
-  font-size: 13px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 13px;
 
 }
 
 .height_tr {
-  height:60px;
+  height:40px;
 }
 
 .menu_ul {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+
 
 }
 
 .menu_ul li {
- padding:10px 0px;
-  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ height: 56.22px;
 }
 
 .menu_ul li:hover{
@@ -123,6 +138,7 @@ table th, table td {
 
 .box {
   padding:10px;
+  margin: 0 15px;
 }
 
 h2{
@@ -133,19 +149,22 @@ h2{
 
 
 header {
-  height:5%;
+  height:6%;
   background-color: #FFFFFF;
   width:100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  position: relative;
 }
 
 .pagination {
   position: absolute;
-  bottom:20px;
-  right:15px;
+  bottom:12px;
+  right:20px;
 }
 
 .pagination a {
   text-decoration: none;
   color:black;
+  margin: 0px 1px;
 }
