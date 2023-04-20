@@ -94,10 +94,10 @@
                                                     <label for="mypage-order-search-radio-12months">12개월</label>
                                                 </div>
                                             </li>
-                                            <li>
+											<li>
                                                 <div class="custom-radio">
-                                                    <input type="radio" id="mypage-order-search-radio-period" class="radio-btn-type2 date-setting" name="mypage-order-search-radio" value="PERIOD">
-                                                    <label for="mypage-order-search-radio-period">기간설정</label>
+                                                    <input type="radio" id="mypage-order-search-radio-24months" class="radio-btn-type2" name="mypage-order-search-radio" value="24MONTHS">
+                                                    <label for="mypage-order-search-radio-24months">24개월</label>
                                                 </div>
                                             </li>
                                         </ul>
@@ -130,12 +130,6 @@
                                                         <span>조회하기</span>
                                                         </a>
                                                     </div>
-                                                    <div class="input-group-btn dis-inb">
-                                                        <button type="button" id="btnInit" class="btn-form btn-link-txt5">
-                                                            <i class="ico-btn-refresh"></i>
-                                                            <span>초기화</span>
-                                                        </button>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -143,7 +137,7 @@
                                 </div>
                             </div>
                          </form>
-                        <div class="no-data-typel">
+                        <div class="no-data-type1">
                             <p class="message">최근 1개월 내에 주문내역이 없습니다.  </p>
                         </div>
                     </div>
@@ -154,4 +148,6 @@
 	<%@include file = "/templates/kgm/footer.jsp" %>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="../../static/js/hdh/mypage4.js"></script>
 </html>
