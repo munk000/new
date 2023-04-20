@@ -142,6 +142,16 @@
     overflow: hidden;
 }
 
+.main-category-btn-wrapper .category-btn-list .swiper-slide .category-btn-item-ico-wrap [class^="ico-for"] {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    background-image: url("https://www.rankingdak.com/resources/pc/images/icon/category-ico-compilation.png?ver=20220922");
+    background-repeat: no-repeat;
+    background-size: 500%;
+}
+
 /* title */
 .main-article .main-article-tit {
     text-align: center;
@@ -178,11 +188,6 @@
 
 .tab-round-type ~ .ui-tab-container {
     margin-top: 20px
-}
-
-/* swiper */
-.frame-slide-overlap .swiper-container {
-    padding: 0 25px
 }
 
 /* íƒ€ìž„ì„¸ì¼ */
@@ -1169,6 +1174,7 @@
 
 .main-category-btn-wrapper .category-btn-list {
     padding-bottom: 10px;
+    JUSTIFY-CONTENT: center;
 }
 
 .main-category-btn-wrapper.swipe-disabled .category-btn-list {
@@ -1242,12 +1248,12 @@
     margin: 0;
 }
 
-.main-category-btn-wrapper .category-btn-list .swiper-slide .category-btn-item-ico-wrap [class^="ico-for"] {
+#Healthy{
     display: block;
     width: 48px;
     height: 48px;
     margin: auto;
-    background-image: url('https://www.rankingdak.com/resources/pc/images/icon/category-ico-compilation.png?ver=20220922');
+    background-image: url("${pageContext.request.contextPath}/static/image/healthy.png");
     background-repeat: no-repeat;
     background-size: 500%;
 }

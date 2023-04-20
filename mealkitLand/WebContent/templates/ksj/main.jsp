@@ -58,89 +58,76 @@
 										style="width: 78px; height: 78px;">
 										<i class="ico-for-family"></i>
 									</div>
-									<figcaption class="category-btn-item-subject">가정의달
-										선물세트</figcaption>
-								</figure>
-						</a></li>
-						<li class="swiper-slide category-btn-item swiper-slide-next"
-							style="width: 78px; margin-right: 20px;"><a
-							href="/promotion/exhibit/hiddenList?exhibitionCd=EX202204150000000014"
-							class="category-btn-item-inn">
-								<figure class="category-btn-boxing">
-									<div class="category-btn-item-ico-wrap"
-										style="width: 78px; height: 78px;">
-										<i class="ico-for-new"></i>
-									</div>
-									<figcaption class="category-btn-item-subject">신상품</figcaption>
-								</figure>
-						</a></li>
-						<li class="swiper-slide category-btn-item"
-							style="width: 78px; margin-right: 20px;"><a
-							href="/display/gift" class="category-btn-item-inn">
-								<figure class="category-btn-boxing">
-									<div class="category-btn-item-ico-wrap"
-										style="width: 78px; height: 78px;">
-										<i class="ico-for-gift"></i>
-									</div>
-									<figcaption class="category-btn-item-subject">선물하기</figcaption>
-								</figure>
-						</a></li>
-						<li class="swiper-slide category-btn-item"
-							style="width: 78px; margin-right: 20px;"><a
-							href="/product/list?depth1=R019" class="category-btn-item-inn">
-								<figure class="category-btn-boxing">
-									<div class="category-btn-item-ico-wrap"
-										style="width: 78px; height: 78px;">
-										<i class="ico-for-chicken_breast"></i>
-									</div>
-									<figcaption class="category-btn-item-subject">닭가슴살</figcaption>
-								</figure>
-						</a></li>
-						<li class="swiper-slide category-btn-item"
-							style="width: 78px; margin-right: 20px;"><a
-							href="/product/list?depth1=R020" class="category-btn-item-inn">
-								<figure class="category-btn-boxing">
-									<div class="category-btn-item-ico-wrap"
-										style="width: 78px; height: 78px;">
-										<i class="ico-for-instant"></i>
-									</div>
-									<figcaption class="category-btn-item-subject">즉석
-										간편식</figcaption>
-								</figure>
-						</a></li>
-						<li class="swiper-slide category-btn-item"
-							style="width: 78px; margin-right: 20px;"><a
-							href="/product/list?depth1=R021" class="category-btn-item-inn">
-								<figure class="category-btn-boxing">
-									<div class="category-btn-item-ico-wrap"
-										style="width: 78px; height: 78px;">
-										<i class="ico-for-packed_meal"></i>
-									</div>
-									<figcaption class="category-btn-item-subject">도시락·볶음밥</figcaption>
-								</figure>
-						</a></li>
-						<li class="swiper-slide category-btn-item"
-							style="width: 78px; margin-right: 20px;"><a
-							href="/product/list?depth1=R040" class="category-btn-item-inn">
-								<figure class="category-btn-boxing">
-									<div class="category-btn-item-ico-wrap"
-										style="width: 78px; height: 78px;">
-										<i class="ico-for-beef"></i>
-									</div>
-									<figcaption class="category-btn-item-subject">소고기</figcaption>
-								</figure>
-						</a></li>
-						<li class="swiper-slide category-btn-item"
-							style="width: 78px; margin-right: 20px;"><a
-							href="/product/list?depth1=R034" class="category-btn-item-inn">
-								<figure class="category-btn-boxing">
-									<div class="category-btn-item-ico-wrap"
-										style="width: 78px; height: 78px;">
-										<i class="ico-for-pork"></i>
-									</div>
-									<figcaption class="category-btn-item-subject">돼지·오리고기</figcaption>
-								</figure>
-						</a></li>
+									<figcaption class="category-btn-item-subject">전체보기</figcaption>
+                        </figure>
+                  </a></li>
+                  <li class="swiper-slide category-btn-item swiper-slide-next"
+                     style="width: 78px; margin-right: 20px;"><a
+                     href="/promotion/exhibit/hiddenList?exhibitionCd=EX202204150000000014"
+                     class="category-btn-item-inn">
+                        <figure class="category-btn-boxing">
+                           <div class="category-btn-item-ico-wrap"
+                              style="width: 78px; height: 78px;">
+                              <i class="ico-for-new"></i>
+                           </div>
+                           <figcaption class="category-btn-item-subject">지역특산물</figcaption>
+                        </figure>
+                  </a></li>
+                  <li class="swiper-slide category-btn-item"
+                     style="width: 78px; margin-right: 20px;"><a
+                     href="/display/gift" class="category-btn-item-inn">
+                        <figure class="category-btn-boxing">
+                           <div class="category-btn-item-ico-wrap"
+                              style="width: 78px; height: 78px;">
+                              <i class="ico-for-gift"></i>
+                           </div>
+                           <figcaption class="category-btn-item-subject">아침</figcaption>
+                        </figure>
+                  </a></li>
+                  <li class="swiper-slide category-btn-item"
+                     style="width: 78px; margin-right: 20px;"><a
+                     href="/product/list?depth1=R019" class="category-btn-item-inn">
+                        <figure class="category-btn-boxing">
+                           <div class="category-btn-item-ico-wrap"
+                              style="width: 78px; height: 78px;">
+                              <i class="ico-for-chicken_breast"></i>
+                           </div>
+                           <figcaption class="category-btn-item-subject">점심</figcaption>
+                        </figure>
+                  </a></li>
+                  <li class="swiper-slide category-btn-item"
+                     style="width: 78px; margin-right: 20px;"><a
+                     href="/product/list?depth1=R020" class="category-btn-item-inn">
+                        <figure class="category-btn-boxing">
+                           <div class="category-btn-item-ico-wrap"
+                              style="width: 78px; height: 78px;">
+                              <i class="ico-for-instant"></i>
+                           </div>
+                           <figcaption class="category-btn-item-subject">저녁</figcaption>
+                        </figure>
+                  </a></li>
+                  <li class="swiper-slide category-btn-item"
+                     style="width: 78px; margin-right: 20px;"><a
+                     href="/product/list?depth1=R021" class="category-btn-item-inn">
+                        <figure class="category-btn-boxing">
+                           <div class="category-btn-item-ico-wrap"
+                              style="width: 78px; height: 78px;">
+                              <i class="ico-for-packed_meal"></i>
+                           </div>
+                           <figcaption class="category-btn-item-subject">술·안주</figcaption>
+                        </figure>
+                  </a></li>
+                  <li class="swiper-slide category-btn-item"
+                     style="width: 78px; margin-right: 20px;"><a
+                     href="/product/list?depth1=R040" class="category-btn-item-inn">
+                        <figure class="category-btn-boxing">
+                           <div class="category-btn-item-ico-wrap"
+                              style="width: 78px; height: 78px;">
+                              <i class="ico-for-beef"></i>
+                           </div>
+                           <figcaption class="category-btn-item-subject">건강</figcaption>
+                        </figure>
+                  </a></li>
 					</ul>
 					<span class="swiper-notification" aria-live="assertive"
 						aria-atomic="true"></span>
@@ -342,17 +329,7 @@
 					<!--// colum -->
 				</ul>
 				<!--// grid-area -->
-				<button
-					class="swiper-button-prev main-md-recomm-swiper-btn swiper-button-disabled"
-					tabindex="0" role="button" aria-label="Previous slide"
-					aria-disabled="true">
-					<i class="ico-arr-left"><span class="blind">이전</span></i>
-				</button>
-				<button class="swiper-button-next main-md-recomm-swiper-btn"
-					tabindex="0" role="button" aria-label="Next slide"
-					aria-disabled="false">
-					<i class="ico-arr-right"><span class="blind">다음</span></i>
-				</button>
+				
 				<span class="swiper-notification" aria-live="assertive"
 					aria-atomic="true"></span>
 			</div>
