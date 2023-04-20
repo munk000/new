@@ -80,4 +80,6 @@
 	<%@include file = "/templates/kgm/footer.jsp" %>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="../../static/js/hdh/mypage1.js"></script>
 </html>
