@@ -195,12 +195,6 @@ legend.block {
 	min-height: 700px;
 }
 
-.frame-sm {
-	position: relative;
-	max-width: 1100px;
-	margin: 0 auto;
-}
-
 /* result-page-top 페이지 */
 .result-page-top {
 	text-align: center;
@@ -538,7 +532,7 @@ legend.block {
 /* order-info 명을 가진 클래스 */
 .order-payment-area.order-complete .order-info {
 	float: left;
-	width: 760px;
+	width: 660px;
 	border: 1px solid #ccc;
 	border-top: 0;
 	padding-bottom: 19px;
@@ -819,7 +813,7 @@ table td, table th {
 
 .frame-sm {
 	position: relative;
-	max-width: 1100px;
+	width: 1000px;
 	margin: 0 auto;
 }
 
@@ -924,11 +918,4 @@ table td, table th {
 .payment-info-box>.tit.type2 {
 	padding-bottom: 18px;
 	border-bottom: 1px solid #ccc
-}
-
-
-.frame-sm {
-    position: relative;
-    max-width: 1100px;
-    margin: 0 auto;
 }

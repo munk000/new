@@ -5,38 +5,120 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/ksj/main.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/ksj/banner.css">
 <title>Insert title here</title>
 </head>
 <body>
 	<jsp:include page="../kgm/header.jsp"></jsp:include>
-	
-	
-	<section class="container">
-        <!-- 메인 베너 -->
-        <div class="banner">
-            <div id="first-temp"></div>
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
-            <div id="last-temp"></div>
-        </div>
-        <div class="arrow prev">&lt;</div>
-        <div class="arrow next">&gt;</div>
-        
-        <div class="dots">
-            <div class="dot 1"></div>
-            <div class="dot 2"></div>
-            <div class="dot 3"></div>
-            <div class="dot 4"></div>
-            <div class="dot 5"></div>
-            <div class="dot 6"></div>
-        </div>
-    </section>
-		
+	<!--슬라이드 배너 -->
+	<div class="main-visual-area">
+		<h2 class="blind">메인 비주얼 영역</h2>
+		<div
+			class="swiper-container main-slide swiper-container-initialized swiper-container-horizontal">
+			<div class="swiper-wrapper"
+				style="transition-duration: 0ms; transform: translate3d(-17280px, 0px, 0px);">
+				<div
+					class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev"
+					data-swiper-slide-index="7" style="width: 1920px;">
+					<a href="javascript:;"
+						class="btn-back"> <img
+						src="https://file.rankingdak.com/image/RANK/BANNER/AR_IMG_1/20230125/IMG1674bgz638273881.jpg"
+						alt="메인비쥬얼이미지">
+					</a>
+				</div>
+
+				<div class="swiper-slide swiper-slide-duplicate-active"
+					data-swiper-slide-index="0" style="width: 1920px;">
+					<a href=""
+						class="btn-back"> <img
+						src="https://file.rankingdak.com/image/RANK/BANNER/AR_IMG_1/20230418/IMG1681cCn783324193.jpg"
+						alt="메인비쥬얼이미지">
+					</a>
+				</div>
+				<div class="swiper-slide" data-swiper-slide-index="1"
+					style="width: 1920px;">
+					<a href="javascript:;"
+						class="btn-back"> <img
+						src="https://file.rankingdak.com/image/RANK/BANNER/AR_IMG_1/20230418/IMG1681Ocp787763130.jpg"
+						alt="메인비쥬얼이미지">
+					</a>
+				</div>
+				<div class="swiper-slide" data-swiper-slide-index="2"
+					style="width: 1920px;">
+					<a href="javascript:;"
+						class="btn-back"> <img
+						src="https://file.rankingdak.com/image/RANK/BANNER/AR_IMG_1/20230404/IMG1680HMJ591448460.jpg"
+						alt="메인비쥬얼이미지">
+					</a>
+				</div>
+				<div class="swiper-slide" data-swiper-slide-index="3"
+					style="width: 1920px;">
+					<a href="javascript:;"
+						class="btn-back"> <img
+						src="https://file.rankingdak.com/image/RANK/BANNER/AR_IMG_1/20230331/IMG1680OmE238942115.jpg"
+						alt="메인비쥬얼이미지">
+					</a>
+				</div>
+				<div class="swiper-slide" data-swiper-slide-index="4"
+					style="width: 1920px;">
+					<a href="javascript:;"
+						class="btn-back"> <img
+						src="https://file.rankingdak.com/image/RANK/BANNER/AR_IMG_1/20230414/IMG1681baJ449469332.jpg"
+						alt="메인비쥬얼이미지">
+					</a>
+				</div>
+				<div class="swiper-slide" data-swiper-slide-index="5"
+					style="width: 1920px;">
+					<a href="javascript:;"
+						class="btn-back"> <img
+						src="https://file.rankingdak.com/image/RANK/BANNER/AR_IMG_1/20230419/IMG1681Nyu895332875.jpg"
+						alt="메인비쥬얼이미지">
+					</a>
+				</div>
+				<div class="swiper-slide" data-swiper-slide-index="6"
+					style="width: 1920px;">
+					<a href="javascript:;"
+						class="btn-back"> <img
+						src="https://file.rankingdak.com/image/RANK/BANNER/AR_IMG_1/20230406/IMG1680fdZ769659131.jpg"
+						alt="메인비쥬얼이미지">
+					</a>
+				</div>
+				<div
+					class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next"
+					data-swiper-slide-index="7" style="width: 1920px;">
+					<a href="javascript:;"
+						class="btn-back"> <img
+						src="https://file.rankingdak.com/image/RANK/BANNER/AR_IMG_1/20230125/IMG1674bgz638273881.jpg"
+						alt="메인비쥬얼이미지">
+					</a>
+				</div>
+				<div class="swiper-slide swiper-slide-duplicate swiper-slide-active"
+					data-swiper-slide-index="0" style="width: 1920px;">
+					<a href="javascript:;"
+						class="btn-back"> <img
+						src="https://file.rankingdak.com/image/RANK/BANNER/AR_IMG_1/20230418/IMG1681cCn783324193.jpg"
+						alt="메인비쥬얼이미지">
+					</a>
+				</div>
+			</div>
+				<!--슬라이드 배너 -->
+			
+				<!--슬라이드배너  -->
+			<!--// swiper-wrapper -->
+			<div class="main-slide-bottom">
+				<div class="inner">
+					<div class="main-slide-btns">
+						<div class="swiper-pagination swiper-pagination-fraction">
+							<span class="swiper-pagination-current">1</span> / <span
+								class="swiper-pagination-total">8</span>
+						</div>
+						<div class="swiper-button-next" tabindex="0" role="button"
+							aria-label="Next slide" aria-disabled="false"></div>
+						<div class="swiper-button-prev swiper-button-disabled"
+							tabindex="0" role="button" aria-label="Previous slide"
+							aria-disabled="true"></div>
+					</div>
+				</div>
+			</div>
 			<!--// main-slide-bottom -->
 			<span class="swiper-notification" aria-live="assertive"
 				aria-atomic="true"></span>
@@ -141,10 +223,175 @@
 									<figcaption class="category-btn-item-subject">돼지·오리고기</figcaption>
 								</figure>
 						</a></li>
+						<li class="swiper-slide category-btn-item"
+							style="width: 78px; margin-right: 20px;"><a
+							href="/product/list?depth1=R038" class="category-btn-item-inn">
+								<figure class="category-btn-boxing">
+									<div class="category-btn-item-ico-wrap"
+										style="width: 78px; height: 78px;">
+										<i class="ico-for-chicken_tender"></i>
+									</div>
+									<figcaption class="category-btn-item-subject">닭안심살</figcaption>
+								</figure>
+						</a></li>
+						<li class="swiper-slide category-btn-item"
+							style="width: 78px; margin-right: 20px;"><a
+							href="/product/list?depth1=R023" class="category-btn-item-inn">
+								<figure class="category-btn-boxing">
+									<div class="category-btn-item-ico-wrap"
+										style="width: 78px; height: 78px;">
+										<i class="ico-for-salad"></i>
+									</div>
+									<figcaption class="category-btn-item-subject">샐러드·과일</figcaption>
+								</figure>
+						</a></li>
+						<li class="swiper-slide category-btn-item"
+							style="width: 78px; margin-right: 20px;"><a
+							href="/product/list?depth1=R041" class="category-btn-item-inn">
+								<figure class="category-btn-boxing">
+									<div class="category-btn-item-ico-wrap"
+										style="width: 78px; height: 78px;">
+										<i class="ico-for-bakery"></i>
+									</div>
+									<figcaption class="category-btn-item-subject">베이커리·치즈</figcaption>
+								</figure>
+						</a></li>
+						<li class="swiper-slide category-btn-item"
+							style="width: 78px; margin-right: 20px;"><a
+							href="/product/list?depth1=R022" class="category-btn-item-inn">
+								<figure class="category-btn-boxing">
+									<div class="category-btn-item-ico-wrap"
+										style="width: 78px; height: 78px;">
+										<i class="ico-for-snack"></i>
+									</div>
+									<figcaption class="category-btn-item-subject">과자·간식·떡</figcaption>
+								</figure>
+						</a></li>
+						<li class="swiper-slide category-btn-item"
+							style="width: 78px; margin-right: 20px;"><a
+							href="/product/list?depth1=R024" class="category-btn-item-inn">
+								<figure class="category-btn-boxing">
+									<div class="category-btn-item-ico-wrap"
+										style="width: 78px; height: 78px;">
+										<i class="ico-for-drink"></i>
+									</div>
+									<figcaption class="category-btn-item-subject">음료·차·프로틴</figcaption>
+								</figure>
+						</a></li>
+						<li class="swiper-slide category-btn-item"
+							style="width: 78px; margin-right: 20px;"><a
+							href="/product/list?depth1=R298" class="category-btn-item-inn">
+								<figure class="category-btn-boxing">
+									<div class="category-btn-item-ico-wrap"
+										style="width: 78px; height: 78px;">
+										<i class="ico-for-vegan"></i>
+									</div>
+									<figcaption class="category-btn-item-subject">비건식품</figcaption>
+								</figure>
+						</a></li>
+						<li class="swiper-slide category-btn-item"
+							style="width: 78px; margin-right: 20px;"><a
+							href="/product/list?depth1=R025" class="category-btn-item-inn">
+								<figure class="category-btn-boxing">
+									<div class="category-btn-item-ico-wrap"
+										style="width: 78px; height: 78px;">
+										<i class="ico-for-egg"></i>
+									</div>
+									<figcaption class="category-btn-item-subject">계란·난백·콩</figcaption>
+								</figure>
+						</a></li>
+						<li class="swiper-slide category-btn-item"
+							style="width: 78px; margin-right: 20px;"><a
+							href="/product/list?depth1=R029" class="category-btn-item-inn">
+								<figure class="category-btn-boxing">
+									<div class="category-btn-item-ico-wrap"
+										style="width: 78px; height: 78px;">
+										<i class="ico-for-seafood"></i>
+									</div>
+									<figcaption class="category-btn-item-subject">수산·해산</figcaption>
+								</figure>
+						</a></li>
+						<li class="swiper-slide category-btn-item"
+							style="width: 78px; margin-right: 20px;"><a
+							href="/product/list?depth1=R026" class="category-btn-item-inn">
+								<figure class="category-btn-boxing">
+									<div class="category-btn-item-ico-wrap"
+										style="width: 78px; height: 78px;">
+										<i class="ico-for-nut"></i>
+									</div>
+									<figcaption class="category-btn-item-subject">견과·고구마·감자</figcaption>
+								</figure>
+						</a></li>
+						<li class="swiper-slide category-btn-item"
+							style="width: 78px; margin-right: 20px;"><a
+							href="/product/list?depth1=R028" class="category-btn-item-inn">
+								<figure class="category-btn-boxing">
+									<div class="category-btn-item-ico-wrap"
+										style="width: 78px; height: 78px;">
+										<i class="ico-for-health"></i>
+									</div>
+									<figcaption class="category-btn-item-subject">건강식품</figcaption>
+								</figure>
+						</a></li>
+						<li class="swiper-slide category-btn-item"
+							style="width: 78px; margin-right: 20px;"><a
+							href="/product/list?depth1=R027" class="category-btn-item-inn">
+								<figure class="category-btn-boxing">
+									<div class="category-btn-item-ico-wrap"
+										style="width: 78px; height: 78px;">
+										<i class="ico-for-mealkit"></i>
+									</div>
+									<figcaption class="category-btn-item-subject">반찬·밀키트·안주</figcaption>
+								</figure>
+						</a></li>
+						<li class="swiper-slide category-btn-item"
+							style="width: 78px; margin-right: 20px;"><a
+							href="/product/list?depth1=R030" class="category-btn-item-inn">
+								<figure class="category-btn-boxing">
+									<div class="category-btn-item-ico-wrap"
+										style="width: 78px; height: 78px;">
+										<i class="ico-for-source"></i>
+									</div>
+									<figcaption class="category-btn-item-subject">소스·오일</figcaption>
+								</figure>
+						</a></li>
+						<li class="swiper-slide category-btn-item"
+							style="width: 78px; margin-right: 20px;"><a
+							href="/product/list?depth1=R031" class="category-btn-item-inn">
+								<figure class="category-btn-boxing">
+									<div class="category-btn-item-ico-wrap"
+										style="width: 78px; height: 78px;">
+										<i class="ico-for-package"></i>
+									</div>
+									<figcaption class="category-btn-item-subject">식단·패키지</figcaption>
+								</figure>
+						</a></li>
+						<li class="swiper-slide category-btn-item"
+							style="width: 78px; margin-right: 20px;"><a
+							href="/product/list?depth1=R032" class="category-btn-item-inn">
+								<figure class="category-btn-boxing">
+									<div class="category-btn-item-ico-wrap"
+										style="width: 78px; height: 78px;">
+										<i class="ico-for-training"></i>
+									</div>
+									<figcaption class="category-btn-item-subject">운동·생활용품</figcaption>
+								</figure>
+						</a></li>
 					</ul>
 					<span class="swiper-notification" aria-live="assertive"
 						aria-atomic="true"></span>
 				</div>
+				<button type="button" class="category-control swiper-button-next"
+					tabindex="0" role="button" aria-label="Next slide"
+					aria-disabled="false">
+					<i class="ico-arr-right"></i> <span class="blind">다음 슬라이드 보기</span>
+				</button>
+				<button type="button"
+					class="category-control swiper-button-prev swiper-button-disabled"
+					tabindex="0" role="button" aria-label="Previous slide"
+					aria-disabled="true">
+					<i class="ico-arr-left"></i> <span class="blind">이전 슬라이드 보기</span>
+				</button>
 			</div>
 		</div>
 	</article>
@@ -361,6 +608,4 @@
 	</article>
 		<jsp:include page="../kgm/footer.jsp"></jsp:include>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="${pageContext.request.contextPath}/static/js/ksj/banner.js"></script>
 </html>

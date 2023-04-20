@@ -190,6 +190,12 @@
     display: flex;
 }
 
+.frame-sm {
+    position: relative;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
 .main-article .time-sales-title-area {
     width: calc(100% - 720px);
     display: flex;
