@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 <meta charset="UTF-8">
@@ -15,16 +15,7 @@
 	<div class="wrap">
 		<%@include file="/templates/kgm/header.jsp"%>
 		<section id="contents" class="container">
-			<form id="join-general-form" name="join-general-form"
-				action="/member/join/actionJoinGeneral" method="post"
-				onsubmit="return onSubmitJoinGeneral();" accept-charset="UTF-8"
-				data-gtm-form-interact-id="0">
-				<input type="hidden" name="_csrf"
-					value="4495ea71-eadd-40ab-922e-c750f252ea76"> <input
-					type="hidden" id="member-join-general-email-domain-text"
-					name="member-join-general-email-domain-text" value> <input
-					type="hidden" id="member-easy-join" name="member-easy-join"
-					value="Y">
+			<form action="" id="" name="form" method="post">
 				<div class="join-container join-container2" style="display: block;">
 					<div class="join-area">
 						<h2 class="join-title">회원가입</h2>
@@ -38,11 +29,10 @@
 								<!-- form-head -->
 								<div class="input-group type-lg w-full">
 									<label for="find-member-id-name-text2" class="blind">이름
-										입력</label> <input type="text" id="find-member-id-name-text2"
-										name="find-member-id-name-text2" class="input-text"
-										placeholder="이름 2자 이상 입력" maxlength="50"
-										onkeyup="onBlurFindMemberIdInput();"
-										onblur="onBlurFindMemberIdInput();">
+										입력</label> <input type="text" id="name" autocomplete="off"
+										name="memberName" class="input-text"
+										placeholder="이름 2자 이상 입력" maxlength="50">
+							<p class="help"></p>
 								</div>
 							</div>
 							<!--//이름 -->
@@ -321,4 +311,5 @@
         }).open();
     }
 </script>
+<script src="${pageContext.request.contextPath}/static/js/kgm/join.js"></script>
 </html>

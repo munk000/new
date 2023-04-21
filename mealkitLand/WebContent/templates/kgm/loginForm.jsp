@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -78,12 +78,12 @@
 		function login_check(){
 			const $id = $("#id");
 			const $pw = $("#pw");
-				if($id.val() == ""){
+				if(!$id.val()){
 					alert("아이디를 입력하세요.");
 					$id.focus();
 					return false;
 				}
-				if($pw.val() == ""){
+				if(!$pw.val()){
 					alert("비밀번호를 입력하세요.")
 					$pw.focus();
 					return false;

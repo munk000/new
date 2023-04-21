@@ -1,8 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,18 +14,11 @@
 <div class="wrap">
 <%@include file="/templates/kgm/header.jsp"%>
     <section id="contents" class="container" style="padding-bottom: 0px;">
-
-        <form name="reqKMCISForm" method="post" action="https://www.kmcert.com/kmcis/web/kmcisReq.jsp"
-            target="KMCISWindow">
-            <input type="hidden" name="tr_cert" value="">
-            <input type="hidden" name="tr_url" value="">
-        </form>
-
         <div class="join-container" style="min-height: auto;">
             <div class="join-area type2">
                 <h2 class="search-title">아이디찾기</h2>
-                <form id="find-member-id-form" action="/auth/findidresult" method="post"
-                    onsubmit="return onSubmitFindMemberId();" data-gtm-form-interact-id="0">
+                <form id="find-member-id-form" action="/auth/findidresult" method="post">
+                    <!-- onsubmit="return onSubmitFindMemberId();" --> 
                     <input type="hidden" name="_csrf" value="7765cce4-ad49-4047-8529-1ad115e1793d">
                     <input type="hidden" id="find-member-id-phone-no-text" name="find-member-id-phone-no-text" value="">
                     <input type="hidden" id="find-member-id-email-text" name="find-member-id-email-text" value="">
@@ -72,20 +64,19 @@
                                 </div>
                                 <div id="find-member-id-email-input-group" class="ui-radio-content active">
                                     <div class="input-group type-lg w-full">
-                                        <label for="find-member-id-name-text2" class="blind">이름 입력</label>
-                                        <input type="text" id="find-member-id-name-text2"
-                                            name="find-member-id-name-text2" class="input-text"
-                                            placeholder="이름 2자 이상 입력" maxlength="50"
-                                            onkeyup="onBlurFindMemberIdInput();" onblur="onBlurFindMemberIdInput();">
+                                        <label for="find-name" class="blind">이름 입력</label>
+                                        <input type="text" id="find-name"
+                                            name="find-name" class="input-text focus-out-check"
+                                            placeholder="이름 2자 이상 입력" maxlength="50">
                                     </div>
+                                    <span class="blind-name">이름은 영문, 한글, 숫자로 시작하고 마침표, 쉼표, 공백은 입력할 수 없습니다.</span>
                                     <!--// input-group -->
                                     <div id="find-member-id-name-error2"></div>
                                     <div class="input-group type-lg w-full">
-                                        <input type="text" id="find-member-id-email-prefix"
-                                            name="find-member-id-email-prefix" class="input-text" placeholder="이메일 주소"
-                                            onkeyup="onBlurFindMemberIdInput();" onblur="onBlurFindMemberIdInput();">
+                                        <input type="text" id="find-email"
+                                            name="find-email" class="input-text focus-out-check" placeholder="이메일 주소">
                                         <div class="input-group-form">
-                                            <div class="ui-select select-box w135" id="find-member-id-email-domain"
+                                            <div class="ui-select select-box w135" id="find-email-domain"
                                                 data-value="">
                                                 <a href="#none" title="선택" class="select-value"><span>직접입력</span></a>
                                                 <div class="select-list">
@@ -143,8 +134,8 @@
                                     <!--// input-group -->
                                     <div id="find-member-id-email-error"></div>
                                     <div class="btn-bottom-area" style="margin-top:20px;">
-                                        <button type="submit" id="find-member-id-submit-btn"
-                                            class="btn-basic-lg2 btn-primary btn-dim" disabled=""><span>확
+                                        <button type="button" id="find-btn"
+                                            class="btn-basic-lg2 btn-primary btn-dim"><span>확
                                                 인</span></button>
                                         <!-- 비활성화 addClass btn-dim -->
                                     </div>
@@ -152,6 +143,7 @@
                                 </div>
                                 <!--// ui-radio-content -->
                             </li>
+                            
                             <!--// 이메일로 찾기 -->
                         </ul>
                     </fieldset>
@@ -176,5 +168,36 @@
 	<%@include file="/templates/kgm/footer.jsp"%>
 	</div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
 
+		const $name = $("input[name=find-name]");
+		console.log($name);
+		const $button = $("#find-btn");
+		$button.on('click',function(){
+			console.log('dd');
+			if($name.val().length() <= 1){
+				console.log("hi");
+				$blind.css('display', 'block');
+				$blind.style('color',"red";
+			}
+		});
+		
+		/* const $name = $("input[name=find-name]");
+ 		const $blind = $(".blind-name");
+	function send(){
+ 		/*  const message = "이름은 영문, 한글, 숫자로 시작하고 마침표, 쉼표, 공백은 입력할 수 없습니다."; */
+		/* $("변경을 원하는 요소").html(변경될 값); */
+
+ 
+		/* if($name.val().length() <= 1){
+			console.log("hi");
+			$blind.css('display', 'block');
+			$blind.style('color',"red";
+		}
+		
+		/* 이름은 영문, 한글, 숫자로 시작하고 마침표, 쉼표, 공백은 입력할 수 없습니다. */
+		
+	/* } */
+</script>
 </html>

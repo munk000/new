@@ -248,6 +248,13 @@ li {
     width: 100%;
     z-index: 2;
 }
+p .help{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 .input-text {
     height: 40px;
     padding: 5px 15px;
