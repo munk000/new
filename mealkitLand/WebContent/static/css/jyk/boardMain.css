@@ -279,6 +279,7 @@ label, select, input, textarea {
 .input-group-wrap .input-group>.input-text+.input-group-btn:last-child {
 	padding: 0;
 	height: 100%;
+	
 }
 
 [class*="btn-icon-"] {
@@ -286,19 +287,19 @@ label, select, input, textarea {
 }
 
 .input-group-wrap.box-type .input-group-btn>.btn-icon-search {
-	padding: 0 10px;
+	padding: 10px 10px;
 	margin-top: 2px;
 }
 
 [class^="ico-btn-"] {
 	display: inline-block;
-	background-image: url(/resources/pc/images/icon/ico_btns.png);
+	background-image: url(https://www.rankingdak.com/resources/pc/images/icon/ico_header_search.svg);
 }
 
 .ico-btn-search {
 	background-position: 0 0;
-	width: 18px;
-	height: 18px;
+	width: 15px;
+	height: 17px;
 }
 
 button .blind {
@@ -310,7 +311,7 @@ button .blind {
 [class*="btn-icon-"]:after {
 	display: inline-block;
 	content: '';
-	background-image: url(/resources/pc/images/icon/ico_btns.png);
+	background-image: url(https://www.rankingdak.com/resources/pc/images/icon/ico_header_search.svg);
 }
 
 /* 카테고리 */
@@ -325,7 +326,7 @@ button .blind {
 .top-search-box .form-inline-list.faq-category-list {
 	display: flex;
 	flex-flow: row wrap;
-	gap: 8px;
+	gap: 40px;
 }
 
 .top-search-box .form-inline-list.faq-category-list>li {
