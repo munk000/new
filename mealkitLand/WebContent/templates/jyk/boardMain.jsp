@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="../../static/css/jyk/boardMain.css">
 </head>
 <body>
+	<%@include file="/templates/kgm/header.jsp"%>
 	<section id="contents" class="container">
 		<div class="content-wrap frame-sm">
 			<div class="page-title-area">
@@ -31,7 +32,7 @@
 						</nav>
 						<div class="aside-guide-box">
 							<dl>
-								<dt>랭킹닭컴 고객센터</dt>
+								<dt>밀키트랜드 고객센터</dt>
 								<dd class="phone-num">02-6405-8088</dd>
 								<dd>
 									평일 <span class="text-num-md">09:00 ~ 18:00</span>
@@ -286,6 +287,7 @@
 
 
 	</section>
+	<%@include file="/templates/kgm/footer.jsp"%>
 </body>
 <script type="text/javascript" src="../../static/js/boardMain.js"></script>
 </html>

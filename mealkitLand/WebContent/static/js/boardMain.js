@@ -2,10 +2,12 @@
  * 
  */
 
+/* 모달열기 */
 function fnOpen() {
 	$('#popup-sample01').css('display', 'block')
 }
 
+/* 모달닫기*/
 function fnClose() {
 	// $('#orderProductPopUp').html('');
 	// $('body').removeAttr('style');
@@ -13,7 +15,7 @@ function fnClose() {
 }
 
 
-
+/* 모달 내에서 상품 선택 */
 function goChoose() {
 	let arr = [];
 	const check = $("input:radio[name^='radio_chk']:checked");
@@ -29,6 +31,7 @@ function goChoose() {
 	fnClose();
 }
 
+/* 게시판 답변 열고 닫기 */
 // function selectBox (e) {
 $(document).on('click', '.select-value', function(e) {
 	if (!$(this).hasClass('disabled')) {
@@ -82,6 +85,8 @@ function selectBoxClose() {
 	// return false;
 }
 
+
+/* 1:1문의 카테고리 선택 */
 var listWrap = $('.ui-accordion').children('.ui-accordion-list'),
 	click = listWrap.children('li').find('.ui-accordion-click');
 
