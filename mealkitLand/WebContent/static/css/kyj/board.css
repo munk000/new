@@ -1,169 +1,162 @@
 @charset "UTF-8";
-   * {
-      margin:0;
-      padding:0;
-   
-      
-    }
-html, body {
-  height: 100%;
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
 }
 
 .container {
-  position: relative;
-  width: 100%;
-  height: 100%;
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
 
 .left-panel {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 15%;
-  height: 100%;
-  background-color:#1c1e22;
-
-  
-
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 15%;
+	height: 100%;
+	background-color: #1c1e22;
 }
 
 .right-panel {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 85%;
-  height: 94%;
-  background-color:  #f2f2f2;
-  
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 85%;
+	height: 94%;
+	background-color: #f2f2f2;
 }
-
 
 .tbl_div {
-
- width:1000px;
- height:600px;
- position:relative;
- margin:100px auto;
-} 
-
-table {
- 
- 
-  background-color: #FFFFFF;
-  text-align: center;
- width:100%;
- height:100%;
- border-collapse: collapse;
- border-radius: 10px;
- 
-
- 
+	width: 1000px;
+	height: 600px;
+	position: relative;
+	margin: 100px auto;
 }
 
-
+table {
+	background-color: #FFFFFF;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+	border-radius: 10px;
+}
 
 table th, table td {
- border: 1px solid rgba(204, 204, 204, 0.2);
-border-right: none;
-font-weight: 250;
-font-size: 14px;
-  
+	border: 1px solid rgba(204, 204, 204, 0.2);
+	border-left: none;
+	border-right: none;
+	border-spacing: 10px;
+	padding: 0px 12px;
+	font-weight: 250;
+	font-size: 14px;
 }
 
 .search {
-    top:25px;
-    left:10px;
-    position:absolute;
-    border:none;
-    border-radius: 12px;
-    background-color: #f2f2f2;
-    text-align: center;
-    padding:12px;
-    outline: none;
+	top: 25px;
+	left: 10px;
+	position: absolute;
+	border: none;
+	border-radius: 12px;
+	background-color: #f2f2f2;
+	text-align: center;
+	padding: 12px;
+	outline: none;
 }
 
 .btn_quit {
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    position: absolute;
-    top: 25px;
-    right: 18px;
-    border: none;
-    cursor: pointer;
-    border-radius: 7px;
-    font-size: 13px;
-
+	background-color: black;
+	color: white;
+	padding: 10px 20px;
+	position: absolute;
+	top: 25px;
+	right: 19px;
+	border: none;
+	cursor: pointer;
+	border-radius: 7px;
+	font-size: 13px;
 }
 
-.height_tr {
-  height:40px;
+.first_tr {
+	height: 80px;
+}
+
+.last_tr {
+	height: 60px;
 }
 
 .menu_ul {
-  display: flex;
-  flex-direction: column;
-
-
+	display: flex;
+	flex-direction: column;
 }
 
 .menu_ul li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
- height: 56.22px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 56.22px;
 }
 
-.menu_ul li:hover{
-  background-color:lightslategray;
-  border-radius: 7px;
+.menu_ul li:hover {
+	background-color: lightslategray;
+	border-radius: 7px;
+	width: 100%;
 }
+
 .menu_ul li a {
-  display: block;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  color:white;
-  font-size: 15px;
-  line-height:25px;
+	display: block;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+	line-height: 25px;
+	width: 100%;
 }
 
 #input {
-  position: absolute;
-  top:0px;
-  right:0px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
 }
 
 .box {
-  padding:10px;
-  margin: 0 15px;
+	padding: 10px;
+	margin: 0 15px;
 }
 
-h2{
-  position:absolute;
-  left:2; top:-40px;
-  font-size: 18px;
+h2 {
+	position: absolute;
+	left: 2;
+	top: -40px;
+	font-size: 18px;
 }
-
 
 header {
-  height:6%;
-  background-color: #FFFFFF;
-  width:100%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  z-index: 2;
-  position: relative;
+	height: 6%;
+	background-color: #FFFFFF;
+	width: 100%;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	z-index: 2;
+	position: relative;
 }
 
 .pagination {
-  position: absolute;
-  bottom:12px;
-  right:20px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: -140px
 }
 
 .pagination a {
-  text-decoration: none;
-  color:black;
-  margin: 0px 1px;
+	text-decoration: none;
+	color: #6c757d;;
+	margin: 0px 7px;
 }
