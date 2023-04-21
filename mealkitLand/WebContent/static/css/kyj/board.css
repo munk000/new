@@ -1,5 +1,5 @@
 @charset "UTF-8";
-   * {
+     * {
       margin:0;
       padding:0;
    
@@ -64,10 +64,12 @@ table {
 
 
 table th, table td {
- border: 1px solid rgba(204, 204, 204, 0.2);
-border-right: none;
-font-weight: 250;
-font-size: 14px;
+  border: 1px solid rgba(204, 204, 204, 0.2);
+  border-left: none; border-right: none;
+  border-spacing: 10px;
+  padding:0px 12px;
+  font-weight: 250;
+  font-size: 14px;
   
 }
 
@@ -89,7 +91,7 @@ font-size: 14px;
     padding: 10px 20px;
     position: absolute;
     top: 25px;
-    right: 18px;
+    right: 19px;
     border: none;
     cursor: pointer;
     border-radius: 7px;
@@ -97,8 +99,12 @@ font-size: 14px;
 
 }
 
-.height_tr {
-  height:40px;
+.first_tr {
+  height:80px;
+}
+
+.last_tr {
+  height:60px;
 }
 
 .menu_ul {
@@ -118,6 +124,7 @@ font-size: 14px;
 .menu_ul li:hover{
   background-color:lightslategray;
   border-radius: 7px;
+    width: 100%;
 }
 .menu_ul li a {
   display: block;
@@ -127,6 +134,7 @@ font-size: 14px;
   color:white;
   font-size: 15px;
   line-height:25px;
+  width: 100%;
 }
 
 #input {
@@ -157,13 +165,15 @@ header {
 }
 
 .pagination {
-  position: absolute;
-  bottom:12px;
-  right:20px;
+  width:100%;
+  text-align: center;
+  position:relative;
+  top:-140px
 }
 
 .pagination a {
   text-decoration: none;
-  color:black;
-  margin: 0px 1px;
+  color:#6c757d;;
+ margin: 0px 7px;
 }
+

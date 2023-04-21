@@ -14,14 +14,15 @@
   
    
     <ul class="menu_ul">
-    <li><a href="#"></a></li> 
-    <li><a href="main.jsp">사이트 바로가기</a></li>
-    <li><a href="member.jsp">회원관리</a></li>
-    <li><a href="register.jsp">상품등록</a></li>
-    <li><a href="board.jsp">문의게시판 관리</a></li>
-    <li><a href="#">공지사항 관리</a></li>
-    <li><a href="order.jsp">주문관리</a></li>
-    <li><a href="main.jsp">로그아웃</a></li>
+            <li><a href="#"></a></li> 
+        <li><a href="main.jsp">사이트 바로가기</a></li>
+        <li><a href="member.jsp">회원관리</a></li>
+         <li><a href="order.jsp">주문관리</a></li>
+         <li><a href="board.jsp">문의게시판 관리</a></li>
+         <li><a href="manageProduct.jsp">상품관리</a></li>
+        <li><a href="register.jsp">상품등록</a></li>
+        <li><a href="notice.jsp">공지사항 작성</a></li>
+        <li><a href="main.jsp">로그아웃</a></li>
       </ul>
 
     </div>
@@ -39,7 +40,7 @@
           
             <label for="category">카테고리</label>
             <select id="category" name="category">
-              <option value="">--카테고리 선택--</option>
+              <option value="">카테고리 선택</option>
               <option value="아침">아침</option>
               <option value="점심">점심</option>
               <option value="저녁">저녁</option>
