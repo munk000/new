@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 <link rel="stylesheet" href="../../static/css/kyj/board.css">
 </head>
+
 <body>
 
 	<div class="container">
