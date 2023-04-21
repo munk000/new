@@ -11,7 +11,7 @@
 </head>
 <body>
 	<link rel="stylesheet" href="../../static/css/jbk/personal.css" />
-	<title>랭킹닭컴</title>
+	<title>밀키트랜드</title>
 
 	<!-- [Pub/Dev] 메인페이지의 경우 addClass main -->
 	<div class="wrap " style>

@@ -537,6 +537,8 @@ input[type="checkbox"], input[type="radio"] {
     min-width: auto;
     font-size: 13px;
     vertical-align: top;
+    position: relative;
+    left: 180px;
 }
 
 .btn-black {
@@ -630,4 +632,3 @@ i {
     color: #333;
     font-size: 15px;
 }
-
