@@ -46,7 +46,7 @@
 								</div>
 							</div>
 							<!--//이름 -->
-							<div class="form-group">
+							<div class="form-group info">
 								<div class="form-head">
 									<label for="member-join-general-id-text" class="form-label">아이디<i
 										class="es2"></i></label>
