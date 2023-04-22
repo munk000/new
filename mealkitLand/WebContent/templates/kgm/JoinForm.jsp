@@ -140,8 +140,8 @@
 
                                     <input type="text" id="sample5_address" placeholder="주소">
                                     <input type="button" onclick="sample5_execDaumPostcode()" value="주소 검색"><br>
-                                    <div id="map">
-                                    </div>
+									<div id="map" style="width:300px;height:300px;margin-top:10px;display:none">
+									</div>
                                 </div>
                             </div>
                         </div>
@@ -190,6 +190,9 @@
 
                 // 주소 정보를 해당 필드에 넣는다.
                 document.getElementById("sample5_address").value = addr;
+                if(document.getElementById("sample5_address").value){
+                	return;
+                }
                 // 주소로 상세 정보를 검색
                 geocoder.addressSearch(data.address, function(results, status) {
                     // 정상적으로 검색이 완료됐으면
