@@ -16,59 +16,6 @@
 <body>
 	<div class="wrap">
 		<%@include file="/templates/kgm/header.jsp"%>
-<<<<<<< HEAD
-		<section id="contents" class="container">
-			<form id="join-general-form" name="join-general-form"
-				action="/member/join/actionJoinGeneral" method="post"
-				onsubmit="return onSubmitJoinGeneral();" accept-charset="UTF-8"
-				data-gtm-form-interact-id="0">
-				<input type="hidden" name="_csrf"
-					value="4495ea71-eadd-40ab-922e-c750f252ea76"> <input
-					type="hidden" id="member-join-general-email-domain-text"
-					name="member-join-general-email-domain-text" value> <input
-					type="hidden" id="member-easy-join" name="member-easy-join"
-					value="Y">
-				<div class="join-container join-container2" style="display: block;">
-					<div class="join-area">
-						<h2 class="join-title">회원가입</h2>
-						<fieldset class="form-group-area">
-							<legend>회원가입 항목 작성</legend>
-							<div class="form-group">
-								<div class="form-head">
-									<label for="member-join-general-id-text" class="form-label">이름<i
-										class="es2"></i></label>
-								</div>
-								<!-- form-head -->
-								<div class="input-group type-lg w-full">
-									<label for="find-member-id-name-text2" class="blind">이름
-										입력</label> <input type="text" id="find-member-id-name-text2"
-										name="find-member-id-name-text2" class="input-text"
-										placeholder="이름 2자 이상 입력" maxlength="50"
-										onkeyup="onBlurFindMemberIdInput();"
-										onblur="onBlurFindMemberIdInput();">
-								</div>
-							</div>
-							<!--//이름 -->
-							<div class="form-group info">
-								<div class="form-head">
-									<label for="member-join-general-id-text" class="form-label">아이디<i
-										class="es2"></i></label>
-								</div>
-								<!--// form-head -->
-								<div class="input-group type-lg w-full">
-									<input type="text" id="member-join-general-id-text"
-										name="member-join-general-id-text" class="input-text w571"
-										placeholder="4~16자 이상 영문 또는 숫자만 사용 가능" value=""> <span
-										class="input-group-btn"><button type="button"
-											id="btn-id-check" class="btn-form btn-default-ex"
-											onclick="onClickMemberJoinVerifyLoginIdBtn();">
-											<span>중복확인</span>
-										</button></span>
-								</div>
-								<div id="member-join-general-id-text-error"></div>
-							</div>
-							<!--// form-group -->
-=======
 		<section id="contents" class=container>
         <form id="join-form" name="join-form" action="" method="post">
             <div class="join-container join-container2" style="display: block;">
@@ -76,7 +23,6 @@
                     <h2 class=join-title">회원가입</h2>
                     <fieldset class="form-group-area">
                         <legend>회원가입 항목 작성</legend>
->>>>>>> kgm
 
                         <div class="info form-head" style="">
                             <div class="form-group info-container">
@@ -182,12 +128,12 @@
                                             <option value="hotmail.com">hotmail.com</option>
                                             <option value="gmail.com">gmail.com</option>
                                         </select>
-                                        <img src="../../static/images/select.png"
+                                        <img src="${pageContext.request.contextPath}/static/images/select.png"
                                             width="16px" style="display: inline-block;">
                                     </div>
                                     <p class="help"></p>
                                     <h6 class="help">
-                                        <img src="../../static/images/warn.png" id="warn"
+                                        <img src="${pageContext.request.contextPath}/static/images/warn.png" id="warn"
                                             width="16px" height="16px">
                                         이메일로 비밀번호 변경 링크 등이 발송됩니다. 개인정보 보호를 위해 정확한 메일 정보를 입력해주세요.
                                     </h6>
