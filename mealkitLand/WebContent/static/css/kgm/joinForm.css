@@ -605,11 +605,11 @@ element.style {
     position: relative;
     text-align: center;
 }
-img{
+/* img{
     width: 400px;
     height: 100px;
     object-fit:contain;
-}
+} */
 .login-area .btn-bottom-area .btn-basic-lg2:only-child, .join-area.type2 .btn-bottom-area .btn-basic-lg2:only-child {
     width: 100%;
 }

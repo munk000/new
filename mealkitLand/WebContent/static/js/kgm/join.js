@@ -1,8 +1,38 @@
-/**
- * 
- */
-// info 
-const $joinInputs = $("input[type='text']");
+// $("div#back").hide();
+// $("div.info").hide();
+// $("div.join").hide();
+// let step = 1;
+
+// // term
+// const $requiredChecks = $("input[type='checkbox'].required");
+
+// function goInfo(){
+//     let check = false;
+//     $requiredChecks.each(function(i, requiredCheck){
+//         check = $(requiredCheck).is(":checked");
+//         return check;
+//     });
+
+//     if(!check){
+//         let modalMessage = "<span>서비스를 이용하시기 위해서는</span><span>필수 약관에 동의해주세요!</span>";
+//         showWarnModal(modalMessage);
+//         return;
+//     }
+
+//     step = 2;
+
+//     $("div.term").hide();
+//     $("div.join").hide();
+//     $("div.info").show();
+//     $("div#back").show();
+
+//     $([document.documentElement,document.body]).animate({
+//         scrollTop:0
+//     },300);
+// }
+
+// info
+const $infoInputs = $("div.info input[type='text']");
 const nameRegex = /^[가-힣|a-z|A-Z|]+$/;
 const specialCharacterRegex = /[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gim;
 const birthRegex = /^(19[0-9][0-9]|20\d{2}).?(0[0-9]|1[0-2]).?(0[1-9]|[1-2][0-9]|3[0-1])$/;
@@ -13,8 +43,96 @@ const $infoHelp = $("div.info p.help");
 let infoCheck;
 let infoCheckAll = [false, false, false, false, false];
 
+$infoInputs.eq(2).on("focus", function(){
+    $(this).val($(this).val().replaceAll("-", ""));
+});
 
-//join
+$infoInputs.eq(1).on("focus", function(){
+    $(this).val($(this).val().replaceAll(".", ""));
+});
+
+$infoInputs.on("blur", function(){
+    let i = $infoInputs.index($(this));
+    let value = $(this).val();
+
+
+    $(this).next().hide();
+    $(this).next().fadeIn(500);
+
+    if(!value){
+        $infoHelp.eq(i).text(infoBlurMessages[i]);
+        showHelp($(this), "error.png");
+        infoCheck = false;
+        infoCheckAll[i] = infoCheck;
+        return;
+    }
+
+    switch(i){
+        case 0:
+            infoCheck = value.length > 1 && value.length < 21 && nameRegex.test(value) && !specialCharacterRegex.test(value);
+            break;
+        case 1:
+            infoCheck = birthRegex.test(value)
+            if(infoCheck){
+                $(this).val(value.replace(/^(\d{4})(\d{2})(\d{2})$/, `$1.$2.$3`));
+            }
+            break;
+        case 2:
+            infoCheck = phoneRegex.test(value);
+            if(infoCheck){
+                $(this).val(value.replace(/^(\d{2,3})(\d{3,4})(\d{4})$/, `$1-$2-$3`));
+            }
+            break;
+    }
+
+    infoCheckAll[i] = infoCheck;
+
+    if(!infoCheck){
+        $infoHelp.eq(i).text(infoRegexMessages[i]);
+        showHelp($(this), "error.png");
+        return;
+    }
+
+    $infoHelp.eq(i).text("");
+    showHelp($(this), "pass.png");
+});
+
+function showHelp($input, fileName){
+    $input.next().attr("src", "/static/images/" + fileName);
+
+    if(fileName == "pass.png") {
+        $input.css("border", "1px solid rgba(0, 0, 0, 0.1)");
+        $input.css("background", "rgb(255, 255, 255)");
+        $input.next().attr("width", "18px");
+    }else {
+        $input.css("border", "1px solid rgb(255, 64, 62)");
+        $input.css("background", "rgb(255, 246, 246)");
+    }
+}
+
+function goJoin(){
+    $infoInputs.trigger("blur");
+    if(infoCheckAll.filter(check => check).length != $infoInputs.length){
+        let modalMessage = "<span>모든 정보를 정확히 입력하셔야</span><span>다음 단계로 진행됩니다.</span>";
+        showWarnModal(modalMessage);
+        return;
+    }
+
+    $("div.basic-info-container dd").each(function(i){
+        $(this).text($infoInputs.eq(i).val());
+    });
+
+    step = 3;
+
+    $("div.info").hide();
+    $("div.join").show();
+
+    $([document.documentElement,document.body]).animate({
+        scrollTop:0
+    },300);
+}
+
+// join
 const $joinInputs = $("div.join input[type='text'], div.join input[type='password']");
 const idRegex = /^(?!(?:[0-9]+)$)([a-zA-Z]|[0-9a-zA-Z]){4,}$/;
 const passwordNumberRegex =/[0-9]/g;
@@ -22,8 +140,7 @@ const passwordEnglishRegex = /[a-z]/ig;
 const passwordSpecialCharacterRegex = /[`~!@@#$%^&*|₩₩₩'₩";:₩/?]/gi;
 const emailFirstRegex =  /[`~!@#$%^&*|\\\'\";:\/?]/;
 const emailLastRegex = /[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-
-//이미 사용중인 아이디
+// 이미 사용중인 아이디 입니다. 다른 아이디를 입력해주세요.
 let joinBlurMessages = ["아이디를 입력하세요.", "비밀번호를 입력하세요.", "비밀번호 확인을 위해 한번 더 입력하세요.", "이메일을 입력하세요."];
 let joinRegexMessages = ["영문 혹은 영문과 숫자를 조합하여 4자~20자로 입력해주세요.", "공백 제외 영어 및 숫자, 특수문자 모두 포함하여 10~20자로 입력해주세요.", "위 비밀번호와 일치하지 않습니다. 다시 입력해주세요.", "이메일 주소를 확인해주세요.", "이메일 주소를 확인해주세요."];
 const $joinHelp = $("div.join p.help");
