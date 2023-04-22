@@ -221,6 +221,9 @@ label, select, input, textarea {
     border-collapse: collapse;
     /* width: 100%; */
 }
+.blind-name{
+	display:none;	
+}
 .blind {
     position: absolute;
     width: 1px;
