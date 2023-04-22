@@ -1,8 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +9,6 @@
     <title>밀키트랜드</title>
     <link rel="stylesheet" href="../../static/css/kgm/footer.css">
 </head>
-
 <body>
 <div class="wrap">
     <footer id="footer" class="footer">
