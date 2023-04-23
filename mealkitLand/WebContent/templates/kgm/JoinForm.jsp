@@ -20,7 +20,7 @@
         <form id="join-form" name="join-form" action="" method="post">
             <div class="join-container join-container2" style="display: block;">
                 <div class="join-area">
-                    <h2 class=join-title">회원가입</h2>
+                    <h2 class="join-title">회원가입</h2>
                     <fieldset class="form-group-area">
                         <legend>회원가입 항목 작성</legend>
 
