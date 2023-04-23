@@ -9,8 +9,13 @@
 	</settings>
 	
 	<typeAliases>
-		<typeAlias type="com.app.board.domain.BoardVO" alias="boardVO"/>
-		<typeAlias type="com.app.board.domain.BoardDTO" alias="boardDTO"/>
+		<typeAlias type="com.mealkitland.board.domain.BoardVO" alias="boardVO"/>
+		<typeAlias type="com.mealkitland.board.domain.BoardDTO" alias="boardDTO"/>
+		<typeAlias type="com.mealkitland.user.domain.UserVO" alias="userVO"/>
+		<typeAlias type="com.mealkitland.announce.domain.AnnounceVO" alias="announceVO"/>
+		<typeAlias type="com.mealkitland.subscribe.domain.SubscribeVO" alias="subscribeVO"/>
+		
+		
 	</typeAliases>
 	
    <environments default="mysql">
