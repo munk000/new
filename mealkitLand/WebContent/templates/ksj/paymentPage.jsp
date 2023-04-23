@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="../../static/css/jbk/PaymentProcess.css" />
-<title>밀키트랜드</title>
+<title>주문/결제</title>
 
 </head>
 <body>

@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<title>Insert title here</title>
+<title>1:1 문의하기</title>
 <link rel="stylesheet" href="../../static/css/jyk/boardWrite.css">
 </head>
 <body>

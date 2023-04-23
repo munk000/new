@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>게시판 관리 페이지</title>
  <link rel="stylesheet" href="../../static/css/kyj/board.css">
 </head>
 <body>

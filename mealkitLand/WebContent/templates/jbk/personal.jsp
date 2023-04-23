@@ -7,11 +7,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>밀키트랜드</title>
+    <title>공지사항</title>
 </head>
 <body>
 	<link rel="stylesheet" href="../../static/css/jbk/personal.css" />
-	<title>밀키트랜드</title>
+	<title>공지사항</title>
 
 	<!-- [Pub/Dev] 메인페이지의 경우 addClass main -->
 	<div class="wrap " style>
