@@ -9,4 +9,26 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <!-- 유저 -->
+  <servlet>
+  	<servlet-name>User</servlet-name>
+  	<servlet-class>com.mealkitland.UserFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>User</servlet-name>
+  	<url-pattern>*.user</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 문의 게시판 -->
+  
+  <!-- 공지 사항  -->
+  
+  <!-- 구독(결제) -->
+
+  <!-- 관리자 -->
+ 	
+ 	
+  
 </web-app>

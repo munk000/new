@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -175,7 +175,7 @@
                                             class="btn-basic-lg2 w-full btn-dim"
                                             onclick="onClickFindMemberPwCertiBtn();"><span>인증번호 받기</span></button>
                                         <button type="submit" id="find-member-pw-submit-btn"
-                                            class="btn-basic-lg2 btn-primary w-full btn-dim" disabled=""><span>비밀번호 재설정
+                                            class="btn-basic-lg2 btn-primary w-full btn-dim"><span>비밀번호 재설정
                                             </span></button>
                                     </div>
 
