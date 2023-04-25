@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/ksj/main.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/ksj/banner.css">
-<title>Insert title here</title>
+<title>메인 페이지</title>
 </head>
 <body>
 	<jsp:include page="../kgm/header.jsp"></jsp:include>

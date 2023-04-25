@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>주문 관리</title>
  <link rel="stylesheet" href="../../static/css/kyj/order.css">
 </head>
 <body>

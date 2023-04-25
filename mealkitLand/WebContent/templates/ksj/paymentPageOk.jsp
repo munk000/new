@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/ksj/paymentPageOk.css">
-<title>Insert title here</title>
+<title>주문 완료</title>
 </head>
 <body>
 <jsp:include page="../kgm/header.jsp"/>

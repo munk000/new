@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>밀키트랜드</title>
+<title>이용약관 동의</title>
 <link rel="stylesheet" href="../../static/css/kgm/termsofUse.css">
 </head>
 <body>

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>상품 관리 페이지</title>
  <link rel="stylesheet" href="../../static/css/kyj/manageProduct.css">
 </head>
 <body>
