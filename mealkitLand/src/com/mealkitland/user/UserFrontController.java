@@ -23,7 +23,7 @@ public class UserFrontController extends HttpServlet{
 		
 		if(target.equals("login")) {
 			result = new Result();
-			result.setPath("templates/kgm/loginFrom.jsp");
+			result.setPath(req.getContextPath()+"/templates/kgm/loginFrom.jsp");
 			
 		} else if(target.equals("loginOk")) {
 			result = new LoginOkController().execute(req, resp);
@@ -31,7 +31,7 @@ public class UserFrontController extends HttpServlet{
 		} else if(target.equals("logout")) {
 			req.getSession().invalidate();
 			result = new Result();
-			result.setPath("templates/kgm/loginFrom.jsp");
+			result.setPath(req.getContextPath()+"/templates/kgm/loginFrom.jsp");
 		}
 		
 		
