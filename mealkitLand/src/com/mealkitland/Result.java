@@ -4,7 +4,7 @@ public class Result {
 	private String path;
 	private boolean isRedirect;
 	
-	public Result() {;	}
+	public Result() {;}
 
 	public String getPath() {
 		return path;
