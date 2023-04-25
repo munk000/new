@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <title>Insert title here</title>
-<link rel="stylesheet" href="../../static/css/jyk/boardMain.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/jyk/boardMain.css">
 </head>
 <body>
 	<%@include file="/templates/kgm/header.jsp"%>
@@ -23,11 +23,9 @@
 						<nav class="aside-menu">
 							<ul class="menu-list">
 								<li><a href="" class="menu">공지사항</a></li>
-								<li><a href="" class="menu">이용안내</a></li>
-								<li><a href="" class="menu">자주묻는질문</a></li>
-								<li><a href="" class="menu" onclick="checkLogin();">1:1문의하기</a>
+								<li><a href="${pageContext.request.contextPath}/templates/jyk/boardMain.jsp" class="menu">자주묻는질문</a></li>
+								<li><a href="${pageContext.request.contextPath}/templates/jyk/boardWrite.jsp" class="menu" onclick="checkLogin();">1:1문의하기</a>
 								</li>
-								<li><a href="" class="menu">고객의소리</a></li>
 							</ul>
 						</nav>
 						<div class="aside-guide-box">
@@ -105,9 +103,11 @@
 							<!-- top-search-box 게시판 내용-->
 							<div class="board-list ui-accordion">
 								<ul class="accordion-list type2 ui-accordion-list">
+									<!-- 게시판 반복문  -->
 									<li>
-										<!-- 활성화시 addClass active --> <!-- 질문영역 --> <a
-										href="javascript:;" class="title-div ui-accordion-click">
+										<!-- 활성화시 addClass active --> 
+										<!-- 질문영역 --> 
+										<a href="javascript:;" class="title-div ui-accordion-click">
 											<div class="subject">
 												<span class="category">기타</span> <span class="classify">Q</span>
 												<p class="txt">언제부터 멤버십이 변경되나요?</p>
@@ -116,7 +116,7 @@
 												<i class="ico-arr-toggle"> <span class="blind">내용보기</span>
 												</i>
 											</div>
-									</a>
+										</a>
 										<div class="ui-accordion-view">
 											<!-- 답변영역 -->
 											<div class="answer">
@@ -245,8 +245,7 @@
 											</div>
 										</div>
 									</li>
-									<!-- 무한반복 -->
-									<!-- li*8 -->
+									<!-- li 반복 -->
 								</ul>
 							</div>
 
@@ -289,5 +288,5 @@
 	</section>
 	<%@include file="/templates/kgm/footer.jsp"%>
 </body>
-<script type="text/javascript" src="../../static/js/boardMain.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/boardMain.js"></script>
 </html>
