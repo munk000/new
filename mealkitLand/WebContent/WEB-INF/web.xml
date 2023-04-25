@@ -13,7 +13,7 @@
   <!-- 유저 -->
   <servlet>
   	<servlet-name>User</servlet-name>
-  	<servlet-class>com.mealkitland.UserFrontController</servlet-class>
+  	<servlet-class>com.mealkitland.user.UserFrontController</servlet-class>
   </servlet>
   
   <servlet-mapping>
@@ -22,7 +22,14 @@
   </servlet-mapping>
   
   <!-- 문의 게시판 -->
-  
+  <servlet>
+  	<servlet-name>Board</servlet-name>
+  	<servlet-class>com.mealkitland.board.BoardFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Board</servlet-name>
+  	<url-pattern>*.board</url-pattern>
+  </servlet-mapping>
   <!-- 공지 사항  -->
   
   <!-- 구독(결제) -->
