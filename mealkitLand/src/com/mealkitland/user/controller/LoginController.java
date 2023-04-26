@@ -17,6 +17,7 @@ public class LoginController implements Action {
 		String userIdentification = null, userPassword = null;
 		Result result = new Result();
 		boolean autoLogin = false;
+		boolean saveId = false;
 		
 		if(req.getHeader("Cookie") != null){
 			Cookie[] cookies = req.getCookies();
@@ -31,16 +32,22 @@ public class LoginController implements Action {
 				if(cookie.getName().equals("autoLogin")) {
 					autoLogin = Boolean.valueOf(cookie.getValue());
 				}
+				if(cookie.getName().equals("saveId")) {
+					saveId = Boolean.valueOf(cookie.getValue());
+				}
 			}
 		}
 		
 		if(userIdentification != null) {
 			req.setAttribute("userIdentification", userIdentification);
 			req.setAttribute("userPassword", userPassword);
-			result.setPath("loginOk.member");
+			result.setPath("loginOk.user");
 		}else {
 			if(autoLogin) {
 				req.setAttribute("autoLogin", autoLogin);
+			}
+			if(saveId) {
+				req.setAttribute("saveId", saveId);
 			}
 			result.setPath("templates/kgm/loginForm.jsp");
 		}
