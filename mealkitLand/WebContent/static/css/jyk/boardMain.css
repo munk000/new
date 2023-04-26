@@ -571,7 +571,7 @@ input[type="radio" i] {
 }
 
 /* 페이지내이션 */
-.page-bottom {
+/* .page-bottom {
 	position: relative;
 }
 
@@ -628,4 +628,37 @@ input[type="radio" i] {
 .pagination .btn-page.next {
 	background-position: 0 -30px;
 	margin: 0 6px 0 0;
+} */
+
+/*페이징 */
+div#paging-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    text-align: center;
+}
+
+a.paging {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+a.paging-checked {
+    color: rgb(235 124 120);
+    background: rgba(235, 124, 120, 0.1);
+    font-weight: 700;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+a.paging-move {
+    margin: 0px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.liTag{
+	border-top : 1px solid rgba(0, 0, 0, 0.05);
 }
