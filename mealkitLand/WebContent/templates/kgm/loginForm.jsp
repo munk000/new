@@ -32,14 +32,27 @@
                             <legend>아이디/비밀번호 입력</legend>
                             <div class="input-group w-full">
                                 <label for="id" class="blind">아이디</label>
+								<%String cookie = "";
+                                String save = "";
+								Cookie[] cookies = request.getCookies();
+								if(cookies !=null&& cookies.length > 0)
+								for (int i = 0; i < cookies.length; i++){
+								if(cookies[i].getName().equals("saveId")){
+								save = cookies[i].getValue();}}
+								if(save.equals("true"))
+								for (int i = 0; i < cookies.length; i++){
+								if (cookies[i].getName().equals("userIdentification")) { // 내가 원하는 쿠키명 찾아서 값 저장
+									cookie = cookies[i].getValue();}}%>
                                 <input type="text" id="id" name="userIdentification" class="input-text type-lg" placeholder="아이디"
-                                    maxlength="100">
+                                    maxlength="100" value=<%=cookie%>>
+ 
                             </div>
                             <div class="input-group w-full">
                                 <label for="pw" class="blind">비밀번호</label>
                                 <input type="password" id="password" name="userPassword" class="input-text type-lg" placeholder="비밀번호"
                                     maxlength="100">
                             </div>
+                            
                             <div class="chk-area remember-me-con">
                                 <div class="custom-checkbox remember-me1-con">
                                     <input type="checkbox" id="remember-me" class="checkbox" name="auto-login"
@@ -58,9 +71,6 @@
                                 <li><a href="/auth/findid" class="text-black2">아이디 찾기</a></li>
                                 <li><a href="/auth/findpw" class="text-black2">비밀번호 찾기</a></li>
                             </ul>
-                        </div>
-
-                        <div id="member-login-error-text" style="display:none;">
                         </div>
 
                     </form>

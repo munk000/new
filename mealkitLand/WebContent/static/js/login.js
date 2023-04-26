@@ -1,11 +1,29 @@
 const $checkAutoLogin = $("input[name='auto-login']");
 const $id = $("input#id");
 const $password = $("input#password");
+const $checkSaveId = $("input[name='save-id']");
 
 $checkAutoLogin.on("change", function(){
     let isChecked = $(this).prop("checked");
-    isChecked ? checkedAutoLogin() : notCheckedAutoLogin();
 });
+
+$checkSaveId.on("change", function(){
+    let itsChecked = $(this).prop("checked");
+});
+
+let saveId = "${saveId}";
+if(saveId){
+	$("input[name='save-id']").prop("checked", true);
+	//checkedSaveId();
+}
+
+
+let autoLogin = "${autoLogin}";
+if(autoLogin){
+	$("input[name='auto-login']").prop("checked", true);
+	//checkedAutoLogin();
+}
+
 
 function send(){
     if(!$id.val()){
@@ -28,25 +46,8 @@ function send(){
 	//$password.val(btoa($password.val()));
 
     document.login.submit();
+    
 }
-
-/*
-$id.on("blur", function(){
-    $id.next().hide();
-    if($id.val()){
-        $id.next().fadeIn(500);
-        showHelp($id, "pass.png");
-    }
-});
-
-$password.on("blur", function(){
-    $password.next().hide();
-    if($password.val()){
-        $password.next().fadeIn(500);
-        showHelp($password, "pass.png");
-    }
-});
-*/
 
 
 

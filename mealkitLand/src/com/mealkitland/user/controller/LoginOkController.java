@@ -23,7 +23,9 @@ public class LoginOkController implements Action{
 		HttpSession session = req.getSession();
 		Result result = new Result();
 		boolean autoLogin = Boolean.valueOf(req.getParameter("auto-login"));
+		boolean saveId = Boolean.valueOf(req.getParameter("save-id"));
 		result.setRedirect(true);
+		String id = "";
 		
 		if(userIdentification == null) {
 			if(req.getHeader("Cookie") != null) {
@@ -39,6 +41,9 @@ public class LoginOkController implements Action{
 					if(cookie.getName().equals("autoLogin")) {
 						autoLogin = Boolean.valueOf(cookie.getValue());
 					}
+					if(cookie.getName().equals("saveId")) {
+						saveId = Boolean.valueOf(cookie.getValue());
+					}
 					
 				}
 				
@@ -51,13 +56,16 @@ public class LoginOkController implements Action{
 			
 		if(userId == null) {
 //			로그인 실패
-			result.setPath(req.getContextPath()+ "/login.user?=false");
+			result.setPath(req.getContextPath()+ "/loginForm.user?=false");
 				
 		}else {
 //			로그인 성공
 			session.setAttribute("userId", userId);
-			result.setPath(req.getContextPath()+ "/templates/jbk/main2.jsp");
-			
+			if(userIdentification.equals("admin")) {
+				result.setPath(req.getContextPath()+ "/templates/kyj/manageProduct.jsp");
+			}else {
+				result.setPath(req.getContextPath()+ "/templates/ksj/main.jsp");
+			}
 			if(autoLogin) {
 				Cookie userIdentificationInCookie = new Cookie("userIdentification", userIdentification);
 				Cookie userPasswordInCookie = new Cookie("userPassword", userPassword);
@@ -65,10 +73,19 @@ public class LoginOkController implements Action{
 				resp.addCookie(userIdentificationInCookie);
 				resp.addCookie(userPasswordInCookie);
 				resp.addCookie(autoLoginInCookie);
-			}else {
+				if(saveId) {
+					Cookie saveIdInCookie = new Cookie("saveId", String.valueOf(saveId));
+					resp.addCookie(saveIdInCookie);	
+				}	
+			}
+			else {
 				if(req.getHeader("Cookie") != null) {
 					Cookie[] cookies = req.getCookies();
+
 					for(Cookie cookie: cookies) {
+						if(cookie.getName().equals("saveId")) {
+							 resp.addCookie(new Cookie("saveId", null));
+						}
 						if(cookie.getName().equals("autoLogin")) {
 							cookie.setMaxAge(0); // 초단위
 							resp.addCookie(cookie);
@@ -76,10 +93,9 @@ public class LoginOkController implements Action{
 					}
 				}
 			}
-			
 		}
 		
 		return result;
 	}
-
+   
 }
