@@ -5,13 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<<<<<<< HEAD
 <title>1:1 문의하기</title>
 <link rel="stylesheet" href="../../static/css/jyk/boardWrite.css">
-=======
 <title>Insert title here</title>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/jyk/boardWrite.css">
->>>>>>> 96e731d2a779bd83e40b6e1d6240c954c2014361
 </head>
 <body>
 	<%@include file="/templates/kgm/header.jsp"%>

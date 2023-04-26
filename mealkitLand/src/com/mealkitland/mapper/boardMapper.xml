@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="board">
-	<select id="selectAll" resultType="boardVO">
+	
+	<!-- 게시글 전체 조회 -->
+	 <select id="selectAll" resultType="boardDTO">
+		select
+		board_id, board_title, board_content, board_category, board_regist_date, board_update_date, u.user_id from tbl_user u join tbl_board b
+		on u.user_id = b.user_id
+		order by board_id desc
+		limit #{offset}, #{rowCount}
+ 	</select>
+
+	<!-- 문의 게시글 작성 -->	
+	<insert id="insert">
+		insert into tbl_board
+		(board_id, board_title, board_content, board_category,user_id)
+		values(#{boardId}, #{boardTitle}, #{boardContent}, #{boardCategory},#{userId})
+	</insert>
+	
+<!-- 	전체 갯수-->
+	<select id="getTotal" resultType="_int">
+	select count(board_id) from tbl_board
 	</select>
+	<!-- 검색 -->		
 </mapper>
