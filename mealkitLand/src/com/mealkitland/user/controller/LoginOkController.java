@@ -14,7 +14,7 @@ import com.mealkitland.user.dao.UserDAO;
 public class LoginOkController implements Action{
 
 	@Override
-	public Result execute(HttpServletRequest req, HttpServletResponse rep) throws IOException, ServletException {
+	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		UserDAO userDAO = new UserDAO();
 		Long userId = userDAO.login(req.getParameter("userIdentification"), req.getParameter("userPassword"));
 		HttpSession session = req.getSession();
@@ -23,7 +23,7 @@ public class LoginOkController implements Action{
 		result.setRedirect(true);
 		
 		if(userId == null) {
-//			로그인 실패
+//			로그인 실패 
 			result.setPath(req.getContextPath()+ "/login.user?=false");
 				
 		}else {

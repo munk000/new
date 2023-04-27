@@ -212,9 +212,11 @@ $joinInputs.on("blur", function(){
 	}else{
 		checkId = false;
 		/*중복 검사*/
+		alert("안녕~~~~");
+		
 		$.ajax({
-			url: "checkIdOk.member",
-			data: {memberIdentification: $(this).val()},
+			url: "checkIdOk	.user",
+			data: {userIdentification: $(this).val()},
 			async: false,
 			success: function(result){
 				result = JSON.parse(result);

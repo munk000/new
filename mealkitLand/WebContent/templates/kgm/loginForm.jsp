@@ -23,7 +23,7 @@
                     </div>
                     <!--// login-greeting -->
 
-                    <form id="login_form" name="login_form" action="/auth/login" method="post"
+                    <form id="login_form" name="login_form" action="${pageContext.request.contextPath}/joinOk.user" method="post"
                         onsubmit="return onSubmitLogin();" data-gtm-form-interact-id="0"><input type="hidden"
                             name="encId" value="">
                         <input type="hidden" name="endPw" value="">
@@ -90,5 +90,4 @@
 				}
 		}
 	</script>
-
 </html>

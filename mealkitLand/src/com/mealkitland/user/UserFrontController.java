@@ -1,6 +1,7 @@
 package com.mealkitland.user;
 
 import com.mealkitland.Result;
+import com.mealkitland.user.controller.JoinOkController;
 import com.mealkitland.user.controller.LoginOkController;
 
 import java.io.IOException;
@@ -20,10 +21,16 @@ public class UserFrontController extends HttpServlet{
 		String target = req.getRequestURI().replace(req.getContextPath() + "/", "").split("\\.")[0];
 		Result result = null;
 		
-		
-		if(target.equals("login")) {
+		if(target.equals("join")) {
 			result = new Result();
-			result.setPath("templates/kgm/loginFrom.jsp");
+			result.setPath("templates/kgm/joinForm.jsp");
+			
+		} else if(target.equals("joinOk")) {
+			result = new JoinOkController().execute(req, resp);
+			
+		} else if(target.equals("login")) {
+			result = new Result();
+			result.setPath("templates/kgm/loginForm.jsp");
 			
 		} else if(target.equals("loginOk")) {
 			result = new LoginOkController().execute(req, resp);
@@ -31,7 +38,7 @@ public class UserFrontController extends HttpServlet{
 		} else if(target.equals("logout")) {
 			req.getSession().invalidate();
 			result = new Result();
-			result.setPath("templates/kgm/loginFrom.jsp");
+			result.setPath("templates/kgm/loginForm.jsp" );
 		}
 		
 		
@@ -50,4 +57,6 @@ public class UserFrontController extends HttpServlet{
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		doGet(req, resp);
  	}
+	
+	
 }
