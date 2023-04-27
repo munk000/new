@@ -23,7 +23,7 @@
 						<nav class="aside-menu">
 							<ul class="menu-list">
 								<li><a href="" class="menu">공지사항</a></li>
-								<li><a href="${pageContext.request.contextPath}/templates/jyk/boardMain.jsp" class="menu">자주묻는질문</a></li>
+								<li><a href="${pageContext.request.contextPath}/listOk.board" class="menu">자주묻는질문</a></li>
 								<li><a href="${pageContext.request.contextPath}/templates/jyk/boardWrite.jsp" class="menu" onclick="checkLogin();">1:1문의하기</a>
 								</li>
 							</ul>
@@ -179,7 +179,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/boardMain.js"></script>
 <script>
 let boards = `${boards}`;
-console.log(boards);
+
 let contextPath = `${pageContext.request.contextPath}`;
 	let $form = $("form[name='page-form']");
 	$("a.change-page").on("click", function(e){

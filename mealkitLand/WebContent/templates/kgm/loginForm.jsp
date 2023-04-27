@@ -77,6 +77,7 @@
                 </div>
                 <!-- //login-area -->
             </div>
+            
             <!-- //login-container -->
         </section>
         <%@include file="/templates/kgm/footer.jsp"%>

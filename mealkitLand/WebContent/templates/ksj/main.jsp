@@ -36,7 +36,8 @@
             <div class="dot 6"></div>
         </div>
     </section>
-		
+		<div>
+			<div>
 			<!--// main-slide-bottom -->
 			<span class="swiper-notification" aria-live="assertive"
 				aria-atomic="true"></span>

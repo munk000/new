@@ -23,6 +23,7 @@ public class BoardFrontController extends HttpServlet {
 		}else if(target.equals("write")) {
 			result = new Result();
 			result.setPath("templates/jyk/boardWrite.jsp");
+			
 		} else if(target.equals("writeOk")) {
 			result = new WriteOkController().execute(req, resp);
 		}
