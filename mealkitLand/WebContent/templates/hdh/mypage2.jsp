@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>나의 구독내역</title>
-    <link rel="stylesheet" href="../../static/css/hdh/mypage2.css">
+   
+    
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/hdh/mypage2.css">
 </head>
 <body>
     <div class="wrap" style>
@@ -65,15 +67,15 @@
                         </div>
                         <div class="search-box ui-toggle">
                             <div class="search-head">
-                                <p class="search-period">조회기간 2023.03.18 ~ 2023.04.18 (최근 1개월)</p>
-                                <botton type="botton" class="btn-link-txt2 ui toggle-btn">
-                                    <span>조회설정</span>
-                                    <i class="ico-arr-toggle"></i>
-                                </botton>
+                                <p class="search-period" style="display:inline-block;">조회기간 2023.03.18 ~ 2023.04.18 (최근 1개월)</p>
+                                <button type="button" class="btn" style="background:red; color:white;">조회</button>
+                                
                             </div>
                         </div>
                         <div class="no-data-type1 id=noDataWrap">
                             <p class="message">최근 1개월 내에 주문내역이 없습니다.</p>
+                            
+                            
                         </div>
                     </div>
                 </div>
@@ -84,3 +86,26 @@
     </div>
 </body>
 </html>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script> 
+
+let json = JSON.parse(`${subscribe}`);
+console.log(json);
+	
+
+	const btn = document.querySelector(".btn");
+const div = document.querySelector(".no-data-type1");
+const msg = document.querySelector(".message");
+let click = false;
+btn.addEventListener("click",()=>{
+	if(!click){
+		 msg.innerHTML = "";
+		    const p = document.createElement("p");
+		    p.innerText =json;
+		    div.appendChild(p);
+	}
+   click = true;
+})
+	
+</script>
+
