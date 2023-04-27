@@ -28,7 +28,7 @@ function showList(){
 				
 				<div class="ui-accordion-view">
 					<div class="answer">
-						<p class= "txt type2">2023년 4월 1일부터 새로워진 멤버십을 만나볼 수 있습니다.</p>
+						<p class= "txt">2023년 4월 1일부터 새로워진 멤버십을 만나볼 수 있습니다.</p>
 					</div>
 				</div>
 			</li>

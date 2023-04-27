@@ -235,7 +235,7 @@
 
 
                 <!-- 메인작성 -->
-                <form action="" id="counselRegFrm" name="counselRegFrm" method="post">
+                <form action="${pageContext.request.contextPath}/writeOk.board" id="counselRegFrm" name="writeForm" method="post">
                     <div class="frame-right">
                         <div class="frame-cnt-inner">
                             <div class="menu-title-area">
@@ -353,7 +353,7 @@
                                     onclick="javascript:history.back();">
                                     <span>취소하기</span>
                                 </button>
-                                <button type="button" class="btn-basic-lg2 btn-primary" onclick="goSave();">
+                                <button type="submit" class="btn-basic-lg2 btn-primary"><!--  onclick="goSave();"> -->
                                     <span>문의하기</span>
                                 </button>
                             </div>
@@ -363,8 +363,6 @@
                     </div>
                 </form>
             </div>
-        </div>
-
         </div>
     </section>
     <%@include file="/templates/kgm/footer.jsp"%>

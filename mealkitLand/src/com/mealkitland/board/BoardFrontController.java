@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.mealkitland.Result;
 import com.mealkitland.board.controller.ListOkController;
+import com.mealkitland.board.controller.WriteOkController;
 
 public class BoardFrontController extends HttpServlet {
 	@Override
@@ -19,7 +20,12 @@ public class BoardFrontController extends HttpServlet {
 		
 		if(target.equals("listOk")) {
 			result = new ListOkController().execute(req, resp);
-		} 
+		}else if(target.equals("write")) {
+			result = new Result();
+			result.setPath("templates/jyk/boardWrite.jsp");
+		} else if(target.equals("writeOk")) {
+			result = new WriteOkController().execute(req, resp);
+		}
 		
 		
 		
