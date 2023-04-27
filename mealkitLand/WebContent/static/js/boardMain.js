@@ -86,7 +86,7 @@ function selectBoxClose() {
 }
 
 
-/* 1:1문의 카테고리 선택 */
+ 
 var listWrap = $('.ui-accordion').children('.ui-accordion-list'),
 	click = listWrap.children('li').find('.ui-accordion-click');
 
@@ -95,6 +95,8 @@ click.on('click', function() {
 		list = $(this).parent('li');
 
 	if (!list.hasClass('active')) {
+		list.addClass('active');
+		$(this).next('.ui-accordion-view').toggle();
 		list.addClass('active').siblings('li').removeClass('active').find('.ui-accordion-view').addClass('hide');
 		view.removeClass('hide')
 		$(this).next('.ui-accordion-view').toggle();

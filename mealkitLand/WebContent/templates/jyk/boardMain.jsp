@@ -176,6 +176,7 @@
 	<%@include file="/templates/kgm/footer.jsp"%>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/boardMain.js"></script>
 <script>
 let boards = `${boards}`;
 console.log(boards);
@@ -188,5 +189,4 @@ let contextPath = `${pageContext.request.contextPath}`;
 	}); 
 </script>
 <script src="${pageContext.request.contextPath}/static/js/kgm/list.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/boardMain.js"></script>
 </html>
