@@ -35,8 +35,6 @@
   <!-- 구독(결제) -->
 
   <!-- 관리자 -->
-<<<<<<< HEAD
-=======
   
   <!-- 구독조회 -->
     <servlet>
@@ -47,8 +45,4 @@
   	<servlet-name>Subscribe</servlet-name>
   	<url-pattern>*.subscribe</url-pattern>
   </servlet-mapping>
- 	
- 	
->>>>>>> master
-  
 </web-app>
