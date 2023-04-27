@@ -14,6 +14,7 @@
 		<typeAlias type="com.mealkitland.user.domain.UserVO" alias="userVO"/>
 		<typeAlias type="com.mealkitland.announce.domain.AnnounceVO" alias="announceVO"/>
 		<typeAlias type="com.mealkitland.subscribe.domain.SubscribeVO" alias="subscribeVO"/>
+		<typeAlias type="com.mealkitland.subscribe.domain.SubscribeDTO" alias="subscribeDTO"/>
 		
 		
 	</typeAliases>

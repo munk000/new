@@ -35,6 +35,16 @@
   <!-- 구독(결제) -->
 
   <!-- 관리자 -->
+  
+  <!-- 구독조회 -->
+    <servlet>
+  	<servlet-name>Subscribe</servlet-name>
+  	<servlet-class>com.mealkitland.subscribe.SubscribeFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Subscribe</servlet-name>
+  	<url-pattern>*.subscribe</url-pattern>
+  </servlet-mapping>
  	
  	
   
