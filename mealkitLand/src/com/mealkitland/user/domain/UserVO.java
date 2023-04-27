@@ -146,4 +146,10 @@ public class UserVO {
 		return true;
 	}	
 	
+<<<<<<< HEAD
+=======
+	
+	
+
+>>>>>>> master
 }

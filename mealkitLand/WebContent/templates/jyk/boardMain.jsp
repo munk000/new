@@ -1,17 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<<<<<<< HEAD
 <title>자주 묻는 질문</title>
-<link rel="stylesheet" href="../../static/css/jyk/boardMain.css">
-=======
-<title>Insert title here</title>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/jyk/boardMain.css">
->>>>>>> 96e731d2a779bd83e40b6e1d6240c954c2014361
 </head>
 <body>
 	<%@include file="/templates/kgm/header.jsp"%>
@@ -107,163 +102,44 @@
 
 							<!-- top-search-box 게시판 내용-->
 							<div class="board-list ui-accordion">
-								<ul class="accordion-list type2 ui-accordion-list">
-									<!-- 게시판 반복문  -->
-									<li>
-										<!-- 활성화시 addClass active --> 
-										<!-- 질문영역 --> 
-										<a href="javascript:;" class="title-div ui-accordion-click">
-											<div class="subject">
-												<span class="category">기타</span> <span class="classify">Q</span>
-												<p class="txt">언제부터 멤버십이 변경되나요?</p>
-											</div>
-											<div class="right">
-												<i class="ico-arr-toggle"> <span class="blind">내용보기</span>
-												</i>
-											</div>
-										</a>
-										<div class="ui-accordion-view">
-											<!-- 답변영역 -->
-											<div class="answer">
-												<p class="txt type2">2023년 4월 1일부터 새로워진 멤버십을 만나볼 수 있습니다.
-												</p>
-											</div>
-										</div>
-									</li>
-									<li>
-										<!-- 활성화시 addClass active --> <!-- 질문영역 --> <a
-										href="javascript:;" class="title-div ui-accordion-click">
-											<div class="subject">
-												<span class="category">기타</span> <span class="classify">Q</span>
-												<p class="txt">왜 멤버십이 리뉴얼 되는건가요?</p>
-											</div>
-											<div class="right">
-												<i class="ico-arr-toggle"> <span class="blind">내용보기</span>
-												</i>
-											</div>
-									</a>
-										<div class="ui-accordion-view">
-											<!-- 답변영역 -->
-											<div class="answer">
-												<p class="txt type2">보다 많은분들께 다양하고 실용적인 혜택을 드리기 위해 리뉴얼
-													되었습니다.</p>
-											</div>
-										</div>
-									</li>
-									<li>
-										<!-- 활성화시 addClass active --> <!-- 질문영역 --> <a
-										href="javascript:;" class="title-div ui-accordion-click">
-											<div class="subject">
-												<span class="category">기타</span> <span class="classify">Q</span>
-												<p class="txt">왜 멤버십이 리뉴얼 되는건가요?</p>
-											</div>
-											<div class="right">
-												<i class="ico-arr-toggle"> <span class="blind">내용보기</span>
-												</i>
-											</div>
-									</a>
-										<div class="ui-accordion-view">
-											<!-- 답변영역 -->
-											<div class="answer">
-												<p class="txt type2">보다 많은분들께 다양하고 실용적인 혜택을 드리기 위해 리뉴얼
-													되었습니다.</p>
-											</div>
-										</div>
-									</li>
-									<li>
-										<!-- 활성화시 addClass active --> <!-- 질문영역 --> <a
-										href="javascript:;" class="title-div ui-accordion-click">
-											<div class="subject">
-												<span class="category">기타</span> <span class="classify">Q</span>
-												<p class="txt">왜 멤버십이 리뉴얼 되는건가요?</p>
-											</div>
-											<div class="right">
-												<i class="ico-arr-toggle"> <span class="blind">내용보기</span>
-												</i>
-											</div>
-									</a>
-										<div class="ui-accordion-view">
-											<!-- 답변영역 -->
-											<div class="answer">
-												<p class="txt type2">보다 많은분들께 다양하고 실용적인 혜택을 드리기 위해 리뉴얼
-													되었습니다.</p>
-											</div>
-										</div>
-									</li>
-									<li>
-										<!-- 활성화시 addClass active --> <!-- 질문영역 --> <a
-										href="javascript:;" class="title-div ui-accordion-click">
-											<div class="subject">
-												<span class="category">기타</span> <span class="classify">Q</span>
-												<p class="txt">왜 멤버십이 리뉴얼 되는건가요?</p>
-											</div>
-											<div class="right">
-												<i class="ico-arr-toggle"> <span class="blind">내용보기</span>
-												</i>
-											</div>
-									</a>
-										<div class="ui-accordion-view">
-											<!-- 답변영역 -->
-											<div class="answer">
-												<p class="txt type2">보다 많은분들께 다양하고 실용적인 혜택을 드리기 위해 리뉴얼
-													되었습니다.</p>
-											</div>
-										</div>
-									</li>
-									<li>
-										<!-- 활성화시 addClass active --> <!-- 질문영역 --> <a
-										href="javascript:;" class="title-div ui-accordion-click">
-											<div class="subject">
-												<span class="category">기타</span> <span class="classify">Q</span>
-												<p class="txt">왜 멤버십이 리뉴얼 되는건가요?</p>
-											</div>
-											<div class="right">
-												<i class="ico-arr-toggle"> <span class="blind">내용보기</span>
-												</i>
-											</div>
-									</a>
-										<div class="ui-accordion-view">
-											<!-- 답변영역 -->
-											<div class="answer">
-												<p class="txt type2">보다 많은분들께 다양하고 실용적인 혜택을 드리기 위해 리뉴얼
-													되었습니다.</p>
-											</div>
-										</div>
-									</li>
-									<li>
-										<!-- 활성화시 addClass active --> <!-- 질문영역 --> <a
-										href="javascript:;" class="title-div ui-accordion-click">
-											<div class="subject">
-												<span class="category">기타</span> <span class="classify">Q</span>
-												<p class="txt">왜 멤버십이 리뉴얼 되는건가요?</p>
-											</div>
-											<div class="right">
-												<i class="ico-arr-toggle"> <span class="blind">내용보기</span>
-												</i>
-											</div>
-									</a>
-										<div class="ui-accordion-view">
-											<!-- 답변영역 -->
-											<div class="answer">
-												<p class="txt type2">보다 많은분들께 다양하고 실용적인 혜택을 드리기 위해 리뉴얼
-													되었습니다.</p>
-											</div>
-										</div>
-									</li>
-									<!-- li 반복 -->
-								</ul>
+								<section id="content-wrap">
+									<ul class="accordion-list type2 ui-accordion-list">
+										<!-- 게시판 반복문  c:forEach써도 되는데-->
+											
+									</ul>
+							<!-- 페이징-->
+							<div id="paging-wrap">
+                				<c:if test="${prev}">
+	                				<a href="${startPage - 1}" class="paging paging-move change-page"><img src="/static/images/prev.png" width="15px"></a>
+                				</c:if>
+                				
+                					<c:forEach var="i" begin="${startPage}" end="${endPage}">
+                						<c:choose>
+               								<c:when test="${i eq page}">
+	                							<a href="javascript:void(0)" class="paging paging-checked"><c:out value="${i}"/></a>
+               								</c:when>
+               								<c:otherwise>
+		                    					<a href="${i}" class="paging change-page"><c:out value="${i}"/></a>
+            								</c:otherwise>
+                						</c:choose>
+                					</c:forEach>
+           							
+           							<c:if test="${next}">
+                   						<a href="${endPage + 1}" class="paging paging-move change-page"><img src="/static/images/next.png" width="15px"></a>
+        							</c:if>
+                			</div>
+								</section>
 							</div>
-
-							<!--   -->
+							
 
 
 							<!-- board-list 페이지네이션-->
-							<div class="page-bottom">
+							<!-- div class="page-bottom">
 								<div class="pagination">
 									<div class="pagging-wrap page-area">
 										<div class="page-number">
 											<div class="pagination mt20">
-												<!-- 페이지수 -->
+												페이지수
 												<a href="javascript:CmPageMove('0')" data-page="0"
 													class="btn-page prev"> <span class="blind">이전</span>
 												</a> <a href="#" class="current"><span>1</span></a> <a
@@ -281,17 +157,36 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 
 						</form>
 					</div>
 				</div>
 			</div>
 		</div>
+		 <form action="${pageContext.request.contextPath}/listOk.board" name="page-form">
+    	<input type="hidden" name="page" value="${page}">
+    	<input type="hidden" name="sort" value="${sort}">
+    	<input type="hidden" name="type" value="${type}">
+    	<input type="hidden" name="keyword" value="${keyword}">
+    </form>
 
 
 	</section>
 	<%@include file="/templates/kgm/footer.jsp"%>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script>
+let boards = `${boards}`;
+console.log(boards);
+let contextPath = `${pageContext.request.contextPath}`;
+	let $form = $("form[name='page-form']");
+	$("a.change-page").on("click", function(e){
+		e.preventDefault();
+		$form.find("input[name='page']").val($(this).attr("href"));
+		$form.submit();
+	}); 
+</script>
+<script src="${pageContext.request.contextPath}/static/js/kgm/list.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/boardMain.js"></script>
 </html>

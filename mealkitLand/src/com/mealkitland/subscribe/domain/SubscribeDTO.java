@@ -2,16 +2,15 @@ package com.mealkitland.subscribe.domain;
 
 import java.util.Objects;
 
-public class SubscribeVO {
-
-	
+public class SubscribeDTO {
 	private Long subscribeId;
 	private String subscribeDate;
 	private int subscribeCount;
 	private Long userId;
 	private Long productId;
+	private String productName;
 	
-	public SubscribeVO() {
+	public SubscribeDTO() {
 		super();
 	}
 
@@ -54,19 +53,29 @@ public class SubscribeVO {
 	public void setProductId(Long productId) {
 		this.productId = productId;
 	}
+
+	public String getProductName() {
+		return productName;
+	}
+
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
 	
 	
 
 	@Override
 	public String toString() {
-		return "SubscribeVO [subscribeId=" + subscribeId + ", subscribeDate=" + subscribeDate + ", subscribeCount="
-				+ subscribeCount + ", userId=" + userId + ", productId=" + productId + "]";
+		return "SubscribeDTO [subscribeId=" + subscribeId + ", subscribeDate=" + subscribeDate + ", subscribeCount="
+				+ subscribeCount + ", userId=" + userId + ", productId=" + productId + ", productName=" + productName
+				+ "]";
 	}
 
 	@Override
 	public int hashCode() {
 		return Objects.hash(subscribeId);
 	}
+	
 
 	@Override
 	public boolean equals(Object obj) {
@@ -76,11 +85,9 @@ public class SubscribeVO {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		SubscribeVO other = (SubscribeVO) obj;
+		SubscribeDTO other = (SubscribeDTO) obj;
 		return Objects.equals(subscribeId, other.subscribeId);
 	}
 
-	
-	
 	
 }
