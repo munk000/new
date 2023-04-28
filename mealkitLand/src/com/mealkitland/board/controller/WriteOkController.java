@@ -22,9 +22,16 @@ public class WriteOkController implements Action{
 		HttpSession session = req.getSession();
 		
 		boardVO.setBoardTitle(req.getParameter("boardTitle"));
+		System.out.println(req.getParameter("boardTitle"));
 		boardVO.setBoardContent(req.getParameter("boardContent")); 
+		System.out.println(req.getParameter("boardContent"));
+		boardVO.setBoardCategory(req.getParameter("boardCategory"));
+		System.out.println(req.getParameter("boardCategory"));
+		
+		System.out.println(req.getParameter("boardCategory"));
 		boardVO.setUserId((Long)session.getAttribute("userId"));
 		
+		boardDAO.insert(boardVO);
 		result.setPath(req.getContextPath()+"listOk.board");
 		result.setRedirect(true);
 		return result;

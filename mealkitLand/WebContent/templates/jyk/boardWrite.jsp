@@ -262,30 +262,28 @@
                                             <td class="text-left">
                                                 <div class="input-group w-full">
                                                     <div class="input-group-form">
-                                                        <div class="ui-select select-box w150" id="vCounselType"
-                                                            data-value>
-                                                            <a href="#none" title class="select-value placeholder">
-                                                                <span>유형선택</span>
-
+                                                        <div class="ui-select select-box w150" id="vCounselType">
+                                                            <a href="#none" class="select-value placeholder">
+                                                                <span id="categorySelect">유형선택</span>
                                                             </a>
                                                             <div class="select-list">
                                                                 <ul>
-                                                                    <li data-name="100" data-value="100">
+                                                                    <li>
                                                                         <a href="#none" class="counselType">
                                                                             <span>주문/결제</span>
                                                                         </a>
                                                                     </li>
-                                                                    <li data-name="200" data-value="200">
+                                                                    <li>
                                                                         <a href="#none" class="counselType">
                                                                             <span>상품관련</span>
                                                                         </a>
                                                                     </li>
-                                                                    <li data-name="300" data-value="300">
+                                                                    <li>
                                                                         <a href="#none" class="counselType">
                                                                             <span>배송관련</span>
                                                                         </a>
                                                                     </li>
-                                                                    <li data-name="999" data-value="999">
+                                                                    <li>
                                                                         <a href="#none" class="counselType">
                                                                             <span>기타</span>
                                                                         </a>
@@ -295,7 +293,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <input type="text" name="vQuestionTitle" id="vQuestionTitle" title
+                                                    <input type="text" name="boardTitle" id="vQuestionTitle" title
                                                         class="input-text" placeholder="제목을 입력해주세요" value>
                                                 </div>
                                             </td>
@@ -329,7 +327,7 @@
                                             </th>
                                             <td class="text-left">
                                                 <div class="textarea-box-count h230">
-                                                    <textarea name="vQuestionCont" id="vQuestionCont"
+                                                    <textarea name="boardContent" id="vQuestionCont"
                                                         placeholder="문의내용을 입력하세요"></textarea>
                                                     <div class="txt-count">
                                                         <span id="counter">0</span>
@@ -345,15 +343,14 @@
                                     </tbody>
                                 </table>
                             </div>
-
-
+							<input type="hidden" id="boardCategory" name="boardCategory">
                             <!-- board-form -->
                             <div class="btn-bottom-area">
                                 <button type="button" class="btn-basic-lg2 btn-grey3"
                                     onclick="javascript:history.back();">
                                     <span>취소하기</span>
                                 </button>
-                                <button type="submit" class="btn-basic-lg2 btn-primary"><!--  onclick="goSave();"> -->
+                                <button type="button" onclick="send();" class="btn-basic-lg2 btn-primary">
                                     <span>문의하기</span>
                                 </button>
                             </div>

@@ -108,4 +108,31 @@ click.on('click', function() {
 	}
 });
 
+var cate = function(value){
+	$("#categorySelect").val(value);
+	console.log("값 변경테스트 :"+ value);
+}
+
+/*category값 보내기 */
+function send(){
+	
+	let category = $('#categorySelect').html();
+	console.log(category);
+	console.log("----");
+	//var category= $("span#categorySelect").text();
+	//console.log("카테고리값 가져옴?"+category);
+	$('#boardCategory').val(category);
+	
+	if(!$('#vQuestionTitle').val()){
+		alert("제목을 입력해주세요");
+		return;
+		}
+	if(!$('#vQuestionCont').val()){
+		alert("내용을 입력해주세요");
+		return;
+	}
+	//console.log($('#boardCategory').val());
+		document.writeForm.submit();
+}
+
 
