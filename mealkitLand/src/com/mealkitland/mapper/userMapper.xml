@@ -9,7 +9,11 @@
 	</insert>
 	
 	<select id="selectIdentification" resultType="string">
-		select user_identification from tbl_user where userer_identification = #{usererIdentification}
+		select user_identification from tbl_user where user_identification = #{usererIdentification}
+	</select>
+	
+	<select id="selectEmail" resultType="string">
+		select user_email from tbl_user where user_email = #{userEmail}
 	</select>
 	
 	<select id="login" resultType="long">

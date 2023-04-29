@@ -22,7 +22,7 @@ public class ListOkController implements Action {
 		Result result = new Result();
 		JSONArray jsonArray = new JSONArray();
 		String temp = req.getParameter("page");
-		int page = temp == null ? 1 : Integer.parseInt(temp);
+		int page = temp == null ? 1 : Integer.parseInt		(temp);
 		Criteria criteria = new Criteria(page, boardDAO.getTotal());
 		
 		boardDAO.selectAll(criteria).stream().map(board -> new JSONObject(board)).forEach(jsonArray::put);

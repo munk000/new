@@ -202,7 +202,7 @@ $joinInputs.on("blur", function(){
     }
 
 	if(i == 3) {
-		$("select.email").trigger("change");
+		$("select.email").trigger("change");;
 		return;
 	}
 
@@ -211,11 +211,9 @@ $joinInputs.on("blur", function(){
 	    showHelp($(this), "pass.png");
 	}else{
 		checkId = false;
-		/*중복 검사*/
-		alert("안녕~~~~");
-		
+		/*중복 검사*/ 
 		$.ajax({
-			url: "checkIdOk	.user",
+			url: "checkIdOk.user",
 			data: {userIdentification: $(this).val()},
 			async: false,
 			success: function(result){
@@ -251,9 +249,9 @@ $("select.email").on("change", function(){
 	
 	/*이메일 중복검사*/
 	$.ajax({
-		url: "checkEmailOk.member",
+		url: "checkEmailOk.user",
 		type: "post",
-		data: {memberEmail: $("input[name='memberEmail']").val()},
+		data: {userEmail: $("input[name='userEmail']").val()},
 		async: false,
 		success: function(result){
 			let $help = $("div.email-select-wrap").next();
@@ -263,7 +261,7 @@ $("select.email").on("change", function(){
 				$help.text("멋진 이메일이네요!");
 				$help.css('color', '#2bb673');
     			showHelp($(".email-wrap input[type=text]"), "pass.png");
-				checkEmail = true;
+				checkEmail = true;  
 			}else{
 		 		$help.text("이미 사용중인 이메일입니다.");
 				$help.css('color', 'red')

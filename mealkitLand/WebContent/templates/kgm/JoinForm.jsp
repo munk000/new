@@ -17,7 +17,7 @@
 	<div class="wrap">
 		<%@include file="/templates/kgm/header.jsp"%>
 		<section id="contents" class=container>
-        <form id="join-form" name="join-form" action="" method="post">
+        <form id="join-form" name="join-form" action="${pageContext.request.contextPath}/joinOk.user" method="post">
             <div class="join-container join-container2" style="display: block;">
                 <div class="join-area">
                     <h2 class="join-title">회원가입</h2>
@@ -25,9 +25,11 @@
                         <legend>회원가입 항목 작성</legend>
 
                         <div class="info form-head" style="">
-                            <div class="form-group info-container">
+                            <div class="form
+                            -group info-container">
                                 <label for="name" class="form-label">이름<i class="es2"></i></label>
-                                <div class="input-group type-lg w-full">
+                                <div class="input-group type-
+                                lg w-full">
                                     <span>
                                         <input type="text" id="name" name="memberName" autocomplete="off"
                                             placeholder="영문 혹은 한글, 2~20자" class="input-text" maxlength="50">
@@ -146,7 +148,7 @@
                             </div>
                         </div>
                         <div class="btn-bottom-area">
-                            <button type="button" id="member-join-submit-btn" class="btn-basic-lg2 btn-dim next"
+                            <button type="button" id="member-join-submit-btn" action="loginForm.jsp" class="btn-basic-lg2 btn-dim next"
                                 onclick="send()"><span>회원가입</span></button>
                         </div>
                     </fieldset>
@@ -215,11 +217,16 @@
         }).open();
     }
 </script>
- <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script
+ >
     <script>
+    	let result = `${result}`;	
+    	
+    	console.log(result);
+    	
         let contextPath = "${pageContext.request.contextPath}"
     </script>
     <script src="${pageContext.request.contextPath}/static/js/kgm/check.js"></script>
-<script src="${pageContext.request.contextPath}/static/js/kgm/modal.js"></script>
 <script src="${pageContext.request.contextPath}/static/js/kgm/join.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/kgm/modal.js"></script>
 </html>

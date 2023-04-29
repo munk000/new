@@ -1,6 +1,8 @@
 package com.mealkitland.user;
 
 import com.mealkitland.Result;
+import com.mealkitland.user.controller.CheckEmailOkController;
+import com.mealkitland.user.controller.CheckIdOkController;
 import com.mealkitland.user.controller.JoinOkController;
 import com.mealkitland.user.controller.LoginOkController;
 
@@ -21,7 +23,11 @@ public class UserFrontController extends HttpServlet{
 		String target = req.getRequestURI().replace(req.getContextPath() + "/", "").split("\\.")[0];
 		Result result = null;
 		
-		if(target.equals("join")) {
+		if(target.equals("checkIdOk")) {
+			result = new CheckIdOkController().execute(req, resp);
+		} else if(target.equals("checkEmailOk")) {
+			result = new CheckEmailOkController().execute(req, resp);
+		} else if(target.equals("join")) {
 			result = new Result();
 			result.setPath("templates/kgm/joinForm.jsp");
 			

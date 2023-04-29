@@ -22,14 +22,8 @@
                         <p class="message"><span class="blind"></span>밀키트랜드 입니다.</p>
                     </div>
                     <!--// login-greeting -->
-
-<<<<<<< HEAD
-                    <form id="login_form" name="login_form" action="${pageContext.request.contextPath}/joinOk.user" method="post"
-=======
-                    <form id="login_form" name="login" action="${pageContext.request.contextPath}/loginOk.user" method="post"
->>>>>>> master
-                        onsubmit="return onSubmitLogin();" data-gtm-form-interact-id="0"><input type="hidden"
-                            name="encId" value="">
+                   <form id="login_form" name="login" action="${pageContext.request.contextPath}/loginOk.user" method="post" onsubmit="return onSubmitLogin();" data-gtm-form-interact-id="0">
+                    <input type="hidden"name="encId" value="">
                         <input type="hidden" name="endPw" value="">
 
                         <fieldset>
@@ -76,7 +70,6 @@
                                 <li><a href="/auth/findpw" class="text-black2">비밀번호 찾기</a></li>
                             </ul>
                         </div>
-
                     </form>
                 </div>
                 <!-- //login-area -->
@@ -89,7 +82,6 @@
     <!-- //wrap -->
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<<<<<<< HEAD
 	<script>
 		function login_check(){
 			const $id = $("#id");
@@ -107,7 +99,6 @@
 		}
 	</script>
 </html>
-=======
+
 <script src="${pageContext.request.contextPath}/static/js/login.js"></script>
 </html>
->>>>>>> master

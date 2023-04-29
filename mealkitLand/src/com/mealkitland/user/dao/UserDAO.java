@@ -33,5 +33,9 @@ public class UserDAO {
 		return sqlSession.selectOne("user.selectIdentification", userIdentification);
 	}
 	
+	// 이메일 중복검사
+		public String selectEmail(String userEmail) {
+			return sqlSession.selectOne("user.selectEmail", userEmail);
+		}
 	
 }
