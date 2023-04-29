@@ -1,6 +1,9 @@
 package com.mealkitland.user;
 
 import com.mealkitland.Result;
+import com.mealkitland.user.controller.CheckEmailOkController;
+import com.mealkitland.user.controller.CheckIdOkController;
+import com.mealkitland.user.controller.JoinOkController;
 import com.mealkitland.user.controller.LoginOkController;
 
 import java.io.IOException;
@@ -20,9 +23,20 @@ public class UserFrontController extends HttpServlet{
 		String target = req.getRequestURI().replace(req.getContextPath() + "/", "").split("\\.")[0];
 		Result result = null;
 		
-		
-		if(target.equals("login")) {
+		if(target.equals("checkIdOk")) {
+			result = new CheckIdOkController().execute(req, resp);
+		} else if(target.equals("checkEmailOk")) {
+			result = new CheckEmailOkController().execute(req, resp);
+		} else if(target.equals("join")) {
 			result = new Result();
+			result.setPath("templates/kgm/joinForm.jsp");
+			
+		} else if(target.equals("joinOk")) {
+			result = new JoinOkController().execute(req, resp);
+			
+		} else if(target.equals("login")) {
+			result = new Result();
+			result.setPath("templates/kgm/loginForm.jsp");
 			result.setPath(req.getContextPath()+"/templates/kgm/loginFrom.jsp");
 			
 		} else if(target.equals("loginOk")) {
@@ -31,6 +45,7 @@ public class UserFrontController extends HttpServlet{
 		} else if(target.equals("logout")) {
 			req.getSession().invalidate();
 			result = new Result();
+			result.setPath("templates/kgm/loginForm.jsp" );
 			result.setPath(req.getContextPath()+"/templates/kgm/loginFrom.jsp");
 		}
 		
@@ -50,4 +65,6 @@ public class UserFrontController extends HttpServlet{
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		doGet(req, resp);
  	}
+	
+	
 }

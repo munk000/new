@@ -7,35 +7,33 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.mealkitland.Action;
 import com.mealkitland.Result;
 import com.mealkitland.user.dao.UserDAO;
 
-public class CheckIdOkController implements Action{
+public class CheckEmailOkController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		resp.setContentType("text/html;charset=utf-8");
 		UserDAO userDAO = new UserDAO();
-		String userIdentification = userDAO.selectIdentification(req.getParameter("userIdentification"));
-		System.out.println(userIdentification);
-		boolean check = userIdentification == null; // true : 사용가능, false : 사용 불가능
-		
+		String userEmail = req.getParameter("userEmail");
+		boolean check = userDAO.selectEmail(userEmail) == null; // 없으니까 null이니까 사용가능, null이 아니면 중복이니까 사용 불가능
 		JSONObject result = new JSONObject();
+		
 		try {
 			result.put("check", check);
-		} catch (JSONException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
-		resp.setContentType("text/html;charset=utf-8");
 		
 		PrintWriter out = resp.getWriter();
 		out.print(result.toString());
 		out.close();
+		
 		return null;
 	}
-	
+
 }

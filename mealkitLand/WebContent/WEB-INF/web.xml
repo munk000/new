@@ -45,7 +45,4 @@
   	<servlet-name>Subscribe</servlet-name>
   	<url-pattern>*.subscribe</url-pattern>
   </servlet-mapping>
- 	
- 	
-  
 </web-app>

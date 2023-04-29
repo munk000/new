@@ -22,10 +22,8 @@
                         <p class="message"><span class="blind"></span>밀키트랜드 입니다.</p>
                     </div>
                     <!--// login-greeting -->
-
-                    <form id="login_form" name="login" action="${pageContext.request.contextPath}/loginOk.user" method="post"
-                        onsubmit="return onSubmitLogin();" data-gtm-form-interact-id="0"><input type="hidden"
-                            name="encId" value="">
+                   <form id="login_form" name="login" action="${pageContext.request.contextPath}/loginOk.user" method="post" onsubmit="return onSubmitLogin();" data-gtm-form-interact-id="0">
+                    <input type="hidden"name="encId" value="">
                         <input type="hidden" name="endPw" value="">
 
                         <fieldset>
@@ -72,7 +70,6 @@
                                 <li><a href="/auth/findpw" class="text-black2">비밀번호 찾기</a></li>
                             </ul>
                         </div>
-
                     </form>
                 </div>
                 <!-- //login-area -->
@@ -85,5 +82,23 @@
     <!-- //wrap -->
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script>
+		function login_check(){
+			const $id = $("#id");
+			const $pw = $("#pw");
+				if(!$id.val()){
+					alert("아이디를 입력하세요.");
+					$id.focus();
+					return false;
+				}
+				if(!$pw.val()){
+					alert("비밀번호를 입력하세요.")
+					$pw.focus();
+					return false;
+				}
+		}
+	</script>
+</html>
+
 <script src="${pageContext.request.contextPath}/static/js/login.js"></script>
 </html>

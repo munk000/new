@@ -55,6 +55,8 @@ public class LoginOkController implements Action{
 		
 			
 		if(userId == null) {
+//			로그인 실패 
+			result.setPath(req.getContextPath()+ "/login.user?=false");
 //			로그인 실패
 			result.setPath(req.getContextPath()+ "/loginForm.user?=false");
 				

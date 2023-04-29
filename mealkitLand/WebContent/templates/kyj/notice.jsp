@@ -28,10 +28,6 @@
         </div>
         <div class="right-panel">
          
-         
-          
-            
-           
            <div class="tbl_div">
           
     
@@ -52,7 +48,6 @@
               </form>
           </dexampleiv>   <!--tbl_div-->
       
-    
         </div>
       </div>
 </body>
