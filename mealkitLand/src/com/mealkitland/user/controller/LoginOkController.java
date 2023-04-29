@@ -25,7 +25,6 @@ public class LoginOkController implements Action{
 		boolean autoLogin = Boolean.valueOf(req.getParameter("auto-login"));
 		boolean saveId = Boolean.valueOf(req.getParameter("save-id"));
 		result.setRedirect(true);
-		String id = "";
 		
 		if(userIdentification == null) {
 			if(req.getHeader("Cookie") != null) {
@@ -57,9 +56,7 @@ public class LoginOkController implements Action{
 		if(userId == null) {
 //			로그인 실패 
 			result.setPath(req.getContextPath()+ "/login.user?=false");
-//			로그인 실패
-			result.setPath(req.getContextPath()+ "/loginForm.user?=false");
-				
+	
 		}else {
 //			로그인 성공
 			session.setAttribute("userId", userId);
