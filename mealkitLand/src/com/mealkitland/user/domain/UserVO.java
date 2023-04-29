@@ -9,6 +9,7 @@ public class UserVO {
 	private String userDate;
 	private String userPhone;
 	private String userEmail;
+	private String userBirth;
 	private String userRegistDate;
 	private String userUpdateDate;
 	private String userSubDate;
@@ -18,6 +19,14 @@ public class UserVO {
 
 	public Long getUserId() {
 		return userId;
+	}
+
+	public String getUserBirth() {
+		return userBirth;
+	}
+
+	public void setUserBirth(String userBirth) {
+		this.userBirth = userBirth;
 	}
 
 	public void setUserId(Long userId) {
@@ -115,7 +124,7 @@ public class UserVO {
 	@Override
 	public String toString() {
 		return "UserVO [userId=" + userId + ", userIdentification=" + userIdentification + ", userPassword="
-				+ userPassword + ", userName=" + userName + ", userAddress=" + userAddress + ", userDate=" + userDate
+				+ userPassword + ", userName=" + userName +", userBirth=" +userBirth+", userAddress=" + userAddress + ", userDate=" + userDate
 				+ ", userPhone=" + userPhone + ", userEmail=" + userEmail + ", userRegistDate=" + userRegistDate
 				+ ", userUpdateDate=" + userUpdateDate + ", userSubDate=" + userSubDate + ", userAdmin=" + userAdmin
 				+ "]";

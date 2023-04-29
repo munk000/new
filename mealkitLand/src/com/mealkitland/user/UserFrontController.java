@@ -27,6 +27,7 @@ public class UserFrontController extends HttpServlet{
 			result = new CheckIdOkController().execute(req, resp);
 		} else if(target.equals("checkEmailOk")) {
 			result = new CheckEmailOkController().execute(req, resp);
+		
 		} else if(target.equals("join")) {
 			result = new Result();
 			result.setPath("templates/kgm/joinForm.jsp");

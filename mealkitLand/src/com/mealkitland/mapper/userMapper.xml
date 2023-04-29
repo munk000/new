@@ -4,24 +4,18 @@
 
 	<insert id="insert">
 		insert into tbl_user
-		(user_identification, user_password, user_name, user_address, user_birth, user_phone, user_email, user_regist_date, user_update_date)
-		values(#{userIdentification}, #{userPassword}, #{userName}, #{userAddress}, #{userBirth}, #{userPhone}, #{userEmail}, #{userRegistDate}, #{userUpdateDate};
+		(user_identification, user_password, user_name, user_address, user_birth, user_phone, user_email)
+		values(#{userIdentification},#{userPassword}, #{userName}, #{userAddress}, #{userBirth}, #{userPhone}, #{userEmail})
 	</insert>
 	
 	<select id="selectIdentification" resultType="string">
-		select user_identification from tbl_user where user_identification = #{usererIdentification}
+		select user_identification from tbl_user where user_identification = #{userIdentification}
 	</select>
 	
 	<select id="selectEmail" resultType="string">
 		select user_email from tbl_user where user_email = #{userEmail}
 	</select>
 	
-	<select id="login" resultType="long">
-		select user_id from tbl_user
-		where user_identification = #{userIdentification} and user_password = #{userPassword}
-	</select>
-	
-
 	<select id="login" resultType="long">
 		select user_id from tbl_user
 		where user_identification = #{userIdentification} and user_password = #{userPassword}

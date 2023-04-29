@@ -25,7 +25,7 @@ public class UserDAO {
 	
 	// 회원가입
 	public void insert(UserVO userVO) {
-		sqlSession.insert("User.insert", userVO);
+		sqlSession.insert("user.insert", userVO);
 	}
 	
 	// 아이디 중복검사

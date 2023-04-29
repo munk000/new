@@ -25,13 +25,11 @@
                         <legend>회원가입 항목 작성</legend>
 
                         <div class="info form-head" style="">
-                            <div class="form
-                            -group info-container">
+                            <div class="form-group info-container">
                                 <label for="name" class="form-label">이름<i class="es2"></i></label>
-                                <div class="input-group type-
-                                lg w-full">
+                                <div class="input-group type-lg w-full">
                                     <span>
-                                        <input type="text" id="name" name="memberName" autocomplete="off"
+                                        <input type="text" id="name" name="userName" autocomplete="off"
                                             placeholder="영문 혹은 한글, 2~20자" class="input-text" maxlength="50">
                                         <img width="16px">
                                     </span>
@@ -44,7 +42,7 @@
                                 <label for="birth" class="form-label">생년월일<i class="es2"></i></label>
                                 <div class="input-group type-lg w-full">
                                     <span>
-                                        <input type="text" id="birth" name="memberBirth" autocomplete="off"
+                                        <input type="text" id="birth" name="userBirth" autocomplete="off"
                                             class="input-text" placeholder="예) 19990101">
                                         <img width="16px">
                                     </span>
@@ -57,7 +55,7 @@
                                 <label for="phone" class="form-label">휴대폰 번호<i class="es2"></i></label>
                                 <div class="input-group type-lg w-full">
                                     <span>
-                                        <input type="text" id="phone" name="memberPhone" autocomplete="off"
+                                        <input type="text" id="phone" name="userPhone" autocomplete="off"
                                             class="input-text" placeholder="예) 01000000000">
                                         <img width="16px">
                                     </span>
@@ -72,7 +70,7 @@
                                     <label for="id" class="form-label">아이디<i class="es2"></i></label>
                                     <div class="input-group type-lg w-full">
                                         <span>
-                                            <input type="text" id="id" name="memberIdentification" autocomplete="off"
+                                            <input type="text" id="id" name="userIdentification" autocomplete="off"
                                                 class="input-text" placeholder="영문 혹은 영문+숫자, 4~20자">
                                             <img width="16px">
                                         </span>
@@ -86,7 +84,7 @@
                                         <label for="password" class="form-label">비밀번호<i class="es2"></i></label>
                                         <div class="input-group type-lg w-full">
                                             <div class="password">
-                                                <input type="password" id="password" name="memberPassword"
+                                                <input type="password" id="password" name="userPassword"
                                                     class="input-text" placeholder="영어, 숫자, 특수문자 중 2가지 이상 10~20자">
                                                 <img width="16px">
                                                 <p class="help"></p>
@@ -107,17 +105,15 @@
                                     <span>
                                         <div class="email-wrap">
                                             <div class="email-first">
-                                                <input type="text" autocomplete="off" placeholder="이메일 앞자리" id="email-f"
-                                                    class="input-text">
+                                                <input type="text" autocomplete="off" placeholder="이메일 앞자리" id="email-f" class="input-text">
                                                 <img width="16px">
                                             </div>
                                             <span id="seperator">@</span>
                                             <div class="email-last">
-                                                <input type="text" autocomplete="off" placeholder="이메일 뒷자리"
-                                                    class="input-text">
+                                                <input type="text" autocomplete="off" placeholder="이메일 뒷자리" id="email-l" class="input-text">
                                                 <img width="16px">
                                             </div>
-                                            <input type="hidden" name="memberEmail">
+                                            <input type="hidden" name="userEmail">
                                         </div>
                                     </span>
                                     <p class="help"></p>
@@ -130,17 +126,16 @@
                                             <option value="hotmail.com">hotmail.com</option>
                                             <option value="gmail.com">gmail.com</option>
                                         </select>
-                                        <img src="${pageContext.request.contextPath}/static/images/select.png"
-                                            width="16px" style="display: inline-block;">
+                                        <img src="${pageContext.request.contextPath}/static/image/select.png"width="16px" style="display: inline-block;">
                                     </div>
                                     <p class="help"></p>
                                     <h6 class="help">
-                                        <img src="${pageContext.request.contextPath}/static/images/warn.png" id="warn"
+                                        <img src="${pageContext.request.contextPath}/static/image/warn.png" id="warn"
                                             width="16px" height="16px">
                                         이메일로 비밀번호 변경 링크 등이 발송됩니다. 개인정보 보호를 위해 정확한 메일 정보를 입력해주세요.
                                     </h6>
 
-                                    <input type="text" id="sample5_address" placeholder="주소">
+                                    <input type="text" name="userAddress" id="sample5_address" readonly placeholder="주소">
                                     <input type="button" onclick="sample5_execDaumPostcode()" value="주소 검색"><br>
 									<div id="map" style="width:300px;height:300px;margin-top:10px;display:none">
 									</div>
@@ -148,8 +143,8 @@
                             </div>
                         </div>
                         <div class="btn-bottom-area">
-                            <button type="button" id="member-join-submit-btn" action="loginForm.jsp" class="btn-basic-lg2 btn-dim next"
-                                onclick="send()"><span>회원가입</span></button>
+                            <button type="submit" id="member-join-submit-btn" action="loginForm.jsp" class="btn-basic-lg2 btn-dim next">
+                            <span>회원가입</span></button>
                         </div>
                     </fieldset>
                     <!-- join-area -->
@@ -217,16 +212,13 @@
         }).open();
     }
 </script>
- <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script
- >
+ <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script>
-    	let result = `${result}`;	
     	
-    	console.log(result);
     	
         let contextPath = "${pageContext.request.contextPath}"
     </script>
-    <script src="${pageContext.request.contextPath}/static/js/kgm/check.js"></script>
+   <script src="${pageContext.request.contextPath}/static/js/kgm/check.js"></script>
 <script src="${pageContext.request.contextPath}/static/js/kgm/join.js"></script>
 <script src="${pageContext.request.contextPath}/static/js/kgm/modal.js"></script>
 </html>
