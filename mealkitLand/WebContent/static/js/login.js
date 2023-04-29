@@ -49,9 +49,18 @@ function send(){
     
 }
 
-
-
-
+$(function(){
+	$('#password').keyup(function(event){
+        if(event.keyCode == 13){
+            send();
+        }
+    })
+	$('#id').keyup(function(event){
+        if(event.keyCode == 13){
+            send();
+        }
+    })
+});
 
 
 

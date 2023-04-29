@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>밀키트랜드</title>
-    <link rel="stylesheet" href="../../static/css/kgm/header.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/kgm/header.css">
 </head>
 
 <body>
@@ -16,14 +16,21 @@
     <header id="header" class="header">
         <!-- ## header,gnb :: include.header() 영역 -->
         <div class="header-inner">
-            <h1 class="logo"><a href="/"><span class="blind">밀키트랜드</span></a></h1>
+            <h1 class="logo"><a href="${pageContext.request.contextPath}/templates/ksj/main.jsp"><span class="blind">밀키트랜드</span></a></h1>
 
             <div class="util">
                 <ul>
-                    <li><a href="/auth/login">로그인</a></li>
-                    <li><a href="/member/join/general">회원가입</a></li>
+                    <%
+						Long id =(Long)session.getAttribute("userId");
+					%>
+					<%if(id==null){%>
+                    <li><a href="${pageContext.request.contextPath}/login.user">로그인</a></li>
+                    <%}else{ %>
+                    <li><a href="${pageContext.request.contextPath}/logout.user">로그아웃</a></li>
+                    <%} %>
+                    <li><a href="${pageContext.request.contextPath}/templates/kgm/loginForm.jsp">회원가입</a></li>
                     <li><a href="/mypage/orderlist">주문조회</a></li>
-                    <li><a href="/service/center">고객센터</a></li>
+                    <li><a href="${pageContext.request.contextPath}/templates/jyk/boardMain.jsp">고객센터</a></li>
                 </ul>
             </div>
             <!--// util -->

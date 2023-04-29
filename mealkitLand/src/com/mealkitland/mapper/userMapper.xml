@@ -22,10 +22,5 @@
 	</select>
 	
 
-	<select id="login" resultType="long">
-		select user_id from tbl_user
-		where user_identification = #{userIdentification} and user_password = #{userPassword}
-	</select>
-
 
 </mapper>
