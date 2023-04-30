@@ -266,10 +266,10 @@ a {
     width: 30px;
     text-align: center;
 }
-img {
+/*img {
     max-width: 100%;
     vertical-align: top;
-}
+}*/
 fieldset, img {
     border: 0;
 }

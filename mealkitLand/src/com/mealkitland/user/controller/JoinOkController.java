@@ -22,17 +22,17 @@ public class JoinOkController implements Action{
 		userVO.setUserIdentification(req.getParameter("userIdentification"));
 		userVO.setUserPassword(req.getParameter("userPassword"));
 		userVO.setUserName(req.getParameter("userName"));
-		userVO.setUserDate(req.getParameter("userBirth"));
+		userVO.setUserBirth(req.getParameter("userBirth"));
 		userVO.setUserAddress(req.getParameter("userAddress"));
 		userVO.setUserPhone(req.getParameter("userPhone"));
 		userVO.setUserEmail(req.getParameter("userEmail"));
-		userVO.setUserRegistDate(req.getParameter("userRegistDate"));
-		userVO.setUserUpdateDate(req.getParameter("userUpdateDate"));
 		
+		System.out.println((req.getParameter("userIdentification")));
 		userDAO.insert(userVO);
 		
 		result.setRedirect(true);
-		result.setPath(req.getContextPath() + "/login.user");
+//		result.setPath(req.getContextPath() + "/login.user");
+		result.setPath(req.getContextPath() + "templates/kgm/loginForm.jsp");
 		
 		return result;
 	}

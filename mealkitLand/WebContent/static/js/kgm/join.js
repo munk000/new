@@ -98,7 +98,7 @@ $infoInputs.on("blur", function(){
 });
 
 function showHelp($input, fileName){
-    $input.next().attr("src", "/static/images/" + fileName);
+    $input.next().attr("src", "/static/image/" + fileName);
 
     if(fileName == "pass.png") {
         $input.css("border", "1px solid rgba(0, 0, 0, 0.1)");
@@ -233,6 +233,7 @@ $joinInputs.on("blur", function(){
 			//error: function(a, b, c){}
 		});
 	}
+
 });
 
 $("select.email").on("change", function(){
@@ -245,7 +246,7 @@ $("select.email").on("change", function(){
     $("div.email-last input").prop("readonly", true);
 
 	/*이메일 합치기*/
-	$("input[name='memberEmail']").val($("div.email-first input").val() + '@' + $("div.email-last input").val())
+	$("input[name='userEmail']").val($("div.email-f input").val() + '@' + $("div.email-l input").val())
 	
 	/*이메일 중복검사*/
 	$.ajax({
