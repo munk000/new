@@ -23,11 +23,11 @@ public class LogoutController implements Action {
 			Cookie[] cookies = req.getCookies();
 			for(Cookie cookie: cookies){
 				if(cookie.getName().equals("userIdentification")) {
-					cookie.setMaxAge(0); //초단위
+					cookie.setMaxAge(0); 
 					resp.addCookie(cookie);
 				}
 				if(cookie.getName().equals("userPassword")) {
-					cookie.setMaxAge(0); //초단위
+					cookie.setMaxAge(0); 
 					resp.addCookie(cookie);
 				}
 

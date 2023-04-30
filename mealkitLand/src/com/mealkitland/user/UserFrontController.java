@@ -4,7 +4,9 @@ import com.mealkitland.Result;
 import com.mealkitland.user.controller.CheckEmailOkController;
 import com.mealkitland.user.controller.CheckIdOkController;
 import com.mealkitland.user.controller.JoinOkController;
+import com.mealkitland.user.controller.LoginController;
 import com.mealkitland.user.controller.LoginOkController;
+import com.mealkitland.user.controller.LogoutController;
 
 import java.io.IOException;
 
@@ -36,18 +38,13 @@ public class UserFrontController extends HttpServlet{
 			result = new JoinOkController().execute(req, resp);
 			
 		} else if(target.equals("login")) {
-			result = new Result();
-			result.setPath("templates/kgm/loginForm.jsp");
-			result.setPath(req.getContextPath()+"/templates/kgm/loginFrom.jsp");
+			result = new LoginController().execute(req, resp);
 			
 		} else if(target.equals("loginOk")) {
 			result = new LoginOkController().execute(req, resp);
 			
 		} else if(target.equals("logout")) {
-			req.getSession().invalidate();
-			result = new Result();
-			result.setPath("templates/kgm/loginForm.jsp" );
-			result.setPath(req.getContextPath()+"/templates/kgm/loginFrom.jsp");
+			result = new LogoutController().execute(req, resp);
 		}
 		
 		
