@@ -8,9 +8,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>회원가입</title>
-<link rel="stylesheet" href="../../static/css/kgm/joinForm.css">
-<link rel="stylesheet" href="../../static/css/kgm/info.css">
-<link rel="stylesheet" href="../../static/css/kgm/member.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/kgm/joinForm.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/kgm/info.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/kgm/member.css">
 </head>
 
 <body>
