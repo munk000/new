@@ -508,14 +508,17 @@ button {
 
 }
 
+
 .no-data-type1 {
     text-align: center;
     padding: 160px 0;
+    
 }
 
 .no-data-type1 .message {
     color: #333;
     font-size: 15px;
+ 
 }
 
 .search-period {

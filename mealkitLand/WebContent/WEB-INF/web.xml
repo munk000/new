@@ -45,4 +45,15 @@
   	<servlet-name>Subscribe</servlet-name>
   	<url-pattern>*.subscribe</url-pattern>
   </servlet-mapping>
+  
+  <!-- 장바구니 -->
+      <servlet>
+  	<servlet-name>CartOk</servlet-name>
+  	<servlet-class>com.mealkitland.cart.CartFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CartOk</servlet-name>
+  	<url-pattern>*.cart</url-pattern>
+  </servlet-mapping>
+
 </web-app>

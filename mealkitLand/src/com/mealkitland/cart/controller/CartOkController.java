@@ -1,4 +1,4 @@
-package com.mealkitland.subscribe.controller;
+package com.mealkitland.cart.controller;
 
 import java.io.IOException;
 
@@ -6,27 +6,25 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-
 import com.mealkitland.Action;
 import com.mealkitland.Result;
+import com.mealkitland.cart.dao.CartDAO;
 import com.mealkitland.subscribe.dao.SubscribeDAO;
-import com.mealkitland.subscribe.domain.SubscribeDTO;
 
-public class SubscribeOkController implements Action{
+public class CartOkController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
 		Result result = new Result();
 		resp.setContentType("text/html; charset = utf-8");
 //		Long userId = (Long)req.getAttribute("userId");
-		SubscribeDAO subscribeDAO = new SubscribeDAO();
-//		req.setAttribute("subscribeDTO", subscribeDAO.select(userId));
-		req.setAttribute("subscribeDTO", subscribeDAO.select(1L));
+		CartDAO cartDAO = new CartDAO();
+//		req.setAttribute("cartDTO", cartDAO.select(userId));
+		req.setAttribute("cartDTO", cartDAO.select(1L));
 		
-		result.setPath("/templates/hdh/mypage2.jsp");
+		result.setPath("/templates/hdh/mypage5.jsp");
 		return result;
 	}
-	
+
 }
