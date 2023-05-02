@@ -10,6 +10,8 @@ public class SubscribeDTO {
 	private Long productId;
 	private String productName;
 	
+
+
 	public SubscribeDTO() {
 		super();
 	}
@@ -61,21 +63,11 @@ public class SubscribeDTO {
 	public void setProductName(String productName) {
 		this.productName = productName;
 	}
-	
-	
-
-	@Override
-	public String toString() {
-		return "SubscribeDTO [subscribeId=" + subscribeId + ", subscribeDate=" + subscribeDate + ", subscribeCount="
-				+ subscribeCount + ", userId=" + userId + ", productId=" + productId + ", productName=" + productName
-				+ "]";
-	}
 
 	@Override
 	public int hashCode() {
 		return Objects.hash(subscribeId);
 	}
-	
 
 	@Override
 	public boolean equals(Object obj) {
@@ -88,6 +80,10 @@ public class SubscribeDTO {
 		SubscribeDTO other = (SubscribeDTO) obj;
 		return Objects.equals(subscribeId, other.subscribeId);
 	}
+	
+	
+	
+
 
 	
 }

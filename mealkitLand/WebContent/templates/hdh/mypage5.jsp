@@ -8,6 +8,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>장바구니</title>
     <link rel="stylesheet" href="../../static/css/hdh/mypage5.css">
+      <style>
+
+
+ .no-data-type1{
+ 	display:flex;
+	justify-content: center;
+	align-items: center;
+ }
+ 
+ .tbl th, .tbl td{
+ border: 1px solid rgba(204, 204, 204, 0.2);
+     width: 200px;
+ }
+ 
+ .tbl{
+ 
+ 	margin-top: -20px;
+ 	text-align: center;
+ }
+
+   	
+   </style>
 </head>
 <body>
     <div class="wrap" style>
@@ -31,7 +53,7 @@
                                     <a class="menu">메뉴</a>
                                     <ul class="depth2">
                                         <li class>
-                                            <a>나의 구독내역</a>
+                                      <a href="${pageContext.request.contextPath}/subscribeOk.subscribe">나의 구독내역</a>
                                         </li>
                                         <li class>
                                             <a>배송 조회</a>
@@ -55,24 +77,22 @@
                     <div class="frame-cnt-inner">
                         <div class="menu-title-area">
                             <h3 class="title-menu">장바구니</h3>
-                            <div class="right" style="display: none">
-                                <button type="button" class="btn-link-txt5" id="btnDeltAll">
-                                    <i class="ico-btn-delete"></i>
-                                    <span>전체삭제</span>
-                                </button>
+         <div class="search-box ui-toggle">
+                            <div class="search-head">
+                               
+                                
                             </div>
                         </div>
-                        <div class="grid-list-wrap ui-compare-select">
-                            <ul id="wishList" class="prd-item-list grid-area-span4 gap33">
-                                <div class="no-data">
-                                    <p class="message">장바구니가 비어있습니다.</p>
-                                </div>
-                            </ul>
+                        <div class="no-data-type1 id=noDataWrap">
+                          
+                            	<table class="tbl">
+                            		<tr><th>상품이름 </th> <th>상품생산일 </th> <th>상품가격</th></tr>
+                            		<tr><td><c:out value="${cartDTO.productName}"/></td> <td><c:out value="${cartDTO.productTypeDate}"/></td> <td><c:out value="${cartDTO.productPrice}"/></td></tr>
+                            	</table>
+                          
+                            
+                            
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 	<%@include file = "/templates/kgm/footer.jsp" %>
     </div>

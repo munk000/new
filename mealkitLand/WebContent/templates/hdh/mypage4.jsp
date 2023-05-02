@@ -8,6 +8,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>결제/취소내역</title>
     <link rel="stylesheet" href="../../static/css/hdh/mypage4.css">
+       <style>
+
+
+ .no-data-type1{
+ 	display:flex;
+	justify-content: center;
+	align-items: center;
+ }
+ 
+ .tbl th, .tbl td{
+ border: 1px solid rgba(204, 204, 204, 0.2);
+     width: 200px;
+ }
+ 
+ .tbl{
+ 	
+ 	margin-top: -20px;
+ }
+   	
+   </style>
 </head>
 <body>
     <div class="wrap" style>
@@ -31,7 +51,7 @@
                                     <a class="menu">메뉴</a>
                                     <ul class="depth2">
                                         <li class>
-                                            <a>나의 구독내역</a>
+                                          <a href="${pageContext.request.contextPath}/subscribeOk.subscribe">나의 구독내역</a>
                                         </li>
                                         <li class>
                                             <a>배송 조회</a>
@@ -138,7 +158,11 @@
                             </div>
                          </form>
                         <div class="no-data-type1">
-                            <p class="message">최근 1개월 내에 주문내역이 없습니다.  </p>
+                            	<table class="tbl">
+                            		<tr><th>결제상품</th> <th>결제금액</th> <th>결제날짜</th></tr>
+                            		<tr><td></td> <td></td> <td></td></tr>
+                            	</table>
+                          
                         </div>
                     </div>
                 </div>
