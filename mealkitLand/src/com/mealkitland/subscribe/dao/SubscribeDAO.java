@@ -15,7 +15,7 @@ public class SubscribeDAO {
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	}
 	
-	public List<SubscribeDTO> select(){
-		return sqlSession.selectList("subscribe.select");
+	public SubscribeDTO select(Long userId ){
+		return sqlSession.selectOne("subscribe.select",userId);
 	}
 }

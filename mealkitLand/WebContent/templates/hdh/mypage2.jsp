@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +8,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>나의 구독내역</title>
-   
-    
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/hdh/mypage2.css">
+   <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/hdh/mypage2.css">
+   <style>
+
+
+ .no-data-type1{
+ 	display:flex;
+	justify-content: center;
+	align-items: center;
+ }
+ 
+ .tbl th, .tbl td{
+ border: 1px solid rgba(204, 204, 204, 0.2);
+     width: 200px;
+ }
+ 
+ .tbl{
+ 	display:none;
+ 	margin-top: -20px;
+ }
+   	
+   </style>
 </head>
 <body>
     <div class="wrap" style>
@@ -33,7 +52,7 @@
                                     <a class="menu">메뉴</a>
                                     <ul class="depth2">
                                         <li class>
-                                            <a>나의 구독내역</a>
+                                            <a href="${pageContext.request.contextPath}/subscribeOk.subscribe">나의 구독내역</a>
                                         </li>
                                         <li class>
                                             <a>배송 조회</a>
@@ -69,11 +88,17 @@
                             <div class="search-head">
                                 <p class="search-period" style="display:inline-block;">조회기간 2023.03.18 ~ 2023.04.18 (최근 1개월)</p>
                                 <button type="button" class="btn" style="background:red; color:white;">조회</button>
+                            	
                                 
                             </div>
                         </div>
                         <div class="no-data-type1 id=noDataWrap">
-                            <p class="message">최근 1개월 내에 주문내역이 없습니다.</p>
+                          
+                            	<table class="tbl">
+                            		<tr><th>구독상품</th> <th>구독개수</th> <th>구독날짜</th></tr>
+                            		<tr><td><c:out value="${subscribeDTO.productName}"/></td> <td><c:out value="${subscribeDTO.subscribeCount}"/></td> <td><c:out value="${subscribeDTO.subscribeDate}"/></td></tr>
+                            	</table>
+                          
                             
                             
                         </div>
@@ -87,25 +112,19 @@
 </body>
 </html>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>let page =  ${pageContext.request.contextPath};</script>
 <script> 
 
-let json = JSON.parse(`${subscribe}`);
-console.log(json);
-	
 
-	const btn = document.querySelector(".btn");
-const div = document.querySelector(".no-data-type1");
-const msg = document.querySelector(".message");
-let click = false;
+const btn = document.querySelector(".btn");
+const table = document.querySelector(".tbl");
+
 btn.addEventListener("click",()=>{
-	if(!click){
-		 msg.innerHTML = "";
-		    const p = document.createElement("p");
-		    p.innerText =json;
-		    div.appendChild(p);
-	}
-   click = true;
+	table.style.display = "block";
+   
 })
 	
+
+
 </script>
 

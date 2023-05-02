@@ -31,7 +31,7 @@
                                     <a class="menu">메뉴</a>
                                     <ul class="depth2">
                                         <li class>
-                                            <a>나의 구독내역</a>
+                                          <a href="${pageContext.request.contextPath}/subscribeOk.subscribe">나의 구독내역</a>
                                         </li>
                                         <li class>
                                             <a>배송 조회</a>
