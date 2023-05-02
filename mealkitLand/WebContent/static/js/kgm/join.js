@@ -238,6 +238,7 @@ $joinInputs.on("blur", function(){
 
 $("select.email").on("change", function(){
     $("div.email-last input").val($(this).val());
+    //console.log($("div.email-last input").val($(this).val()));
     $joinInputs.eq(4).trigger("blur");
     if(!$(this).val()){
         $("div.email-last input").prop("readonly", false);
@@ -246,8 +247,7 @@ $("select.email").on("change", function(){
     $("div.email-last input").prop("readonly", true);
 
 	/*이메일 합치기*/
-	$("input[name='userEmail']").val($("div.email-f input").val() + '@' + $("div.email-l input").val())
-	
+	$("input[name='userEmail']").val($("#email-f").val() + '@' + $("#email-l").val())
 	/*이메일 중복검사*/
 	$.ajax({
 		url: "checkEmailOk.user",
@@ -284,6 +284,8 @@ function send(){
 	/*비밀번호 암호화*/
 	$("input[name='memberPassword']").val(btoa($("input[name='memberPassword']").val()));
 	$("#password-check").val(btoa($("#password-check").val()));
+	
+	
 
     document.join.submit();
 }

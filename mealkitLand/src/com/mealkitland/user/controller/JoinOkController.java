@@ -31,8 +31,8 @@ public class JoinOkController implements Action{
 		userDAO.insert(userVO);
 		
 		result.setRedirect(true);
-//		result.setPath(req.getContextPath() + "/login.user");
-		result.setPath(req.getContextPath() + "templates/kgm/loginForm.jsp");
+		result.setPath(req.getContextPath() + "/login.user");
+//		result.setPath(req.getContextPath() + "templates/kgm/loginForm.jsp");
 		
 		return result;
 	}
